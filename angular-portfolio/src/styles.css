@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+.bg-night {
+  background-color: #131315;
+}
+.bg-wenge {
+  background-color: #a89fa6;
+}
+.bg-grey-light {
+  background-color: #747682;
+}
+.bg-grey-dark {
+  background-color: #2c3434;
+}
+.bg-blue-dark {
+  background-color: #1c2c33;
+}
+.bg-feldgrau {
+  background-color: #546363;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.text-black {
+  color: #09090a;
+}
+.text-whitepowder {
+  color: #f0f4ef;
+}
+.text-platinum {
+  color: #D1DEDE;
+}
+.text-grey-light {
+  color: #747682;
+}
+.text-grey-lightplus {
+  color: #a1afbd;
+}
+.text-grey-dark {
+  color: #2c3434;
+}
+.text-blue-dark {
+  color: #1c2c33;
+}
+.text-cyan {
+  color: #01baef;
+}
+.text-neongreen {
+  color: #c2f970;
+}
+
+.row-fullscreen {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
