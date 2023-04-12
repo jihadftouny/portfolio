@@ -1,7 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+.font-ubuntu {
+  font-family: "Ubuntu", sans-serif;
+}
+.font-blackops {
+  font-family: "Black Ops One", cursive;
+}
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
 .bg-night {
   background-color: #131315;
 }
+
+.bg-whitepowder {
+  color: #f0f4ef;
+}
+
 .bg-wenge {
   background-color: #a89fa6;
 }
@@ -18,22 +33,23 @@
   background-color: #546363;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
 }
 
-.font-ubuntu {
-  font-family: 'Ubuntu', sans-serif;
-}
-
-.text-black {
-  color: #09090a;
+.text-night {
+  color: #131315;
 }
 .text-whitepowder {
   color: #f0f4ef;
 }
 .text-platinum {
-  color: #D1DEDE;
+  color: #d1dede;
 }
 .text-grey-light {
   color: #747682;
