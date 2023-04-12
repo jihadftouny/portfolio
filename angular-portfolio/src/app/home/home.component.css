@@ -33,7 +33,7 @@ a.image-overlay {
   color: #f0f4ef;
   font-family: "Black Ops One", cursive;
   text-shadow: 0 0 5px #01baef;
-  font-size: 10vh;
+  font-size: 4em;
   padding: 10px;
   border-radius: 3px;
   border: none;
@@ -61,4 +61,21 @@ a.image-overlay:hover {
   transform: scale(1.03);
   box-shadow: 0 0 20px #01baef;
   filter: blur(1px);
+}
+
+
+
+.image-container-pfp {
+  background: url(../../assets/images/jihad-ftouny.png) center center no-repeat;
+  background-size: contain;
+
+  height: 50vh;
+
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.image-container-pfp:hover {
+  background-image: url("../../assets/images/jihad-ftouny-hover.png");
 }

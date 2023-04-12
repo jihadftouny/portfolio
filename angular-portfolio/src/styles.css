@@ -8,6 +8,34 @@
 .font-roboto {
   font-family: "Roboto", sans-serif;
 }
+.font-righteous {
+  font-family: 'Righteous', cursive;
+}
+.font-audiowide {
+  font-family: 'Audiowide', cursive;
+}
+.font-rajdhani {
+  font-family: 'Rajdhani', sans-serif;
+}
+.font-size-3 {
+  font-size: 4rem;
+}
+.font-size-4 {
+  font-size: 3.5rem;
+}
+.font-size-5 {
+  font-size: 3rem;
+}
+.font-size-6 {
+  font-size: 2.5rem;
+}
+.font-size-7 {
+  font-size: 2rem;
+}
+.font-size-8 {
+  font-size: 1.5rem;
+}
+
 
 .bg-night {
   background-color: #131315;
@@ -39,7 +67,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Audiowide', cursive;
 }
 
 .text-night {
@@ -77,3 +105,5 @@ h6 {
   align-items: center;
   min-height: 100vh;
 }
+
+
