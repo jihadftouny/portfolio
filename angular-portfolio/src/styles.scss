@@ -1,4 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import 'overrides.scss';
+
+
+body {
+  overflow-x: hidden;
+}
+
 .font-ubuntu {
   font-family: "Ubuntu", sans-serif;
 }
@@ -99,7 +107,7 @@ h6 {
 }
 
 .row-fullscreen {
-  width: 100%;
+  // width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
