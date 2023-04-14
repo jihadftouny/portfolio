@@ -114,6 +114,13 @@ h6 {
   min-height: 100vh;
 }
 
+.row-fullscreen-top {
+  // width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+}
 
 .line{
   width: 25vh;
@@ -121,4 +128,9 @@ h6 {
   border-bottom: 1px solid gray;
   position: absolute;
   }
+
+.logo-skill {
+  height: 64px;
+  width: 64px;
+}
 
