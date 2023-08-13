@@ -32,7 +32,7 @@
 a.image-overlay {
   color: #f0f4ef;
   font-family: "Black Ops One", cursive;
-  text-shadow: 0 0 5px #01baef;
+  text-shadow: 0 0 24px #01baef;
   font-size: 4em;
   padding: 10px;
   border-radius: 3px;
@@ -45,6 +45,7 @@ a.image-overlay {
 a.image-overlay:hover {
   opacity: 0.8;
 }
+
 
 
 .image-container {
@@ -60,7 +61,7 @@ a.image-overlay:hover {
 .image-container:hover img {
   transform: scale(1.03);
   box-shadow: 0 0 20px #01baef;
-  filter: blur(1px);
+  filter: blur(0.1rem);
 }
 
 
