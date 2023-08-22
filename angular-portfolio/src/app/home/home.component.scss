@@ -102,11 +102,11 @@ a.image-overlay:hover {
   justify-content: center;
   align-items: center;
   background-color: #f0f4ef;
-  background-image: url("../../assets/images/sound/sound-playing.png");
+  background-image: url("../../assets/images/sound/sound-muted.png");
   background-size: contain;
   transform: transform ease-in-out;
 }
 
-.sound-btn.muted {
-  background-image: url("../../assets/images/sound/sound-muted.png");
+.sound-btn.playing {
+  background-image: url("../../assets/images/sound/sound-playing.png");
 }
