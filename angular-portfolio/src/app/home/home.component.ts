@@ -39,7 +39,6 @@ export class HomeComponent implements OnInit {
   @HostListener('mouseenter', ['$event2'])
   onMouseEnterAbout2(event: MouseEvent) {
     const targetElement = event.target as HTMLElement;
-    this.playHoverSoundAbout();
   }
 
   playHoverSoundAbout() {
