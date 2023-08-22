@@ -35,8 +35,8 @@ export class HomeComponent implements OnInit {
     this.playHoverSoundAbout();
   }
 
-  //having this wrong function solves the issue when a sound is played when you hover outside the page then in again
-  @HostListener('mouseenter', ['$event2'])
+  //having this empty function solves the issue when a sound is played when you hover outside the page then in again
+  @HostListener('mouseenter', ['$event'])
   onMouseEnterAbout2(event: MouseEvent) {
     const targetElement = event.target as HTMLElement;
   }
