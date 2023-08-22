@@ -4,7 +4,7 @@
 
 <a
   (click)="toggleAudioPlayback()"
-  class="btn border-0 position-fixed bottom-0 end-0 m-3 rounded-4 sound-btn"
+  class="btn border-0 position-fixed bottom-0 end-0 m-3 rounded-1 sound-btn"
   [ngClass]="{ playing: isPlaying }"
 ></a>
 
@@ -21,6 +21,11 @@
           <br /><br />
           Your place amongst the stars awaits you.
         </h3>
+        <a
+          (click)="toggleAudioPlayback()"
+          class="btn border-0 m-3 rounded-1 sound-btn"
+          [ngClass]="{ playing: isPlaying }"
+        ></a>
       </div>
 
       <div class="col-0 col-md-1"></div>
