@@ -55,7 +55,7 @@ a.image-overlay:hover {
 .image-container img {
   width: 100%;
   height: auto;
-  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, filter 0.5s ease-in-out;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out, filter 0.1s ease-in-out;
 }
 
 .image-container:hover img {
@@ -75,10 +75,12 @@ a.image-overlay:hover {
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+  transform-origin: center center;
 }
 
 .image-container-pfp:hover {
   background-image: url("../../assets/images/jihad-ftouny-hover.png");
+  transform: scale(1.03);
 }
 
 .custom-download-link {
@@ -89,4 +91,22 @@ a.image-overlay:hover {
 .custom-download-link:hover {
   color: #01baef;
   text-decoration: none;
+}
+
+.sound-btn {
+  color:white;
+  width: 40px;
+  height: 40px;
+  font-size: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f4ef;
+  background-image: url("../../assets/images/sound/sound-playing.png");
+  background-size: contain;
+  transform: transform ease-in-out;
+}
+
+.sound-btn.muted {
+  background-image: url("../../assets/images/sound/sound-muted.png");
 }

@@ -43,7 +43,7 @@
           <h1 class="text-whitepowder font-size-5">GAMES</h1>
           <div class="col-md-6 pt-5">
             <h1 class="text-platinum pb-2">Elvish Rootings</h1>
-            <div class="image-container">
+            <div class="image-container" (mouseenter)="onMouseEnter($event)">
               <img
                 src="../../assets/images/projects/elvish-rootings.jpg"
                 class="img-fluid rounded-1"
@@ -59,7 +59,7 @@
           </div>
           <div class="col-md-6 pt-5">
             <h1 class="text-platinum pb-2">The Void</h1>
-            <div class="image-container">
+            <div class="image-container" (mouseenter)="onMouseEnter($event)">
               <img
                 src="../../assets/images/projects/the-void.jpg"
                 class="img-fluid rounded-1"
@@ -83,7 +83,7 @@
         <h1 class="text-whitepowder font-size-5 pt-5">WEBSITE DEVELOPMENT</h1>
         <div class="col-md-6 pt-5">
           <h1 class="text-platinum pb-2">Think AI</h1>
-          <div class="image-container">
+          <div class="image-container" (mouseenter)="onMouseEnter($event)">
             <img
               src="../../assets/images/projects/thinkai.jpeg"
               class="img-fluid rounded-1"
@@ -99,8 +99,8 @@
           </div>
         </div>
         <div class="col-md-6 pt-5">
-          <h1 class="text-platinum pb-2">ABZ E-Shop</h1>
-          <div class="image-container">
+          <h1 class="text-platinum pb-2">ABZ eShop</h1>
+          <div class="image-container" (mouseenter)="onMouseEnter($event)">
             <img
               src="../../assets/images/projects/abz-flowers.jpg"
               class="img-fluid rounded-1"
@@ -122,7 +122,10 @@
       >
         <div class="col-md-3"></div>
         <div class="col-md-6">
-          <div class="image-container-pfp"></div>
+          <div
+            class="image-container-pfp"
+            (mouseenter)="onMouseEnterAbout($event)"
+          ></div>
           <h1 class="text-whitepowder mt-4 pb-0 mb-0 font-size-5">ABOUT</h1>
           <a
             (click)="downloadCV()"
@@ -634,3 +637,16 @@
     </div>
   </div>
 </div>
+
+<a
+  target="_blank"
+  class="btn border-0 position-fixed bottom-0 end-0 m-4 rounded-5 sound-btn"
+  [ngClass]="{ muted: isMuted }"
+  (click)="toggleMute()"
+>
+</a>
+
+<audio id="backgroundMusic" autoplay loop>
+  <source src="../../assets/audio/ObservingTheStar.ogg" type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
