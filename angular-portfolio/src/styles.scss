@@ -138,5 +138,9 @@ h6 {
 .logo-skill {
   height: 64px;
   width: 64px;
+  transition: transform 0.1s ease-in-out;
 }
 
+.logo-skill:hover {
+  transform: scale(1.2); /* You can adjust the scale factor for the desired zoom level */
+}

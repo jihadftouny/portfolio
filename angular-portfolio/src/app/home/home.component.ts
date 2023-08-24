@@ -39,6 +39,15 @@ export class HomeComponent {
     hoverSound.play();
   }
 
+  @ViewChild('hoverSoundSkill')
+  hoverSoundSkillRef!: ElementRef<HTMLAudioElement>;
+
+  playHoverSoundSkill(): void {
+    const hoverSound = this.hoverSoundSkillRef.nativeElement;
+    hoverSound.currentTime = 0; // Reset sound to start
+    hoverSound.play();
+  }
+
   downloadCV(): void {
     const link = document.createElement('a');
     link.href = '../../assets/downloads/Jihad_Ftouny_CV.pdf';
