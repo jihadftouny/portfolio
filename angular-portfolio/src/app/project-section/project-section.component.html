@@ -1,16 +1,14 @@
 <div class="container-fluid p-0">
 	<div class="row align-items-center gx-3">
 		<div class="d-none d-md-block col-md-2"></div>
-		<div class="col-12 col-md-8 px-md-0">
+		<div class="col-12 col-md-8 px-3">
 			<div class="row pb-5 pb-md-0 justify-content-center align-items-center">
 				<p class="text-soft-white font-audiowide font-size-5 pt-0 pt-sm-5">{{ title }}</p>
 				<!-- render each project as its own full-width row -->
 				<div class="w-100">
 					<ng-container *ngFor="let project of projects; let i = index">
-						<div class="row w-100 pt-5">
-							<div class="col-12">
-								<app-project-card [project]="project" [index]="i"></app-project-card>
-							</div>
+						<div class="pt-5">
+							<app-project-card [project]="project" [index]="i"></app-project-card>
 						</div>
 					</ng-container>
 				</div>

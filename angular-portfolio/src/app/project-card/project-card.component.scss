@@ -49,9 +49,7 @@
 /* On medium+ screens make media and content sit side-by-side */
 @media (min-width: 768px) {
 	.project-card {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
+		display: block; /* keep project header stacked above content-row */
 	}
 
 	/* standard layout: media on the right */
@@ -73,6 +71,55 @@
 	.project-card > .row > .col-md-6:first-child {
 		padding-right: 0 !important;
 	}
+
+	/* ensure the left content and right media match heights when in two-column layout */
+	.project-card .project-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.project-card .desc-bubble {
+		/* allow bubble to fill available vertical space next to the image */
+		flex: 1 1 auto;
+		margin-bottom: 1rem;
+	}
+
+	.project-card .project-media .image-container {
+		height: 100%;
+	}
+
+	.project-card .project-media img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	/* ensure only the content-row becomes a flex layout on larger screens */
+	.project-card .content-row {
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+	}
+
+	.project-card .content-row .project-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.project-card .content-row .desc-bubble {
+		flex: 1 1 auto;
+		margin-bottom: 1rem;
+	}
+
+	.project-card .content-row .project-media .image-container {
+		height: 100%;
+	}
+
+	.project-card .content-row .project-media img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
 }
 
 /* Visual polish to match attached design */
@@ -90,7 +137,9 @@
 	background: linear-gradient(90deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 60%, rgba(255,255,255,0.04) 100%);
 	border-radius: 1rem;
 	padding: 1.5rem;
-	max-width: 90%;
+	max-width: none; /* allow full width inside its container */
+	width: 100%;
+	box-sizing: border-box;
 	box-shadow: 0 10px 30px rgba(0,0,0,0.45);
 }
 

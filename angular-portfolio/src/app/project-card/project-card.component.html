@@ -1,21 +1,24 @@
 <div class="project-card">
-  <div class="row align-items-center g-4">
-    <div class="col-12 col-md-6 pe-md-4">
-      <div class="project-content">
-        <p class="eyebrow small mb-2">Featured Project</p>
-        <p class="project-title font-audiowide mb-3">{{ project.title }}</p>
+  <!-- Header: eyebrow + title full width -->
+  <div class="project-header mb-3">
+    <p class="eyebrow small mb-2">Featured Project</p>
+    <p class="project-title font-audiowide mb-0">{{ project.title }}</p>
+  </div>
 
-        <div class="desc-bubble mb-3">
+  <!-- Content row: left = text (desc + tech), right = image; both stretch to same height -->
+  <div class="content-row row align-items-stretch g-4">
+    <div class="col-12 col-md-6">
+      <div class="project-content d-flex flex-column h-100">
+        <div class="desc-bubble mb-0 flex-grow-1">
           <p class="project-description mb-0">{{ project.description || 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.' }}</p>
         </div>
-
-        <p class="mt-2 small tech-list">{{ project.tech ? (project.tech.join(' · ')) : 'Tech · Placeholder' }}</p>
       </div>
     </div>
+
     <div class="col-12 col-md-6">
-      <div class="project-media w-100">
-        <div class="image-container position-relative">
-          <img [src]="project.image" class="img-fluid rounded-1 w-100" />
+      <div class="project-media h-100 d-flex align-items-center justify-content-center">
+        <div class="image-container position-relative w-100 h-100">
+          <img [src]="project.image" class="img-fluid rounded-1 w-100 h-100" style="object-fit:cover;" />
           <a [href]="project.link" target="_blank" rel="noopener noreferrer" class="image-overlay">{{ project.overlay || 'View Project' }}</a>
         </div>
       </div>
