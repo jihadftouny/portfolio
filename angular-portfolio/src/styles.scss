@@ -1,3 +1,31 @@
+/* Custom animations for hero section */
+.animate-blink {
+  animation: blink-cursor 1s steps(2, start) infinite;
+}
+.animate-blink {
+  animation: blink-cursor 1s steps(2, start) infinite;
+}
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.fade-in-stagger > * {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.7s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+.fade-in-stagger > *:nth-child(1) { animation-delay: 0.1s; }
+.fade-in-stagger > *:nth-child(2) { animation-delay: 0.3s; }
+.fade-in-stagger > *:nth-child(3) { animation-delay: 0.5s; }
+.fade-in-stagger > *:nth-child(4) { animation-delay: 0.7s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 // Minimal styles for AI-generated placeholder website
 body {
   background: #171823;
@@ -46,5 +74,23 @@ body {
 
 .text-dark {
   color: #171823 !important;
+}
+
+/* Prevent tiny horizontal overflow (device-pixel rounding / 100vw issues) */
+html, body {
+  max-width: 100vw; /* avoid elements using 100vw pushing past the viewport */
+  overflow-x: hidden; /* defensive: hide any accidental horizontal overflow */
+}
+
+/* sensible global box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* constrain full-width images/elements to the container */
+img, .img-fluid, .w-100 {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
