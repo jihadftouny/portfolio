@@ -47,7 +47,7 @@
 }
 
 /* On medium+ screens make media and content sit side-by-side */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 	.project-card {
 		display: block; /* keep project header stacked above content-row */
 	}
@@ -169,7 +169,7 @@
 	margin-bottom: 3rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 	:host {
 		margin-bottom: 4.5rem;
 	}
