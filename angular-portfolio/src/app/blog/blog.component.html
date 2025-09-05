@@ -1,1 +1,8 @@
-<p>blog works!</p>
+
+<div class="container mt-5">
+	<h2 class="font-ubuntu mb-4">Technical Blog</h2>
+	<div *ngFor="let post of posts">
+		<app-blog-post [post]="post"></app-blog-post>
+		<hr />
+	</div>
+</div>

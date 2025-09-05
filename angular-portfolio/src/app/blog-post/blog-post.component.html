@@ -1,0 +1,12 @@
+
+<div class="blog-post mb-4">
+	<h3 class="font-ubuntu">{{ post.title }}</h3>
+	<small class="text-muted">{{ post.date }}</small>
+	<p class="mt-3">{{ post.content }}</p>
+	<div *ngIf="post.citations?.length">
+		<strong>Citations:</strong>
+		<ul>
+			<li *ngFor="let cite of post.citations">{{ cite }}</li>
+		</ul>
+	</div>
+</div>

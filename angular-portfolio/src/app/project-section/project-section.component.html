@@ -1,0 +1,10 @@
+<div class="row pb-5 pb-md-0 justify-content-center align-items-center">
+	<p class="text-soft-white font-audiowide font-size-5 pt-0 pt-sm-5">{{ title }}</p>
+	<div class="row w-100">
+		<ng-container *ngFor="let project of projects">
+			<div class="col-md-6 pt-5">
+				<app-project-card [project]="project"></app-project-card>
+			</div>
+		</ng-container>
+	</div>
+</div>

@@ -1,0 +1,16 @@
+<p class="font-audiowide text-soft-white font-size-7 pb-2">
+	{{ project.title }}
+</p>
+<div class="image-container">
+	<img
+		[src]="project.image"
+		class="img-fluid rounded-1"
+	/>
+	<a
+		[href]="project.link"
+		target="_blank"
+		rel="noopener noreferrer"
+		class="image-overlay"
+		>{{ project.overlay }}</a
+	>
+</div>
