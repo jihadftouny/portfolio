@@ -1,8 +1,15 @@
 <div class="project-card">
   <!-- Header: eyebrow + title full width -->
   <div class="project-header mb-3">
-    <p class="eyebrow small mb-2">Featured Project</p>
-    <p class="project-title font-audiowide mb-0">{{ project.title }}</p>
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-6">
+        <p class="eyebrow small mb-2">Featured Project</p>
+        <p class="project-title font-audiowide mb-0">{{ project.title }}</p>
+      </div>
+      <div class="col-12 col-lg-6 d-flex align-items-center justify-content-lg-end">
+        <!-- intentionally empty: keeps header split into two equal columns for alignment -->
+      </div>
+    </div>
   </div>
 
   <!-- Content row: left = text (desc + tech), right = image; both stretch to same height -->
