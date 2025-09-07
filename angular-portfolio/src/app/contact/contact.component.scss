@@ -1,0 +1,32 @@
+:host { display: block; }
+
+.contact-card {
+  background: linear-gradient(90deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 60%, rgba(255,255,255,0.04) 100%);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* make inputs a bit darker to match the theme */
+.contact-card .form-control {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  color: var(--text-primary);
+}
+
+.contact-card .form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(20,184,166,0.12);
+  border-color: rgba(20,184,166,0.6);
+}
+
+.contact-card .btn-primary {
+  background-color: #14b8a6;
+  border-color: #14b8a6;
+}
+
+.contact-card .btn-primary:hover {
+  background-color: color-mix(in srgb, #14b8a6 85%, black 15%);
+  border-color: color-mix(in srgb, #14b8a6 85%, black 15%);
+}

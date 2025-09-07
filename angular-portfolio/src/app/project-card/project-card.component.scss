@@ -18,16 +18,84 @@
 
 .image-container {
 	position: relative;
-	overflow: hidden;
+	/* allow glow to extend beyond the image */
+	overflow: visible;
 }
 
 .image-container img {
 	display: block;
 	transition: transform 400ms ease;
+	position: relative;
+	z-index: 2; /* place above the glow */
 }
 
-.image-container:hover img {
-	transform: scale(1.03);
+.image-container .image-overlay {
+	z-index: 3; /* overlay above image */
+}
+
+/* replace generic image-container glow with targeted selectors so the glow sits behind project-media containers */
+.project-media .image-container::before,
+.project-card .project-media .image-container::before,
+.project-card .content-row .project-media .image-container::before {
+  content: "";
+  position: absolute;
+  left: var(--glow-x, 50%);
+  top: 50%;
+  /* make glow 250% of the image container (double previous 125%) */
+  width: 250%;
+  height: 250%;
+  /* center the glow on the specified x position */
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle at center, rgba(20,184,166,0.32) 0%, rgba(20,184,166,0.14) 30%, transparent 60%);
+  filter: blur(28px);
+  z-index: 1; /* behind the image */
+  pointer-events: none;
+}
+
+/* More specific glow behind the .project-media image container (double size = 250%) */
+.project-media .image-container::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	/* double the previous 125% -> 250% */
+	width: 250%;
+	height: 250%;
+	background: radial-gradient(circle at center, rgba(20,184,166,0.32) 0%, rgba(20,184,166,0.14) 25%, transparent 55%);
+	filter: blur(28px);
+	z-index: 1; /* behind the image */
+	pointer-events: none;
+}
+
+/* make sure the glow scales down on small screens */
+@media (max-width: 767px) {
+  .project-media .image-container::before,
+  .project-card .project-media .image-container::before,
+  .project-card .content-row .project-media .image-container::before {
+    width: calc(250% * 0.5);
+    height: calc(250% * 0.5);
+    filter: blur(14px);
+  }
+
+  .project-media .image-container::before {
+		width: calc(250% * 0.6);
+		height: calc(250% * 0.6);
+		filter: blur(18px);
+	}
+
+	/* Ensure glow isn't clipped on small screens by parent overflow rules */
+	.project-card,
+	.project-media {
+		overflow: visible !important;
+	}
+
+	/* Slightly reduce glow spread on very small devices */
+	.project-media .image-container::before {
+		width: calc(250% * 0.5) !important;
+		height: calc(250% * 0.5) !important;
+		filter: blur(12px) !important;
+	}
 }
 
 .image-overlay {
@@ -35,7 +103,7 @@
 	left: 1rem;
 	bottom: 1rem;
 	background: rgba(0, 0, 0, 0.5);
-	color: #fff;
+	color: var(--text-primary);
 	padding: 0.5rem 1rem;
 	border-radius: 0.5rem;
 	text-decoration: none;
@@ -65,6 +133,19 @@
 	/* when host has .reverse apply row-reverse to flip media/content */
 	:host(.reverse) .project-card {
 		flex-direction: row-reverse;
+	}
+
+	/* flip header and content when host has .reverse so cards alternate */
+	:host(.reverse) .content-row {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: stretch;
+	}
+
+	:host(.reverse) .project-header .row {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
 	}
 
 	// Remove right padding from the first column (text column) in the project card
@@ -120,12 +201,56 @@
 		height: 100%;
 		object-fit: cover;
 	}
+
+	/* ensure padding is removed from the inner gutter correctly depending on order */
+	.project-card .content-row > .col-lg-6:first-child {
+		padding-right: 0 !important;
+	}
+
+	:host(.reverse) .project-card .content-row > .col-lg-6:first-child {
+		/* when reversed the first visual column is actually the image column, so remove left padding instead */
+		padding-left: 0 !important;
+		padding-right: 1rem !important; /* keep some right gutter when reversed */
+	}
+
+	/* Use explicit ordering so columns reliably swap when host has .reverse */
+	.project-card .content-row .project-content {
+		order: 1;
+	}
+
+	.project-card .content-row .project-media {
+		order: 2;
+	}
+
+	:host(.reverse) .project-card .content-row .project-content {
+		order: 2;
+	}
+
+	:host(.reverse) .project-card .content-row .project-media {
+		order: 1;
+	}
+
+	/* Make text bubble 'bleed' into the image column on large screens */
+	.project-card .content-row .desc-bubble {
+		/* extend width and pull towards the image column */
+		width: calc(100% + 2rem);
+		margin-right: -2rem;
+		box-sizing: border-box;
+	}
+
+	/* When the whole card is reversed, flip the bleed to the other side */
+	:host(.reverse) .project-card .content-row .desc-bubble {
+		width: calc(100% + 2rem);
+		margin-left: -2rem;
+		margin-right: 0;
+	}
 }
 
 /* Visual polish to match attached design */
 .project-title {
 	font-size: 2.25rem; /* large headline */
 	line-height: 1.05;
+	color: var(--text-heading);
 }
 
 .eyebrow {
@@ -151,11 +276,14 @@
 }
 
 .project-media .image-container {
-	background: linear-gradient(180deg,#2a0834 0%, #3d0a48 100%);
+	background: linear-gradient(180deg,#062729 0%, #09393b 100%);
 	border-radius: 1rem;
 	padding: 1.5rem;
 	box-shadow: 0 20px 40px rgba(0,0,0,0.6);
 	width: 100%;
+	/* allow glow to extend beyond the media container specifically */
+	overflow: visible;
+	position: relative;
 }
 
 .project-media img {

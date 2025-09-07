@@ -1,27 +1,31 @@
 <div class="project-card">
-  <!-- Header: eyebrow + title full width -->
+  <!-- Header -->
   <div class="project-header mb-3">
     <div class="row align-items-center">
       <div class="col-12 col-lg-6">
-        <p class="eyebrow small mb-2">Featured Project</p>
+        <p class="eyebrow small mb-2">{{ project.projectType || 'Featured Project' }}</p>
         <p class="project-title font-audiowide mb-0">{{ project.title }}</p>
       </div>
-      <div class="col-12 col-lg-6 d-flex align-items-center justify-content-lg-end">
-        <!-- intentionally empty: keeps header split into two equal columns for alignment -->
-      </div>
+      <div class="col-12 col-lg-6 d-flex align-items-center justify-content-lg-end"></div>
     </div>
   </div>
 
-  <!-- Content row: left = text (desc + tech), right = image; both stretch to same height -->
-  <div class="content-row row align-items-stretch g-4">
+  <!-- Content row: reverse on odd cards at lg+ -->
+  <div class="content-row row align-items-stretch g-4"
+       [class.flex-lg-row-reverse]="index % 2 === 1">
+
+    <!-- Text block -->
     <div class="col-12 col-lg-6">
       <div class="project-content d-flex flex-column h-100">
-        <div class="desc-bubble mb-0 flex-grow-1">
-          <p class="project-description mb-0">{{ project.description || 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.' }}</p>
+        <div class="desc-bubble mb-0 flex-grow-1" [ngClass]="{ 'pe-5': true, 'ps-lg-5': index % 2 === 1 }">
+          <p class="project-description mb-0">
+            {{ project.description || 'a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a ' }}
+          </p>
         </div>
       </div>
     </div>
 
+    <!-- Image block -->
     <div class="col-12 col-lg-6">
       <div class="project-media h-100 d-flex align-items-center justify-content-center">
         <div class="image-container position-relative w-100 h-100">
@@ -32,4 +36,3 @@
     </div>
   </div>
 </div>
-

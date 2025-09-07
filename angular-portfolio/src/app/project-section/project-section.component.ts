@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./project-section.component.scss']
 })
 export class ProjectSectionComponent {
-
-  @Input() title: string = '';
+  /** Section header shown above the list; can be set by parent (e.g. "Technical Projects" or "Educational Experience") */
+  @Input() title: string = 'Projects';
   @Input() projects: any[] = [];
 }

@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { featuredProjects, aiProjects, gameProjects, websiteProjects } from '../project-card/project-card.component';
+import { featuredProjects, featuredEducation, aiProjects, gameProjects, websiteProjects } from '../project-card/project-card.component';
 
 @Component({
   selector: 'app-home',
@@ -12,6 +12,7 @@ export class HomeComponent {
   gameProjects = gameProjects;
   websiteProjects = websiteProjects;
   featuredProjects = featuredProjects;
+  featuredEducation = featuredEducation;
 
   downloadCV(): void {
     const link = document.createElement('a');

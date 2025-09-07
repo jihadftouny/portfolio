@@ -1,3 +1,7 @@
+@import './scss/tokens';
+@import './scss/background';
+@import './scss/projects-bg';
+
 /* Custom animations for hero section */
 .animate-blink {
   animation: blink-cursor 1s steps(2, start) infinite;
@@ -26,28 +30,22 @@
     transform: none;
   }
 }
-// Minimal styles for AI-generated placeholder website
-body {
-  background: #171823;
-  font-family: 'Montserrat', sans-serif;
+/* If you have licensed Gotham font files, place them in src/assets/fonts and uncomment the @font-face below.
+@font-face {
+  font-family: 'Gotham';
+  src: url('/assets/fonts/Gotham-Book.woff2') format('woff2'),
+       url('/assets/fonts/Gotham-Book.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-/* temporary remove after done: global white text for development */
-body, * {
-  color: #fff !important;
-}
+/* Fallback to system fonts if Gotham isn't available */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-body {
-  background: linear-gradient(135deg, #0b0f19 0%, #101828 60%, #3a2e5d 100%),
-              radial-gradient(circle at 20% 30%, rgba(134,227,242,0.15) 0%, transparent 60%),
-              radial-gradient(circle at 80% 70%, rgba(246,197,110,0.10) 0%, transparent 70%),
-              radial-gradient(circle at 60% 10%, rgba(58,46,93,0.18) 0%, transparent 80%);
-  min-height: 100vh;
-  position: relative;
-  overflow-x: hidden;
-  /* temporary remove after done: global white text for development */
-  color: #fff;
+/* Force Gotham across the site with sensible fallbacks */
+html, body {
+  font-family: 'Gotham', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 .nebula-bg {
@@ -57,7 +55,7 @@ body {
 }
 
 .text-soft-white {
-  color: #ededed !important;
+  color: #f7f9fa !important; /* lighter near-white */
 }
 
 .text-neon-blue {
@@ -69,7 +67,7 @@ body {
 }
 
 .text-silver {
-  color: #d1dede !important;
+  color: #eef6f7 !important; /* very light silver */
 }
 
 .text-dark {
@@ -92,5 +90,88 @@ img, .img-fluid, .w-100 {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+/* Global typography color mapping for dark space theme */
+body {
+  color: var(--text-primary);
+  background: linear-gradient(180deg, var(--space-bg-1) 0%, var(--space-bg-2) 100%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: var(--text-heading);
+  font-weight: 700;
+}
+
+/* Section header: center and space the heading for sections */
+.section-header {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: var(--accent-teal);
+}
+
+.text-secondary {
+  color: var(--text-secondary) !important;
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+.bg-panel-light {
+  background-color: rgba(255,255,255,0.06); /* brighter translucent panel */
+  color: var(--on-light);
+}
+
+/* Helpers for ensuring bright white on dark backgrounds */
+.text-on-dark {
+  color: var(--text-primary) !important;
+}
+
+.heading-on-dark {
+  color: var(--text-heading) !important;
+}
+
+/* utility: teal background */
+.bg-teal {
+  background-color: var(--accent-teal) !important;
+  color: #042322 !important;
+}
+
+/* Ensure components that used explicit whites inherit variables */
+.hero-intro,
+.project-description,
+.contact-card,
+.desc-bubble {
+  color: var(--text-primary);
+}
+
+/* CV download CTA */
+.btn.btn-cv {
+  display: inline-block;
+  background-color: #14b8a6 !important;
+  background-image: none !important;
+  border: 1px solid #14b8a6 !important;
+  color: #ffffff !important;
+  padding: 0.55rem 1rem;
+  border-radius: 0.6rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(20,184,166,0.14);
+  transition: transform 180ms ease, box-shadow 180ms ease, opacity 160ms ease;
+  opacity: 1 !important;
+}
+.btn.btn-cv:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(20,184,166,0.18);
+  opacity: 0.98 !important;
+  background-color: color-mix(in srgb, #14b8a6 85%, black 15%) !important;
+  border-color: color-mix(in srgb, #14b8a6 85%, black 15%) !important;
 }
 

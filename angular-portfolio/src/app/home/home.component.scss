@@ -27,7 +27,6 @@
 
 a.image-overlay {
   color: #f0f4ef;
-  font-family: "Black Ops One", cursive;
   text-shadow: 0 0 24px #01baef;
   font-size: 4em;
   padding: 10px;
@@ -90,7 +89,7 @@ a.image-overlay:hover {
 }
 
 .sound-btn {
-  color:white;
+  color: var(--text-primary);
   width: 36px;
   height: 36px;
   font-size: 34px;

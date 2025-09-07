@@ -1,0 +1,158 @@
+/* Layer order: 1) gradient base, 2) starfield dots, 3) nebula glow blobs */
+
+/* 1) Gradient base that’s professional/subtle */
+.bg-space-gradient {
+  background: linear-gradient(135deg, var(--space-bg-1) 0%, var(--space-bg-2) 100%);
+}
+
+/* 2) Starfield (very sparse, low-contrast) using layered radial-gradients */
+.bg-starfield {
+  background-image:
+    radial-gradient(1px 1px at 8% 20%, var(--space-star) 0, transparent 2px),
+    radial-gradient(1px 1px at 22% 65%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 40% 30%, var(--space-star) 0, transparent 2px),
+    radial-gradient(1px 1px at 75% 18%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 90% 70%, var(--space-star) 0, transparent 2px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .55;           /* keep it classy */
+  pointer-events: none;   /* purely decorative */
+}
+
+/* Additional starfield layers for vertical pages: small, medium, large */
+.bg-starfield--dense {
+  background-image:
+    radial-gradient(1px 1px at 5% 10%, var(--space-star) 0, transparent 2px),
+    radial-gradient(1px 1px at 12% 30%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 18% 70%, var(--space-star) 0, transparent 2px),
+    radial-gradient(1px 1px at 28% 22%, var(--space-star) 0, transparent 2px),
+    radial-gradient(1px 1px at 36% 50%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 44% 85%, var(--space-star) 0, transparent 2px),
+    radial-gradient(1px 1px at 66% 40%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 80% 72%, var(--space-star) 0, transparent 2px);
+  opacity: .8;
+}
+
+/* Super-dense starfield for long pages (tripled density) */
+.bg-starfield {
+  background-image:
+    radial-gradient(1px 1px at 2% 6%, var(--space-star) 0, transparent 2px),
+    radial-gradient(1px 1px at 6% 22%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 10% 40%, var(--space-star) 0, transparent 2px),
+    radial-gradient(1px 1px at 14% 8%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 18% 62%, var(--space-star) 0, transparent 2px),
+    radial-gradient(1px 1px at 22% 30%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 26% 82%, var(--space-star) 0, transparent 2px),
+    radial-gradient(1px 1px at 30% 14%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 34% 48%, var(--space-star) 0, transparent 2px),
+    radial-gradient(1px 1px at 38% 76%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 42% 20%, var(--space-star) 0, transparent 2px),
+    radial-gradient(1px 1px at 46% 54%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 50% 88%, var(--space-star) 0, transparent 2px),
+    radial-gradient(1px 1px at 60% 12%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 68% 36%, var(--space-star) 0, transparent 2px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .75;           /* stronger due to tripling */
+  pointer-events: none;   /* purely decorative */
+}
+
+/* Dense variant (also tripled) */
+.bg-starfield--dense {
+  background-image:
+    radial-gradient(1px 1px at 3% 5%, var(--space-star) 0, transparent 2px),
+    radial-gradient(1px 1px at 7% 18%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 11% 33%, var(--space-star) 0, transparent 2px),
+    radial-gradient(1px 1px at 15% 47%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 19% 61%, var(--space-star) 0, transparent 2px),
+    radial-gradient(1px 1px at 23% 75%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 27% 89%, var(--space-star) 0, transparent 2px),
+    radial-gradient(1px 1px at 31% 22%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 35% 44%, var(--space-star) 0, transparent 2px),
+    radial-gradient(1px 1px at 39% 66%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 43% 88%, var(--space-star) 0, transparent 2px),
+    radial-gradient(1px 1px at 47% 12%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 51% 34%, var(--space-star) 0, transparent 2px),
+    radial-gradient(1px 1px at 55% 56%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 59% 78%, var(--space-star) 0, transparent 2px),
+    radial-gradient(1px 1px at 63% 8%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 67% 28%, var(--space-star) 0, transparent 2px),
+    radial-gradient(1px 1px at 71% 48%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 75% 68%, var(--space-star) 0, transparent 2px),
+    radial-gradient(1px 1px at 79% 88%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 83% 18%, var(--space-star) 0, transparent 2px),
+    radial-gradient(1px 1px at 87% 38%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 91% 58%, var(--space-star) 0, transparent 2px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .9;
+}
+
+/* 3) Nebula glow accents: soft, corner-anchored blurs */
+.bg-nebula {
+  position: relative;
+  isolation: isolate;     /* create stacking context */
+}
+.bg-nebula::before,
+.bg-nebula::after {
+  content: "";
+  position: absolute;
+  inset: auto;
+  width: 55vmin;
+  height: 55vmin;
+  filter: blur(60px);
+  opacity: .38;
+  transform: translateZ(0);  /* perf hint */
+  z-index: -1;
+}
+.bg-nebula::before {
+  bottom: -10vmin; left: -5vmin;
+  background: radial-gradient(60% 60% at 50% 50%,
+    color-mix(in srgb, var(--space-nebula-1) 70%, transparent),
+    transparent 70%);
+}
+.bg-nebula::after {
+  top: -12vmin; right: -8vmin;
+  background: radial-gradient(60% 60% at 50% 50%,
+    color-mix(in srgb, var(--space-nebula-3) 65%, transparent),
+    transparent 70%);
+}
+
+/* Multi-blob nebula helpers for deep pages */
+.bg-nebula--extra {
+  position: absolute; pointer-events:none; z-index:-1; width:100%; height:100%; inset:0; overflow:visible;
+}
+.bg-nebula--extra .nebula {
+  position: absolute; width:55vmin; height:55vmin; filter: blur(80px); opacity:.28; transform: translateZ(0);
+}
+.bg-nebula--extra .nebula.n1 { left: -8vmin; top: 20vmin; background: radial-gradient(circle, color-mix(in srgb, var(--space-nebula-1) 75%, transparent), transparent 70%); }
+.bg-nebula--extra .nebula.n2 { right: -12vmin; top: 60vmin; background: radial-gradient(circle, color-mix(in srgb, var(--space-nebula-2) 70%, transparent), transparent 70%); }
+.bg-nebula--extra .nebula.n3 { left: 10vmin; bottom: -8vmin; background: radial-gradient(circle, color-mix(in srgb, var(--space-nebula-3) 70%, transparent), transparent 70%); }
+.bg-nebula--extra .nebula.n4 { right: 20vmin; bottom: 40vmin; background: radial-gradient(circle, color-mix(in srgb, var(--space-nebula-1) 60%, transparent), transparent 70%); }
+.bg-nebula--extra .nebula.n5 { left: 5vmin; top: 120vmin; background: radial-gradient(circle, color-mix(in srgb, var(--space-nebula-2) 70%, transparent), transparent 70%); opacity:.26; filter: blur(90px); }
+.bg-nebula--extra .nebula.n6 { right: -12vmin; top: 180vmin; background: radial-gradient(circle, color-mix(in srgb, var(--space-nebula-3) 70%, transparent), transparent 70%); opacity:.22; filter: blur(100px); }
+.bg-nebula--extra .nebula.n7 { left: -20vmin; top: 260vmin; background: radial-gradient(circle, color-mix(in srgb, var(--space-nebula-1) 60%, transparent), transparent 70%); opacity:.2; filter: blur(80px); }
+.bg-nebula--extra .nebula.n8 { right: 10vmin; top: 320vmin; background: radial-gradient(circle, color-mix(in srgb, var(--space-nebula-2) 65%, transparent), transparent 70%); opacity:.22; filter: blur(85px); }
+
+/* Slightly reduce nebula opacity globally to keep content readable */
+.bg-nebula--extra .nebula { opacity: .24; }
+
+/* Optional: gentle vertical vignette to focus center content */
+.bg-vignette {
+  position: relative;
+}
+.bg-vignette::after {
+  content:"";
+  position: absolute; inset:0;
+  background: radial-gradient(120% 80% at 50% -10%, transparent 60%, rgba(0,0,0,.25) 100%);
+  pointer-events:none; z-index:-1;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .parallax { transform: none !important; }
+}
+
+/* Make sure the parallax helper is available */
+.parallax--slow { will-change: transform; }
+.parallax--slower { will-change: transform; }

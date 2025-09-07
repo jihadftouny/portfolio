@@ -7,6 +7,7 @@ export interface Project {
   overlay?: string;
   description?: string;
   tech?: string[];
+  projectType?: string;
 }
 
 // Shared project data moved here per request
@@ -70,7 +71,8 @@ export const featuredProjects: Project[] = [
     link: '#',
     overlay: 'View Project',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae justo at dolor gravida tristique.'
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae',
+    projectType: 'Role'
   },
   {
     title: 'Test Project 2',
@@ -78,7 +80,29 @@ export const featuredProjects: Project[] = [
     link: '#',
     overlay: 'View Project',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat, lorem at pulvinar posuere, urna nunc.'
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae',
+    projectType: 'Featured Project'
+  }
+];
+
+export const featuredEducation: Project[] = [
+  {
+    title: 'Test Project 1',
+    image: '../../assets/images/projects/thinkai.jpeg',
+    link: '#',
+    overlay: 'View Project',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae',
+    projectType: 'Role'
+  },
+  {
+    title: 'Test Project 2',
+    image: '../../assets/images/projects/abz-flowers.jpg',
+    link: '#',
+    overlay: 'View Project',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae',
+    projectType: 'Featured Project'
   }
 ];
 
