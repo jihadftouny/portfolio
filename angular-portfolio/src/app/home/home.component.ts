@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { featuredProjects, featuredEducation, aiProjects, gameProjects, websiteProjects } from '../project-card/project-card.component';
+import { featuredProjects, featuredEducation} from '../project-card/project-card.component';
 
 @Component({
   selector: 'app-home',
@@ -8,9 +8,6 @@ import { featuredProjects, featuredEducation, aiProjects, gameProjects, websiteP
 })
 export class HomeComponent {
   // Pull shared project lists from project-card component
-  aiProjects = aiProjects;
-  gameProjects = gameProjects;
-  websiteProjects = websiteProjects;
   featuredProjects = featuredProjects;
   featuredEducation = featuredEducation;
 

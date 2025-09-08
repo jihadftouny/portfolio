@@ -13,6 +13,12 @@
     radial-gradient(1px 1px at 40% 30%, var(--space-star) 0, transparent 2px),
     radial-gradient(1px 1px at 75% 18%, var(--space-star-dim) 0, transparent 2px),
     radial-gradient(1px 1px at 90% 70%, var(--space-star) 0, transparent 2px);
+  /* added duplicates to double apparent star count */
+  background-image: radial-gradient(1px 1px at 12% 35%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(1px 1px at 33% 10%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 58% 55%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(1px 1px at 82% 35%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 96% 85%, var(--space-star-dim) 0, transparent 2px);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: .55;           /* keep it classy */
@@ -30,6 +36,15 @@
     radial-gradient(1px 1px at 44% 85%, var(--space-star) 0, transparent 2px),
     radial-gradient(1px 1px at 66% 40%, var(--space-star-dim) 0, transparent 2px),
     radial-gradient(1px 1px at 80% 72%, var(--space-star) 0, transparent 2px);
+  /* duplicated to double density */
+  background-image: radial-gradient(1px 1px at 9% 22%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(1px 1px at 21% 48%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 30% 68%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(1px 1px at 42% 12%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 54% 34%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(1px 1px at 62% 56%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 74% 80%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(1px 1px at 88% 28%, var(--space-star) 0, transparent 2px);
   opacity: .8;
 }
 
@@ -51,6 +66,22 @@
     radial-gradient(1px 1px at 50% 88%, var(--space-star) 0, transparent 2px),
     radial-gradient(1px 1px at 60% 12%, var(--space-star-dim) 0, transparent 2px),
     radial-gradient(1px 1px at 68% 36%, var(--space-star) 0, transparent 2px);
+  /* duplicates to double the long-page star count */
+  background-image: radial-gradient(1px 1px at 4% 18%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(1px 1px at 8% 34%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 12% 52%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(1px 1px at 16% 6%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 20% 74%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(1px 1px at 24% 28%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 28% 90%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(1px 1px at 32% 18%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 36% 62%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(1px 1px at 40% 80%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 44% 26%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(1px 1px at 48% 68%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 52% 94%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(1px 1px at 56% 16%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 64% 44%, var(--space-star-dim) 0, transparent 2px);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: .75;           /* stronger due to tripling */
@@ -83,9 +114,175 @@
     radial-gradient(1px 1px at 83% 18%, var(--space-star) 0, transparent 2px),
     radial-gradient(1px 1px at 87% 38%, var(--space-star-dim) 0, transparent 2px),
     radial-gradient(1px 1px at 91% 58%, var(--space-star) 0, transparent 2px);
+  /* duplicated entries to double dense map */
+  background-image: radial-gradient(1px 1px at 4% 12%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(1px 1px at 10% 26%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 16% 40%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(1px 1px at 22% 54%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 28% 68%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(1px 1px at 34% 82%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 40% 10%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(1px 1px at 46% 30%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 52% 50%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(1px 1px at 58% 70%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 64% 90%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(1px 1px at 70% 20%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 76% 40%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(1px 1px at 82% 60%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 88% 80%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(1px 1px at 94% 8%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 98% 28%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(1px 1px at 6% 42%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 18% 64%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(1px 1px at 30% 86%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 42% 16%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(1px 1px at 54% 38%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 66% 60%, var(--space-star-dim) 0, transparent 2px);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: .9;
+}
+
+/* Extra star layer (adds more tiny distant stars) */
+.bg-starfield--extra {
+  background-image:
+    radial-gradient(.8px .8px at 4% 6%, var(--space-star) 0, transparent 2px),
+    radial-gradient(.8px .8px at 9% 18%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(.8px .8px at 13% 34%, var(--space-star) 0, transparent 2px),
+    radial-gradient(.8px .8px at 17% 52%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(.8px .8px at 21% 68%, var(--space-star) 0, transparent 2px),
+    radial-gradient(.8px .8px at 25% 84%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(.8px .8px at 29% 12%, var(--space-star) 0, transparent 2px),
+    radial-gradient(.8px .8px at 33% 28%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(.8px .8px at 37% 44%, var(--space-star) 0, transparent 2px),
+    radial-gradient(.8px .8px at 41% 60%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(.8px .8px at 45% 76%, var(--space-star) 0, transparent 2px),
+    radial-gradient(.8px .8px at 49% 92%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(.8px .8px at 53% 8%, var(--space-star) 0, transparent 2px),
+    radial-gradient(.8px .8px at 57% 24%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(.8px .8px at 61% 40%, var(--space-star) 0, transparent 2px),
+    radial-gradient(.8px .8px at 65% 56%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(.8px .8px at 69% 72%, var(--space-star) 0, transparent 2px),
+    radial-gradient(.8px .8px at 73% 88%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(.8px .8px at 77% 14%, var(--space-star) 0, transparent 2px),
+    radial-gradient(.8px .8px at 81% 30%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(.8px .8px at 85% 46%, var(--space-star) 0, transparent 2px),
+    radial-gradient(.8px .8px at 89% 62%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(.8px .8px at 93% 78%, var(--space-star) 0, transparent 2px);
+  /* duplicate set to double outer distant stars */
+  background-image: radial-gradient(.8px .8px at 6% 14%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(.8px .8px at 11% 26%, var(--space-star) 0, transparent 2px),
+  radial-gradient(.8px .8px at 15% 42%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(.8px .8px at 19% 58%, var(--space-star) 0, transparent 2px),
+  radial-gradient(.8px .8px at 23% 74%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(.8px .8px at 27% 90%, var(--space-star) 0, transparent 2px),
+  radial-gradient(.8px .8px at 31% 16%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(.8px .8px at 35% 32%, var(--space-star) 0, transparent 2px),
+  radial-gradient(.8px .8px at 39% 48%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(.8px .8px at 43% 64%, var(--space-star) 0, transparent 2px),
+  radial-gradient(.8px .8px at 47% 80%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(.8px .8px at 51% 96%, var(--space-star) 0, transparent 2px),
+  radial-gradient(.8px .8px at 55% 12%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(.8px .8px at 59% 28%, var(--space-star) 0, transparent 2px),
+  radial-gradient(.8px .8px at 63% 44%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(.8px .8px at 67% 60%, var(--space-star) 0, transparent 2px),
+  radial-gradient(.8px .8px at 71% 76%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(.8px .8px at 75% 92%, var(--space-star) 0, transparent 2px),
+  radial-gradient(.8px .8px at 79% 18%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(.8px .8px at 83% 34%, var(--space-star) 0, transparent 2px),
+  radial-gradient(.8px .8px at 87% 50%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(.8px .8px at 91% 66%, var(--space-star) 0, transparent 2px),
+  radial-gradient(.8px .8px at 95% 82%, var(--space-star-dim) 0, transparent 2px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+/* Twinkle effect: two pseudo-layers with staggered opacity animation to simulate random twinkling */
+.bg-starfield--twinkle {
+  position: relative;
+}
+.bg-starfield--twinkle::before,
+.bg-starfield--twinkle::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.0;
+  mix-blend-mode: screen;
+}
+
+/* two different star maps so they twinkle out of phase */
+.bg-starfield--twinkle::before {
+  background-image:
+    radial-gradient(1px 1px at 6% 12%, var(--space-star) 0, transparent 2px),
+    radial-gradient(.8px .8px at 14% 34%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 20% 56%, var(--space-star) 0, transparent 2px),
+    radial-gradient(.8px .8px at 28% 78%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 36% 20%, var(--space-star) 0, transparent 2px),
+    radial-gradient(.8px .8px at 44% 42%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 52% 64%, var(--space-star) 0, transparent 2px),
+    radial-gradient(.8px .8px at 60% 86%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 68% 28%, var(--space-star) 0, transparent 2px),
+    radial-gradient(.8px .8px at 76% 50%, var(--space-star-dim) 0, transparent 2px);
+  /* duplicated twinkle map to increase twinkle coverage */
+  background-image: radial-gradient(1px 1px at 8% 22%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(.8px .8px at 16% 44%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 24% 66%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(.8px .8px at 32% 88%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 40% 30%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(.8px .8px at 48% 52%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 56% 74%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(.8px .8px at 64% 16%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 72% 38%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(.8px .8px at 80% 60%, var(--space-star) 0, transparent 2px);
+  opacity: .18;
+  animation: twinkleA 6s infinite ease-in-out;
+}
+.bg-starfield--twinkle::after {
+  background-image:
+    radial-gradient(.8px .8px at 8% 22%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 16% 44%, var(--space-star) 0, transparent 2px),
+    radial-gradient(.8px .8px at 24% 66%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 32% 88%, var(--space-star) 0, transparent 2px),
+    radial-gradient(.8px .8px at 40% 30%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 48% 52%, var(--space-star) 0, transparent 2px),
+    radial-gradient(.8px .8px at 56% 74%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 64% 16%, var(--space-star) 0, transparent 2px),
+    radial-gradient(.8px .8px at 72% 38%, var(--space-star-dim) 0, transparent 2px),
+    radial-gradient(1px 1px at 80% 60%, var(--space-star) 0, transparent 2px);
+  /* duplicated twinkle map to increase twinkle coverage */
+  background-image: radial-gradient(.8px .8px at 10% 32%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 18% 54%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(.8px .8px at 26% 76%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 34% 18%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(.8px .8px at 42% 40%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 50% 62%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(.8px .8px at 58% 84%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 66% 26%, var(--space-star-dim) 0, transparent 2px),
+  radial-gradient(.8px .8px at 74% 48%, var(--space-star) 0, transparent 2px),
+  radial-gradient(1px 1px at 82% 70%, var(--space-star-dim) 0, transparent 2px);
+  opacity: .12;
+  animation: twinkleB 8s infinite ease-in-out;
+}
+
+@keyframes twinkleA {
+  0% { opacity: .12; transform: scale(1); }
+  25% { opacity: .22; transform: scale(1.02); }
+  50% { opacity: .10; transform: scale(0.98); }
+  75% { opacity: .20; transform: scale(1.01); }
+  100% { opacity: .12; transform: scale(1); }
+}
+
+@keyframes twinkleB {
+  0% { opacity: .08; transform: scale(1); }
+  20% { opacity: .18; transform: scale(1.03); }
+  40% { opacity: .06; transform: scale(0.97); }
+  70% { opacity: .16; transform: scale(1.015); }
+  100% { opacity: .08; transform: scale(1); }
 }
 
 /* 3) Nebula glow accents: soft, corner-anchored blurs */

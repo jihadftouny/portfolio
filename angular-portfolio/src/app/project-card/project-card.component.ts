@@ -10,101 +10,94 @@ export interface Project {
   projectType?: string;
 }
 
-// Shared project data moved here per request
-export const aiProjects: Project[] = [
-  {
-    title: 'AI Text Detector',
-    image: '../../assets/images/projects/gptector.jpg',
-    link: 'https://gptector-flask.onrender.com/',
-    overlay: 'Access WebApp',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod, nisl at convallis placerat, arcu urna pharetra orci, a dictum libero lectus a justo.' ,
-    tech: ['Python', 'Flask', 'NLP']
-  }
-];
-
-export const gameProjects: Project[] = [
-  {
-    title: 'Elvish Rootings',
-    image: '../../assets/images/projects/elvish-rootings.jpg',
-    link: 'https://bramevet.itch.io/elvish-rootings',
-    overlay: 'Play on Browser',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    tech: ['Unity', 'C#']
-  },
-  {
-    title: 'The Void',
-    image: '../../assets/images/projects/the-void.jpg',
-    link: 'https://bramevet.itch.io/the-void',
-    overlay: 'Access Page',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia, sapien id dictum tristique, urna quam efficitur mi, vitae.' ,
-    tech: ['Godot', 'GDScript']
-  }
-];
-
-export const websiteProjects: Project[] = [
-  {
-    title: 'Think AI',
-    image: '../../assets/images/projects/thinkai.jpeg',
-    link: 'https://www.thinkai.me/',
-    overlay: 'Access Page',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in leo id nibh convallis malesuada.',
-    tech: ['Angular', 'Node']
-  },
-  {
-    title: 'ABZ Flowers',
-    image: '../../assets/images/projects/abz-flowers.jpg',
-    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7100400060353425408/',
-    overlay: 'See Demo',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;'
-  }
-];
-
 export const featuredProjects: Project[] = [
   {
-    title: 'Test Project 1',
-    image: '../../assets/images/projects/thinkai.jpeg',
+    title: 'GPTector – AI Text Detection Research',
+    image: '../../assets/images/projects/gptector.jpg',
     link: '#',
-    overlay: 'View Project',
+    overlay: 'View Tool',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae',
-    projectType: 'Role'
+      'Created GPTector, a lightweight machine‑learning tool for detecting AI‑generated text. The project supported SUPSI (University of Applied Sciences and Arts of Southern Switzerland) research by demonstrating that compact models can identify AI‑authored content without the computational overhead of large deep‑learning models. Highlighted efficient, responsible AI practices.',
+    projectType: 'Research Tool'
   },
   {
-    title: 'Test Project 2',
-    image: '../../assets/images/projects/abz-flowers.jpg',
+    title: 'Smart Glasses Prototype – Assistive Tech for the Visually Impaired',
+    image: '../../assets/images/projects/gptector.jpg',
     link: '#',
-    overlay: 'View Project',
+    overlay: 'View Prototype',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae',
-    projectType: 'Featured Project'
+      'Led a team that won a competition by designing a smart‑glasses prototype for visually impaired users. Integrated computer vision to provide object recognition and navigational assistance, showcasing human‑centric AI innovation.',
+    projectType: 'Competition Project'
   }
 ];
 
 export const featuredEducation: Project[] = [
+  // Missing G42 Inception & QudraTech project
   {
-    title: 'Test Project 1',
-    image: '../../assets/images/projects/thinkai.jpeg',
-    link: '#',
+    title: 'SEEDS – K‑12 AI Curriculum',
+    image: '../../assets/images/projects/gptector.jpg',
+    link: 'https://www.linkedin.com/company/seeds-school/',
     overlay: 'View Project',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae',
-    projectType: 'Role'
+      'Co‑developed ZAKA’s SEEDS curriculum, the first K‑12 AI program in the MENA region. Designed hands‑on lessons that introduce AI concepts to Grades 4–12 and encourage critical thinking, ethical creativity, and innovation. Helped build modules covering data, machine learning, AI tools, and responsible AI to prepare the next generation of AI leaders.',
+    projectType: 'Educational Program'
   },
   {
-    title: 'Test Project 2',
-    image: '../../assets/images/projects/abz-flowers.jpg',
-    link: '#',
+    title: 'AI Starter Kit – AUB',
+    image: '../../assets/images/projects/gptector.jpg',
+    link: 'https://aub.edu.lb/msfea/online/Programs/AI-starter-kit.html',
     overlay: 'View Project',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae',
-    projectType: 'Featured Project'
+      'Developed AUB’s AI Starter Kit, an 8‑week, non‑technical online certificate program designed for absolute beginners. The course cuts through complexity to teach practical AI skills such as task automation, data analysis, content creation, workflow optimization, and ethical considerations. Localized examples include Arabic LLMs and regional use cases.',
+    projectType: 'Professional Certificate'
+  },
+  {
+    title: 'UAE AI Academy – AI Skills for Tomorrow',
+    image: '../../assets/images/projects/uae-ai-academy.jpg',
+    link: '#',
+    overlay: 'View Program',
+    description:
+      'Co-developed course content for the UAE AI Academy, a national initiative launched in partnership with Microsoft. This 2‑month program provides flexible, high‑impact learning for university students, faculty, and staff, combining self‑paced AI courses, expert‑led workshops, and a national hackathon. It is open to all university roles with no prior experience required and aims to build an AI‑empowered academic community:contentReference[oaicite:3]{index=3}.',
+    projectType: 'University Program'
+  },
+  {
+    title: 'AI Personal Toolkit & Tools Training',
+    image: '../../assets/images/projects/gptector.jpg',
+    link: '#',
+    overlay: 'View Course',
+    description:
+      'Designed and taught ZAKA’s AI Personal Toolkit, a 7‑module program covering AI fundamentals, ChatGPT mastery, generative image/audio tools, creative problem solving, and ethics. Delivered tailored AI tools trainings for USJ, IMAGIC, and other organizations—enabling professionals to adopt AI in their workflows. Served as an expert trainer for USJ’s Certificate in AI Tools program, teaching modules on computer vision, LLMs, and ethical AI.',
+    projectType: 'Training Program'
+  },
+  {
+    title: 'ZAKA AI Certification Bootcamps',
+    image: '../../assets/images/projects/gptector.jpg',
+    link: '#',
+    overlay: 'View Bootcamps',
+    description:
+      'Delivered in‑person and online bootcamps for ZAKA’s AI Certification program, covering machine learning, deep learning, NLP, and computer vision. Guided participants through building end‑to‑end AI pipelines, deploying models, and understanding real‑world AI ethics and biases.',
+    projectType: 'Bootcamp Series'
+  },
+  {
+    title: 'Capstone Mentorship & Student Projects',
+    image: '../../assets/images/projects/gptector.jpg',
+    link: '#',
+    overlay: 'View Mentorship',
+    description:
+      'Mentored more than 30 students on AI capstone projects, advising on data preparation, model design, evaluation metrics, and presentation. Projects ranged from recommender systems and health‑tech prototypes to social impact applications, emphasizing rigorous engineering and responsible AI.',
+    projectType: 'Mentorship'
+  },
+  {
+    title: 'Judge at Clyntech/Berytech Hackathon',
+    image: '../../assets/images/projects/gptector.jpg',
+    link: '#',
+    overlay: 'View Event',
+    description:
+      'Served as a judge at Berytech’s Clyntech Hackathon, evaluating solutions in clean‑technology and green innovation. Assessed projects for technical feasibility, impact, scalability, and AI usage, and provided feedback to teams aspiring to address environmental challenges through AI.',
+    projectType: 'Community Engagement'
   }
 ];
+
 
 @Component({
   selector: 'app-project-card',
