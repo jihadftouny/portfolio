@@ -31,71 +31,37 @@
   border-color: color-mix(in srgb, var(--accent-neon) 85%, black 15%);
 }
 
-/* Footer row for social links and email */
+/* Contact footer icon and email styles (ensure white by default, neon on hover) */
 .contact-footer {
+  display: flex;
   gap: 0.5rem;
+  align-items: center;
 }
 
-.contact-footer .contact-icon {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
-}
-
-/* Ensure icon font <i> elements inherit color and size correctly */
-.contact-footer i.contact-icon {
-  font-size: 28px;
-  line-height: 28px;
-  color: var(--text-primary);
-}
-
-.contact-link:hover i.contact-icon {
-  color: var(--accent-neon);
-}
-
-/* Make inline SVGs match the bitmap icons sizing and color-inherit on hover */
+.contact-footer .contact-icon,
+.contact-footer i.contact-icon,
 .contact-footer svg.contact-icon {
   width: 28px;
   height: 28px;
-  display: inline-block;
-  vertical-align: middle;
-  color: var(--text-primary);
+  color: #ffffff; /* default white */
+  transition: color 160ms ease, filter 160ms ease, transform 160ms ease;
 }
 
+.contact-link:hover .contact-icon,
+.contact-link:hover i.contact-icon,
 .contact-link:hover svg.contact-icon {
   color: var(--accent-neon);
+  transform: translateY(-2px);
 }
 
 .contact-footer .contact-email {
-  color: var(--text-primary);
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
+  transition: color 160ms ease;
 }
 
 .contact-footer .contact-email:hover {
   color: var(--accent-neon);
   text-decoration: underline;
-}
-
-/* clickable icon styles */
-.contact-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 160ms ease, filter 160ms ease;
-}
-
-.contact-link:hover .contact-icon {
-  filter: drop-shadow(0 6px 18px rgba(102,232,255,0.18));
-  transform: translateY(-3px);
-}
-
-.contact-link:hover {
-  transform: translateY(-3px);
-}
-
-.contact-link:focus .contact-icon,
-.contact-link:focus-visible .contact-icon {
-  outline: none;
-  box-shadow: 0 0 0 4px rgba(102,232,255,0.08);
 }
