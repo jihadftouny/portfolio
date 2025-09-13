@@ -1,0 +1,67 @@
+:host { display: block; }
+
+.contact-card {
+  background: linear-gradient(90deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 60%, rgba(255,255,255,0.04) 100%);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* make inputs a bit darker to match the theme */
+.contact-card .form-control {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  color: var(--text-primary);
+}
+
+.contact-card .form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(102,232,255,0.12);
+  border-color: rgba(102,232,255,0.6);
+}
+
+.contact-card .btn-primary {
+  background-color: var(--accent-neon);
+  border-color: var(--accent-neon);
+}
+
+.contact-card .btn-primary:hover {
+  background-color: color-mix(in srgb, var(--accent-neon) 85%, black 15%);
+  border-color: color-mix(in srgb, var(--accent-neon) 85%, black 15%);
+}
+
+/* Contact footer icon and email styles (ensure white by default, neon on hover) */
+.contact-footer {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.contact-footer .contact-icon,
+.contact-footer i.contact-icon,
+.contact-footer svg.contact-icon {
+  width: 28px;
+  height: 28px;
+  color: #ffffff; /* default white */
+  transition: color 160ms ease, filter 160ms ease, transform 160ms ease;
+}
+
+.contact-link:hover .contact-icon,
+.contact-link:hover i.contact-icon,
+.contact-link:hover svg.contact-icon {
+  color: var(--accent-neon);
+  transform: translateY(-2px);
+}
+
+.contact-footer .contact-email {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 160ms ease;
+}
+
+.contact-footer .contact-email:hover {
+  color: var(--accent-neon);
+  text-decoration: underline;
+}

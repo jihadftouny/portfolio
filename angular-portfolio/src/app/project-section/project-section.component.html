@@ -1,0 +1,19 @@
+<div class="container py-5">
+	<div class="row align-items-center gx-3">
+		<div class="d-none d-md-block col-md-2"></div>
+		<div class="col-12 col-md-8">
+			<div class="row pb-5 pb-md-0 justify-content-center align-items-center">
+				<h2 class="heading-on-dark font-audiowide font-size-5 pt-0 pt-sm-5 section-header">{{ title }}</h2>
+
+				<div class="w-100">
+					<ng-container *ngFor="let project of projects; let i = index">
+						<div class="pt-5">
+							<app-project-card [project]="project" [index]="i"></app-project-card>
+						</div>
+					</ng-container>
+				</div>
+			</div>
+		</div>
+		<div class="d-none d-md-block col-md-2"></div>
+	</div>
+</div>

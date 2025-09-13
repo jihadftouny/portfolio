@@ -1,0 +1,32 @@
+/* Hero component styles */
+.avatar-wrapper {
+  /* keep the wrapper from expanding beyond its column */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-avatar {
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  width: 8rem; /* mobile default */
+  height: 8rem;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .hero-avatar {
+    /* fill available horizontal space in the column, but do not force the column to grow */
+    width: 100%;
+    height: auto;
+    max-width: 12rem; /* cap the max visual size to avoid overwhelming the layout */
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-avatar {
+    max-width: 14rem; /* allow a slightly larger avatar on very wide screens */
+  }
+}

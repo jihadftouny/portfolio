@@ -1,1 +1,24 @@
-<app-home></app-home>
+<div class="bg-space-gradient bg-nebula bg-vignette position-relative min-vh-100 overflow-hidden">
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-starfield parallax parallax--slower" data-parallax="0.02"></div>
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-starfield bg-starfield--dense parallax" data-parallax="0.05"></div>
+  <!-- extra star layer + twinkle overlay -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-starfield bg-starfield--extra" aria-hidden="true"></div>
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-starfield--twinkle" aria-hidden="true"></div>
+
+  <!-- extra nebula blobs for long pages -->
+  <div class="bg-nebula--extra parallax--slow" data-parallax="0.03">
+    <div class="nebula n1"></div>
+    <div class="nebula n2"></div>
+    <div class="nebula n3"></div>
+    <div class="nebula n4"></div>
+    <div class="nebula n5"></div>
+    <div class="nebula n6"></div>
+    <div class="nebula n7"></div>
+    <div class="nebula n8"></div>
+  </div>
+
+  <app-navbar></app-navbar>
+  <main class="position-relative">
+    <router-outlet></router-outlet>
+  </main>
+</div>

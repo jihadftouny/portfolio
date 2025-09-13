@@ -1,0 +1,42 @@
+:host {
+	display: block;
+}
+
+.navbar {
+	background: transparent;
+}
+
+.navbar-brand {
+	color: var(--text-heading) !important;
+	font-weight: 700;
+}
+
+.nav-link {
+	color: var(--text-primary) !important;
+	font-weight: 500;
+}
+
+/* Ensure toggler icon is visible on dark background */
+.navbar-toggler {
+	border-color: rgba(255,255,255,0.12);
+}
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Glass blur */
+.glass-navbar{
+  background: rgba(23,24,35,0.35);        /* tweak for your dark theme */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  z-index: 1030; /* above content */
+}
+
+/* Prevent content from sliding under the fixed navbar */
+body { padding-top: 72px; }                /* adjust to your navbar height */
+@media (min-width: 992px){
+  body { padding-top: 80px; }
+}
+
+

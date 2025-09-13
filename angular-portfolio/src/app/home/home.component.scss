@@ -1,9 +1,5 @@
 .container-fluid {
   min-height: 100vh;
-  background-image: url("../../assets/images/background.png");
-  background-size: cover;
-  background-repeat: repeat-y;
-  background-attachment: fixed;
 }
 
 .image-container {
@@ -31,7 +27,6 @@
 
 a.image-overlay {
   color: #f0f4ef;
-  font-family: "Black Ops One", cursive;
   text-shadow: 0 0 24px #01baef;
   font-size: 4em;
   padding: 10px;
@@ -94,7 +89,7 @@ a.image-overlay:hover {
 }
 
 .sound-btn {
-  color:white;
+  color: var(--text-primary);
   width: 36px;
   height: 36px;
   font-size: 34px;

@@ -1,0 +1,10 @@
+.projects-bg {
+  position: relative; overflow: hidden; isolation: isolate;
+  background: linear-gradient(135deg, var(--space-bg-1), var(--space-bg-2));
+}
+.projects-bg::before {
+  content:"";
+  position:absolute; inset:0;
+  background: url('/assets/constellation.svg') center/cover no-repeat;
+  opacity:.4; pointer-events:none; z-index:-1;
+}

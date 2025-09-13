@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="glow" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#86e3f2" stop-opacity=".55"/>
+  <stop offset="100%" stop-color="#9B5CFF" stop-opacity=".35"/>
+    </linearGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="1.5" />
+    </filter>
+  </defs>
+
+  <!-- lines -->
+  <g stroke="url(#glow)" stroke-width="1" opacity=".55" filter="url(#soft)">
+    <path d="M80 120 L260 200 L420 140 L640 220 L820 160 L1000 240" fill="none"/>
+    <path d="M200 360 L360 320 L520 420 L740 380 L920 440" fill="none"/>
+  </g>
+
+  <!-- stars (nodes) -->
+  <g fill="#ffffff" opacity=".8">
+    <circle cx="80" cy="120" r="2"/>
+    <circle cx="260" cy="200" r="2"/>
+    <circle cx="420" cy="140" r="2"/>
+    <circle cx="640" cy="220" r="2"/>
+    <circle cx="820" cy="160" r="2"/>
+    <circle cx="1000" cy="240" r="2"/>
+
+    <circle cx="200" cy="360" r="2"/>
+    <circle cx="360" cy="320" r="2"/>
+    <circle cx="520" cy="420" r="2"/>
+    <circle cx="740" cy="380" r="2"/>
+    <circle cx="920" cy="440" r="2"/>
+  </g>
+</svg>
