@@ -46,7 +46,7 @@
   height: 250%;
   /* center the glow on the specified x position */
   transform: translate(-50%, -50%);
-  background: radial-gradient(circle at center, rgba(20,184,166,0.32) 0%, rgba(20,184,166,0.14) 30%, transparent 60%);
+	background: radial-gradient(circle at center, rgba(50, 48, 180, 0.32) 0%, rgba(10, 53, 131, 0.14) 30%, transparent 60%);
   filter: blur(28px);
   z-index: 1; /* behind the image */
   pointer-events: none;
@@ -62,7 +62,7 @@
 	/* double the previous 125% -> 250% */
 	width: 250%;
 	height: 250%;
-	background: radial-gradient(circle at center, rgba(20,184,166,0.32) 0%, rgba(20,184,166,0.14) 25%, transparent 55%);
+	background: radial-gradient(circle at center, rgba(102,232,255,0.32) 0%, rgba(102,232,255,0.14) 25%, transparent 55%);
 	filter: blur(28px);
 	z-index: 1; /* behind the image */
 	pointer-events: none;
@@ -232,16 +232,16 @@
 
 	/* Make text bubble 'bleed' into the image column on large screens */
 	.project-card .content-row .desc-bubble {
-		/* extend width and pull towards the image column */
-		width: calc(100% + 2rem);
-		margin-right: -2rem;
+		/* extend width and pull towards the image column (increase bleed) */
+		width: calc(100% + 3rem);
+		margin-right: -3rem;
 		box-sizing: border-box;
 	}
 
 	/* When the whole card is reversed, flip the bleed to the other side */
 	:host(.reverse) .project-card .content-row .desc-bubble {
-		width: calc(100% + 2rem);
-		margin-left: -2rem;
+		width: calc(100% + 3rem);
+		margin-left: -3rem;
 		margin-right: 0;
 	}
 }
@@ -254,7 +254,7 @@
 }
 
 .eyebrow {
-	color: #b48cff;
+	color: var(--accent-neon);
 	letter-spacing: 0.08em;
 }
 
@@ -276,7 +276,7 @@
 }
 
 .project-media .image-container {
-	background: linear-gradient(180deg,#062729 0%, #09393b 100%);
+	background: linear-gradient(180deg,#0b1835 0%, #0d1e41 100%);
 	border-radius: 1rem;
 	padding: 1.5rem;
 	box-shadow: 0 20px 40px rgba(0,0,0,0.6);

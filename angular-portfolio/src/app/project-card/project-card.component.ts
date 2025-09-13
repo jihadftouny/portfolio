@@ -12,90 +12,107 @@ export interface Project {
 
 export const featuredProjects: Project[] = [
   {
-    title: 'GPTector – AI Text Detection Research',
+    title: 'GPTector: AI Text Detection Research',
     image: '../../assets/images/projects/gptector.jpg',
-    link: '#',
+    link: 'https://gptector-flask.onrender.com/',
     overlay: 'View Tool',
     description:
-      'Created GPTector, a lightweight machine‑learning tool for detecting AI‑generated text. The project supported SUPSI (University of Applied Sciences and Arts of Southern Switzerland) research by demonstrating that compact models can identify AI‑authored content without the computational overhead of large deep‑learning models. Highlighted efficient, responsible AI practices.',
+      'Created GPTector, a lightweight machine-learning tool for detecting AI-generated text. The project supported SUPSI (University of Applied Sciences and Arts of Southern Switzerland) research by demonstrating that compact models can identify AI-authored content without the computational overhead of large deep-learning models. Highlighted efficient, responsible AI practices.',
     projectType: 'Research Tool'
   },
   {
-    title: 'Smart Glasses Prototype – Assistive Tech for the Visually Impaired',
-    image: '../../assets/images/projects/gptector.jpg',
-    link: '#',
-    overlay: 'View Prototype',
+    title: 'Smart Glasses Prototype',
+    image: '../../assets/images/projects/aub-hackathon.jpg',
+    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7090393604661071872/',
+    overlay: 'View Post',
     description:
-      'Led a team that won a competition by designing a smart‑glasses prototype for visually impaired users. Integrated computer vision to provide object recognition and navigational assistance, showcasing human‑centric AI innovation.',
+      'Led a team that won an AUB hackathon by designing a smart-glasses prototype for visually impaired users. Integrated computer vision with YOLO to provide object recognition and navigational assistance, showcasing human-centric AI innovation.',
     projectType: 'Competition Project'
   }
 ];
 
 export const featuredEducation: Project[] = [
-  // Missing G42 Inception & QudraTech project
-  {
-    title: 'SEEDS – K‑12 AI Curriculum',
-    image: '../../assets/images/projects/gptector.jpg',
-    link: 'https://www.linkedin.com/company/seeds-school/',
-    overlay: 'View Project',
+    {
+    title: 'ZAKA AI Certification & Bootcamps',
+    image: '../../assets/images/projects/zaka.jpg',
+    link: 'https://zaka.ai/ai-certification/',
+    overlay: 'View Program',
     description:
-      'Co‑developed ZAKA’s SEEDS curriculum, the first K‑12 AI program in the MENA region. Designed hands‑on lessons that introduce AI concepts to Grades 4–12 and encourage critical thinking, ethical creativity, and innovation. Helped build modules covering data, machine learning, AI tools, and responsible AI to prepare the next generation of AI leaders.',
+      'Delivered in‑person and online sessions for ZAKA’s AI Certification and Bootcamp programs, covering machine learning, deep learning, NLP, and computer vision. Guided participants through building end‑to‑end AI pipelines, deploying models, and understanding real‑world AI ethics and biases.',
+    projectType: 'Professional Trainings'
+  },
+  {
+    title: 'SEEDS: K-12 AI Curriculum',
+    image: '../../assets/images/projects/seeds.jpg',
+    link: 'https://seeds.school/',
+    overlay: 'View Page',
+    description:
+      'Developed ZAKA’s SEEDS educational content, the first K-12 AI program in the MENA region. Designed hands-on lessons that introduce AI concepts to Grades 4–12 and encourage critical thinking, ethical creativity, and innovation. Helped build modules covering data, machine learning, AI tools, and responsible AI to prepare the next generation of AI leaders.',
     projectType: 'Educational Program'
   },
   {
-    title: 'AI Starter Kit – AUB',
-    image: '../../assets/images/projects/gptector.jpg',
+    title: 'AUB: AI Starter Kit',
+    image: '../../assets/images/projects/aub-starter-kit.jpg',
     link: 'https://aub.edu.lb/msfea/online/Programs/AI-starter-kit.html',
     overlay: 'View Project',
     description:
-      'Developed AUB’s AI Starter Kit, an 8‑week, non‑technical online certificate program designed for absolute beginners. The course cuts through complexity to teach practical AI skills such as task automation, data analysis, content creation, workflow optimization, and ethical considerations. Localized examples include Arabic LLMs and regional use cases.',
+      'Developed AUB’s AI Starter Kit, an 8‑week online certificate program designed for absolute beginners. The course cuts through complexity to teach practical AI skills such as task automation, data analysis, content creation, workflow optimization, and ethical considerations. Localized examples include Arabic LLMs and regional use cases.',
     projectType: 'Professional Certificate'
   },
   {
-    title: 'UAE AI Academy – AI Skills for Tomorrow',
-    image: '../../assets/images/projects/uae-ai-academy.jpg',
-    link: '#',
-    overlay: 'View Program',
+    title: 'UAE AI Academy: From Campus to the Future',
+    image: '../../assets/images/projects/ai-academy.jpg',
+    link: 'https://www.middleeastainews.com/p/microsoft-upskill-1-million-in-ai-uae',
+    overlay: 'View Article',
     description:
-      'Co-developed course content for the UAE AI Academy, a national initiative launched in partnership with Microsoft. This 2‑month program provides flexible, high‑impact learning for university students, faculty, and staff, combining self‑paced AI courses, expert‑led workshops, and a national hackathon. It is open to all university roles with no prior experience required and aims to build an AI‑empowered academic community:contentReference[oaicite:3]{index=3}.',
+      'Developed course content for the UAE AI Academy, a national initiative launched in partnership with Microsoft. This 2‑month program provides flexible, high‑impact learning for university students, faculty, and staff, combining self‑paced AI courses, expert‑led workshops, and a national hackathon. It is open to all university roles with no prior experience required and aims to build an AI‑empowered academic community.',
     projectType: 'University Program'
   },
   {
-    title: 'AI Personal Toolkit & Tools Training',
-    image: '../../assets/images/projects/gptector.jpg',
-    link: '#',
+    title: 'AI Tools Training',
+    image: '../../assets/images/projects/ai-personal-toolkit.jpg',
+    link: 'https://zaka.ai/personal-toolkit/',
     overlay: 'View Course',
     description:
-      'Designed and taught ZAKA’s AI Personal Toolkit, a 7‑module program covering AI fundamentals, ChatGPT mastery, generative image/audio tools, creative problem solving, and ethics. Delivered tailored AI tools trainings for USJ, IMAGIC, and other organizations—enabling professionals to adopt AI in their workflows. Served as an expert trainer for USJ’s Certificate in AI Tools program, teaching modules on computer vision, LLMs, and ethical AI.',
+      'Delivered ZAKA’s AI Personal Toolkit trainings, a 7‑module program covering AI fundamentals, ChatGPT mastery, generative image/audio tools, creative problem solving, and ethics. Delivered tailored AI tools trainings for L’Oréal, USJ, IMAGIC, and other organizations, enabling professionals to adopt AI in their workflows. Served as an expert trainer for USJ’s Certificate in AI Tools program, teaching modules on computer vision, LLMs, and ethical AI.',
     projectType: 'Training Program'
   },
   {
-    title: 'ZAKA AI Certification Bootcamps',
-    image: '../../assets/images/projects/gptector.jpg',
-    link: '#',
-    overlay: 'View Bootcamps',
-    description:
-      'Delivered in‑person and online bootcamps for ZAKA’s AI Certification program, covering machine learning, deep learning, NLP, and computer vision. Guided participants through building end‑to‑end AI pipelines, deploying models, and understanding real‑world AI ethics and biases.',
-    projectType: 'Bootcamp Series'
-  },
-  {
     title: 'Capstone Mentorship & Student Projects',
-    image: '../../assets/images/projects/gptector.jpg',
-    link: '#',
-    overlay: 'View Mentorship',
+    image: '../../assets/images/projects/zaka.jpg',
+    link: 'https://www.linkedin.com/in/jihad-ftouny/details/recommendations/?detailScreenTabIndex=0',
+    overlay: 'View Recommendations',
     description:
-      'Mentored more than 30 students on AI capstone projects, advising on data preparation, model design, evaluation metrics, and presentation. Projects ranged from recommender systems and health‑tech prototypes to social impact applications, emphasizing rigorous engineering and responsible AI.',
+      'Mentored more than 30 students on AI capstone projects and pitch competitions, advising on data preparation, model design, evaluation metrics, and presentation. Projects ranged from recommender systems and health‑tech prototypes to social impact applications, emphasizing rigorous engineering and responsible AI.',
     projectType: 'Mentorship'
   },
   {
     title: 'Judge at Clyntech/Berytech Hackathon',
-    image: '../../assets/images/projects/gptector.jpg',
+    image: '../../assets/images/projects/clyntech.jpg',
     link: '#',
     overlay: 'View Event',
     description:
       'Served as a judge at Berytech’s Clyntech Hackathon, evaluating solutions in clean‑technology and green innovation. Assessed projects for technical feasibility, impact, scalability, and AI usage, and provided feedback to teams aspiring to address environmental challenges through AI.',
     projectType: 'Community Engagement'
-  }
+  },
+  {
+  title: 'Inception / G42 Training Program',
+  image: '../../assets/images/projects/inception.jpg',
+  link: '#',
+  overlay: 'View Program',
+  description:
+    'Developed and delivered training sessions as part of a professional program.',
+  projectType: 'Professional Training'
+},
+{
+  title: 'VISA Training Program',
+  image: '../../assets/images/projects/visa.jpg',
+  link: '#',
+  overlay: 'View Program',
+  description:
+    'Developed training workshops for professionals.',
+  projectType: 'Corporate Training'
+}
 ];
 
 

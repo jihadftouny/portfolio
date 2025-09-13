@@ -11,7 +11,7 @@
 
   --space-nebula-1: #4a2a9e;  /* violet glow */
   --space-nebula-2: #1a2e57;  /* blue glow */
-  --space-nebula-3: #1d7f9f;  /* teal/cyan glow */
+  --space-nebula-3: #2aaee8;  /* neon-blue/cyan glow */
 
   --shadow-soft: 0 12px 50px rgba(0,0,0,.35);
 
@@ -22,10 +22,15 @@
   --text-muted:     rgba(255,255,255,0.65); /* captions, less important but still bright */
   --text-quiet:     rgba(255,255,255,0.45); /* placeholders */
 
-  /* Accent tokens - keep existing ones for reference */
-  --accent-teal:    #14B8A6;
+  /* Accent tokens - neon light blue introduced; keep aliases for compatibility */
+  --accent-neon:    #66E8FF; /* neon light blue */
+  --accent-teal:    var(--accent-neon); /* alias for backwards compatibility */
   --accent-cyan:    #86E3F2;
-  --accent-violet:  #6D5EFC;
+  --accent-neon-violet: #9B5CFF; /* neon purple */
+  --accent-violet:  var(--accent-neon-violet); /* alias to neon violet */
+
+  /* nudge nebula 3 toward neon-blue for visual harmony */
+  --space-nebula-3: #2aaee8;
 
   --on-light:       #06121a; /* text color for light panels (darker for contrast) */
 }

@@ -2,35 +2,38 @@
   <!-- Header -->
   <div class="project-header mb-3">
     <div class="row align-items-center">
-      <div class="col-12 col-lg-6">
+      <div class="col-12 col-xl-6">
         <p class="eyebrow small mb-2">{{ project.projectType || 'Featured Project' }}</p>
         <p class="project-title font-audiowide mb-0">{{ project.title }}</p>
       </div>
-      <div class="col-12 col-lg-6 d-flex align-items-center justify-content-lg-end"></div>
+      <div class="col-12 col-xl-6 d-flex align-items-center justify-content-xl-end"></div>
     </div>
   </div>
 
-  <!-- Content row: reverse on odd cards at lg+ -->
+  <!-- Content row: reverse on odd cards at xl+ -->
   <div class="content-row row align-items-stretch g-4"
-       [class.flex-lg-row-reverse]="index % 2 === 1">
+       [class.flex-xl-row-reverse]="index % 2 === 1">
 
     <!-- Text block -->
-    <div class="col-12 col-lg-6">
+    <div class="col-12 col-xl-6">
       <div class="project-content d-flex flex-column h-100">
-        <div class="desc-bubble mb-0 flex-grow-1" [ngClass]="{ 'pe-5': true, 'ps-lg-5': index % 2 === 1 }">
+        <div class="desc-bubble mb-0 flex-grow-1"
+             [ngClass]="{ 'pe-5': true, 'ps-xl-5': index % 2 === 1 }">
           <p class="project-description mb-0">
-            {{ project.description || 'a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a ' }}
+            {{ project.description || 'Project description placeholder text...' }}
           </p>
         </div>
       </div>
     </div>
 
     <!-- Image block -->
-    <div class="col-12 col-lg-6">
+    <div class="col-12 col-xl-6">
       <div class="project-media h-100 d-flex align-items-center justify-content-center">
         <div class="image-container position-relative w-100 h-100">
           <img [src]="project.image" class="img-fluid rounded-1 w-100 h-100" style="object-fit:cover;" />
-          <a [href]="project.link" target="_blank" rel="noopener noreferrer" class="image-overlay">{{ project.overlay || 'View Project' }}</a>
+          <a [href]="project.link" target="_blank" rel="noopener noreferrer" class="image-overlay">
+            {{ project.overlay || 'View Project' }}
+          </a>
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@
   <defs>
     <linearGradient id="glow" x1="0" x2="0" y1="0" y2="1">
       <stop offset="0%" stop-color="#86e3f2" stop-opacity=".55"/>
-      <stop offset="100%" stop-color="#6d5efc" stop-opacity=".35"/>
+  <stop offset="100%" stop-color="#9B5CFF" stop-opacity=".35"/>
     </linearGradient>
     <filter id="soft">
       <feGaussianBlur stdDeviation="1.5" />

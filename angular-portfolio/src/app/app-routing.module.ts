@@ -16,7 +16,16 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    // enable automatic scrolling to element IDs when navigating with fragments
+    anchorScrolling: 'enabled',
+    // restore scroll position on back/forward navigation
+    scrollPositionRestoration: 'enabled',
+    // allow navigation to the same URL when only the fragment differs
+    onSameUrlNavigation: 'reload',
+    // offset the scroll to account for fixed navbar (x, y)
+    scrollOffset: [0, 80]
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
