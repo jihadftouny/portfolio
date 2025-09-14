@@ -32,7 +32,7 @@ export const featuredProjects: Project[] = [
 ];
 
 export const featuredEducation: Project[] = [
-    {
+  {
     title: 'ZAKA AI Certification & Bootcamps',
     image: '../../assets/images/projects/zaka.jpg',
     link: 'https://zaka.ai/ai-certification/',
@@ -87,7 +87,7 @@ export const featuredEducation: Project[] = [
     projectType: 'Mentorship'
   },
   {
-    title: 'Judge at Clyntech/Berytech Hackathon',
+    title: 'Judge at Clyntech Hackathon',
     image: '../../assets/images/projects/clyntech.jpg',
     link: '#',
     overlay: 'View Event',
@@ -96,23 +96,32 @@ export const featuredEducation: Project[] = [
     projectType: 'Community Engagement'
   },
   {
-  title: 'Inception / G42 Training Program',
-  image: '../../assets/images/projects/inception.jpg',
-  link: '#',
-  overlay: 'View Program',
-  description:
-    'Developed and delivered training sessions as part of a professional program.',
-  projectType: 'Professional Training'
-},
-{
-  title: 'VISA Training Program',
-  image: '../../assets/images/projects/visa.jpg',
-  link: '#',
-  overlay: 'View Program',
-  description:
-    'Developed training workshops for professionals.',
-  projectType: 'Corporate Training'
-}
+    title: 'IMAGIC Training Program',
+    image: '../../assets/images/projects/imagic.jpg',
+    link: 'https://www.g42.ai/companies/inception-institute-of-ai',
+    overlay: 'View Company',
+    description:
+      'Developed and delivered training sessions as part of a professional program.',
+    projectType: 'Corporate Training'
+  },
+  {
+    title: 'Inception / G42 Training Program',
+    image: '../../assets/images/projects/inception.jpg',
+    link: 'https://www.g42.ai/companies/inception-institute-of-ai',
+    overlay: 'View Company',
+    description:
+      'Developed and delivered training sessions as part of a professional program.',
+    projectType: 'Professional Training'
+  },
+  {
+    title: 'VISA Training Program',
+    image: '../../assets/images/projects/visa.jpg',
+    link: 'https://corporate.visa.com/en/services/visa-consulting-analytics.html',
+    overlay: 'View Company',
+    description:
+      'Developed training workshops for professionals.',
+    projectType: 'Corporate Training'
+  }
 ];
 
 

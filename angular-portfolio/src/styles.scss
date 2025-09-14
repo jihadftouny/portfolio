@@ -31,6 +31,7 @@
   }
 }
 /* If you have licensed Gotham font files, place them in src/assets/fonts and uncomment the @font-face below.
+   Example filenames: Gotham-Book.woff2, Gotham-Medium.woff2, Gotham-Bold.woff2
 @font-face {
   font-family: 'Gotham';
   src: url('/assets/fonts/Gotham-Book.woff2') format('woff2'),
@@ -40,14 +41,19 @@
   font-display: swap;
 }
 
-/* Fallback to system fonts if Gotham isn't available */
+/* Keep Montserrat as a fallback webfont (optional) if Gotham isn't available */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 /* Force Gotham across the site with sensible fallbacks */
 html, body {
-  font-family: 'Gotham', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  /* Gotham is first so browsers will use it when available; Montserrat and system fonts are fallbacks */
+  font-family: 'Segoe UI', 'Montserrat', Arial, sans-serif !important;
   scroll-behavior: smooth;
+  /* Prevent tiny horizontal overflow (device-pixel rounding / 100vw issues) */
+  max-width: 100vw; /* avoid elements using 100vw pushing past the viewport */
+  overflow-x: hidden; /* defensive: hide any accidental horizontal overflow */
 }
+
 
 .nebula-bg {
   background: linear-gradient(135deg, #171823 0%, #101828 60%, #3a2e5d 100%),
@@ -75,11 +81,7 @@ html, body {
   color: #171823 !important;
 }
 
-/* Prevent tiny horizontal overflow (device-pixel rounding / 100vw issues) */
-html, body {
-  max-width: 100vw; /* avoid elements using 100vw pushing past the viewport */
-  overflow-x: hidden; /* defensive: hide any accidental horizontal overflow */
-}
+/* (merged overflow/max-width into the global html,body block above) */
 
 /* sensible global box-sizing */
 *, *::before, *::after {
@@ -175,4 +177,18 @@ a {
   background-color: color-mix(in srgb, #0d1e41 85%, black 15%) !important;
   border-color: color-mix(in srgb, #0d1e41 85%, black 15%) !important;
 }
+
+/* Project card global styles (moved from component to reduce component CSS size) */
+.project-title{font-size:2.25rem;line-height:1.05;color:var(--text-heading)}
+.eyebrow{color:var(--accent-neon);letter-spacing:.08em}
+.desc-bubble{background:linear-gradient(90deg,rgba(255,255,255,.06) 0%,rgba(255,255,255,.02) 60%,rgba(255,255,255,.04) 100%);border-radius:1rem;padding:1.4rem;width:100%;box-shadow:0 10px 28px rgba(0,0,0,.45);box-sizing:border-box}
+.project-media{display:flex;justify-content:center;align-items:center;height:100%}
+.project-media .image-container{background:linear-gradient(180deg,#0b1835 0%,#0d1e41 100%);border-radius:1rem;padding:1.3rem;box-shadow:0 18px 36px rgba(0,0,0,.6);width:100%;overflow:visible;position:relative}
+.project-media img{border-radius:.45rem;box-shadow:0 8px 18px rgba(0,0,0,.5)}
+
+/* Additional project card globals moved from component */
+.desc-bubble{background:linear-gradient(90deg,rgba(255,255,255,.06) 0%,rgba(255,255,255,.02) 60%,rgba(255,255,255,.04) 100%);border-radius:1rem;padding:1.5rem;max-width:none;width:100%;box-sizing:border-box;box-shadow:0 10px 30px rgba(0,0,0,.45)}
+.project-media{display:flex;justify-content:center;align-items:center;height:100%}
+.project-media .image-container{background:linear-gradient(180deg,#0b1835 0%,#0d1e41 100%);border-radius:1rem;padding:1.5rem;box-shadow:0 20px 40px rgba(0,0,0,.6);width:100%;overflow:visible;position:relative}
+.project-media img{border-radius:.5rem;box-shadow:0 8px 20px rgba(0,0,0,.5)}
 

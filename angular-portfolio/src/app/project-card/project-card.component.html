@@ -3,8 +3,8 @@
   <div class="project-header mb-3">
     <div class="row align-items-center">
       <div class="col-12 col-xl-6">
-        <p class="eyebrow small mb-2">{{ project.projectType || 'Featured Project' }}</p>
-        <p class="project-title font-audiowide mb-0">{{ project.title }}</p>
+  <p *ngIf="project.projectType" class="eyebrow small mb-2">{{ project.projectType }}</p>
+        <p class="project-title mb-0">{{ project.title }}</p>
       </div>
       <div class="col-12 col-xl-6 d-flex align-items-center justify-content-xl-end"></div>
     </div>
