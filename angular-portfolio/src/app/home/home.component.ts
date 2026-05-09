@@ -1,19 +1,14 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
-import { featuredProjects, featuredEducation} from '../project-card/project-card.component';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  // Pull shared project lists from project-card component
-  featuredProjects = featuredProjects;
-  featuredEducation = featuredEducation;
-
   downloadCV(): void {
     const link = document.createElement('a');
-    link.href = '../../assets/downloads/Jihad_Ftouny_CV.pdf';
+    link.href = '/assets/downloads/Jihad_Ftouny_CV.pdf';
     link.target = '_blank';
     link.download = 'Jihad_Ftouny_CV.pdf';
     link.click();

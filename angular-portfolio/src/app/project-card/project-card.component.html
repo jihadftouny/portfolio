@@ -1,41 +1,55 @@
-<div class="project-card">
-  <!-- Header -->
-  <div class="project-header mb-3">
-    <div class="row align-items-center">
-      <div class="col-12 col-xl-6">
-  <p *ngIf="project.projectType" class="eyebrow small mb-2">{{ project.projectType }}</p>
-        <p class="project-title mb-0">{{ project.title }}</p>
-      </div>
-      <div class="col-12 col-xl-6 d-flex align-items-center justify-content-xl-end"></div>
-    </div>
+<article class="project-card" [class.is-placeholder]="isPlaceholder">
+  <div class="card-media">
+    <img
+      [src]="project.image"
+      [alt]="project.title"
+      class="card-img"
+      loading="lazy"
+    />
+    <span class="card-category" [attr.data-cat]="project.category">
+      {{ categoryLabel }}
+    </span>
+    <div class="card-scrim" aria-hidden="true"></div>
   </div>
 
-  <!-- Content row: reverse on odd cards at xl+ -->
-  <div class="content-row row align-items-stretch g-4"
-       [class.flex-xl-row-reverse]="index % 2 === 1">
+  <div class="card-body">
+    <p
+      *ngIf="project.projectType || project.year"
+      class="card-eyebrow"
+    >
+      <span *ngIf="project.projectType">{{ project.projectType }}</span>
+      <span *ngIf="project.projectType && project.year" class="dot"
+        aria-hidden="true">·</span>
+      <span *ngIf="project.year">{{ project.year }}</span>
+    </p>
 
-    <!-- Text block -->
-    <div class="col-12 col-xl-6">
-      <div class="project-content d-flex flex-column h-100">
-        <div class="desc-bubble mb-0 flex-grow-1"
-             [ngClass]="{ 'pe-5': true, 'ps-xl-5': index % 2 === 1 }">
-          <p class="project-description mb-0">
-            {{ project.description || 'Project description placeholder text...' }}
-          </p>
-        </div>
-      </div>
-    </div>
+    <h3 class="card-title">{{ project.title }}</h3>
 
-    <!-- Image block -->
-    <div class="col-12 col-xl-6">
-      <div class="project-media h-100 d-flex align-items-center justify-content-center">
-        <div class="image-container position-relative w-100 h-100">
-          <img [src]="project.image" class="img-fluid rounded-1 w-100 h-100" style="object-fit:cover;" />
-          <a [href]="project.link" target="_blank" rel="noopener noreferrer" class="image-overlay">
-            {{ project.overlay || 'View Project' }}
-          </a>
-        </div>
-      </div>
-    </div>
+    <p *ngIf="project.description" class="card-desc">
+      {{ project.description }}
+    </p>
+
+    <ul *ngIf="project.tech?.length" class="card-tech" role="list">
+      <li class="tech-pill" *ngFor="let t of project.tech">{{ t }}</li>
+    </ul>
   </div>
-</div>
+
+  <div class="card-footer" *ngIf="!isPlaceholder">
+    <a
+      [href]="project.link"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="card-link"
+      [attr.aria-label]="(project.overlay || 'View project') + ': ' + project.title"
+    >
+      {{ project.overlay || 'View Project' }}
+      <span class="card-link-arrow" aria-hidden="true">→</span>
+    </a>
+  </div>
+
+  <div class="card-footer card-footer--muted" *ngIf="isPlaceholder">
+    <span class="card-link card-link--disabled">
+      {{ project.overlay || 'Coming Soon' }}
+    </span>
+  </div>
+</article>

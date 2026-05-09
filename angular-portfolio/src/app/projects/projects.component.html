@@ -1,0 +1,52 @@
+<section class="projects-section container py-5" appReveal>
+  <header class="section-head text-center mb-4">
+    <p class="eyebrow mb-2">Selected Work</p>
+    <h2 id="projects-heading" class="section-title">Projects</h2>
+    <p class="section-sub">
+      A cross-section of research, teaching, and creative builds.
+    </p>
+  </header>
+
+  <div
+    role="tablist"
+    aria-labelledby="projects-heading"
+    class="filter-tabs"
+  >
+    <button
+      *ngFor="let tab of tabs"
+      role="tab"
+      type="button"
+      [id]="'tab-' + tab.key"
+      [attr.aria-selected]="activeFilter === tab.key"
+      [attr.aria-controls]="'panel-' + tab.key"
+      [attr.tabindex]="activeFilter === tab.key ? 0 : -1"
+      class="filter-tab"
+      [class.is-active]="activeFilter === tab.key"
+      (click)="setFilter(tab.key)"
+      (keydown)="onTabKey($event)"
+    >
+      <span class="tab-label">{{ tab.label }}</span>
+      <span class="tab-count" aria-hidden="true">{{ tab.count }}</span>
+    </button>
+  </div>
+
+  <div
+    role="tabpanel"
+    [id]="'panel-' + activeFilter"
+    [attr.aria-labelledby]="'tab-' + activeFilter"
+    class="projects-grid"
+    [@filterFade]="animKey"
+  >
+    <app-project-card
+      *ngFor="let project of filtered; trackBy: trackById"
+      [project]="project"
+    ></app-project-card>
+  </div>
+
+  <p
+    *ngIf="filtered.length === 0"
+    class="empty-state text-center text-muted mt-4"
+  >
+    No projects in this category yet.
+  </p>
+</section>

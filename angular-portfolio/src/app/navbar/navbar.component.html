@@ -1,24 +1,37 @@
-<nav class="navbar navbar-expand-lg fixed-top glass-navbar">
-	<div class="container-fluid">
-		<a class="navbar-brand" routerLink="/">Jihad Ftouny</a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav ms-auto">
-				<li class="nav-item">
-					<a class="nav-link" [routerLink]="['/']" fragment="hero">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" [routerLink]="['/']" fragment="technical-projects">Technical Projects</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" [routerLink]="['/']" fragment="educational-projects">Educational Projects</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" [routerLink]="['/']" fragment="contact">Contact</a>
-				</li>
-			</ul>
-		</div>
-	</div>
+<nav
+  class="navbar navbar-expand-lg fixed-top glass-navbar"
+  [class.is-scrolled]="scrolled"
+>
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/" fragment="hero">
+      <span class="brand-mark">JF</span>
+      <span class="brand-name">Jihad Ftouny</span>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" #navCollapse>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item" *ngFor="let s of sections">
+          <a
+            class="nav-link"
+            [class.active]="activeId === s.id"
+            [routerLink]="['/']"
+            [fragment]="s.id"
+            (click)="closeNav()"
+          >
+            {{ s.label }}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>

@@ -1,0 +1,139 @@
+:host {
+  display: block;
+}
+
+.projects-section {
+  position: relative;
+  z-index: 1;
+}
+
+.section-head {
+  max-width: 720px;
+  margin: 0 auto;
+
+  .eyebrow {
+    color: var(--accent-neon);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+
+    @media (min-width: 992px) {
+      font-size: 3rem;
+    }
+  }
+
+  .section-sub {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+  }
+}
+
+/* ─── Filter tab strip ─────────────────────────────────────────────── */
+.filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  margin: 0 auto 2.5rem;
+  max-width: max-content;
+  background: rgba(23, 24, 35, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.filter-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.1rem;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition:
+    color 200ms ease,
+    background 200ms ease,
+    border-color 200ms ease,
+    transform 200ms ease;
+}
+
+.filter-tab:hover {
+  color: var(--text-primary);
+  background: rgba(102, 232, 255, 0.06);
+}
+
+.filter-tab.is-active {
+  color: #06121a;
+  background: var(--accent-neon);
+  border-color: var(--accent-neon);
+  box-shadow: 0 4px 18px rgba(102, 232, 255, 0.28);
+}
+
+.filter-tab.is-active .tab-count {
+  background: rgba(6, 18, 26, 0.18);
+  color: #06121a;
+}
+
+.tab-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.5rem;
+  height: 1.25rem;
+  padding: 0 0.4rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* ─── Grid ─────────────────────────────────────────────────────────── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+@media (min-width: 640px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1100px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.75rem;
+  }
+}
+
+.empty-state {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+/* ─── Reduced motion ───────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .filter-tab {
+    transition: none;
+  }
+  .filter-tab.is-active {
+    box-shadow: none;
+  }
+}

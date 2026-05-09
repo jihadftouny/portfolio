@@ -1,0 +1,31 @@
+/* ─── Scroll-reveal directive ──────────────────────────────────────── */
+[appReveal] {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .7s cubic-bezier(.2,.8,.2,1),
+              transform .7s cubic-bezier(.2,.8,.2,1);
+  will-change: opacity, transform;
+}
+
+[appReveal].is-revealed {
+  opacity: 1;
+  transform: none;
+}
+
+/* ─── Reduced-motion override ──────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  [appReveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

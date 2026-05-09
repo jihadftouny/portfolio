@@ -1,6 +1,8 @@
 @import './scss/tokens';
 @import './scss/background';
 @import './scss/projects-bg';
+@import './scss/animations';
+@import './scss/a11y';
 
 /* Custom animations for hero section */
 .animate-blink {
@@ -149,9 +151,7 @@ a {
 
 /* Ensure components that used explicit whites inherit variables */
 .hero-intro,
-.project-description,
-.contact-card,
-.desc-bubble {
+.contact-card {
   color: var(--text-primary);
 }
 
@@ -178,17 +178,6 @@ a {
   border-color: color-mix(in srgb, #0d1e41 85%, black 15%) !important;
 }
 
-/* Project card global styles (moved from component to reduce component CSS size) */
-.project-title{font-size:2.25rem;line-height:1.05;color:var(--text-heading)}
-.eyebrow{color:var(--accent-neon);letter-spacing:.08em}
-.desc-bubble{background:linear-gradient(90deg,rgba(255,255,255,.06) 0%,rgba(255,255,255,.02) 60%,rgba(255,255,255,.04) 100%);border-radius:1rem;padding:1.4rem;width:100%;box-shadow:0 10px 28px rgba(0,0,0,.45);box-sizing:border-box}
-.project-media{display:flex;justify-content:center;align-items:center;height:100%}
-.project-media .image-container{background:linear-gradient(180deg,#0b1835 0%,#0d1e41 100%);border-radius:1rem;padding:1.3rem;box-shadow:0 18px 36px rgba(0,0,0,.6);width:100%;overflow:visible;position:relative}
-.project-media img{border-radius:.45rem;box-shadow:0 8px 18px rgba(0,0,0,.5)}
-
-/* Additional project card globals moved from component */
-.desc-bubble{background:linear-gradient(90deg,rgba(255,255,255,.06) 0%,rgba(255,255,255,.02) 60%,rgba(255,255,255,.04) 100%);border-radius:1rem;padding:1.5rem;max-width:none;width:100%;box-sizing:border-box;box-shadow:0 10px 30px rgba(0,0,0,.45)}
-.project-media{display:flex;justify-content:center;align-items:center;height:100%}
-.project-media .image-container{background:linear-gradient(180deg,#0b1835 0%,#0d1e41 100%);border-radius:1rem;padding:1.5rem;box-shadow:0 20px 40px rgba(0,0,0,.6);width:100%;overflow:visible;position:relative}
-.project-media img{border-radius:.5rem;box-shadow:0 8px 20px rgba(0,0,0,.5)}
+/* Eyebrow utility used by section headers */
+.eyebrow { color: var(--accent-neon); letter-spacing: .08em; }
 

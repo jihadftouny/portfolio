@@ -1,22 +1,25 @@
-<div class="container py-5">
+<div class="container py-5" appReveal>
 	<div class="row align-items-center gx-3">
 		<div class="d-none d-md-block col-md-2"></div>
 		<div class="col-12 col-md-8">
 			<!-- Contact content starts here -->
 			<div class="py-5 contact-card text-center text-md-start">
 				<h2 class="font-ubuntu mb-4">Contact Me</h2>
-				<form id="contact-form" (submit)="sendEmail($event)">
+				<form id="contact-form" (submit)="sendEmail($event)" novalidate>
 					<div class="mb-3">
 						<label for="name" class="form-label">Name</label>
-						<input type="text" class="form-control" id="name" name="name" required />
+						<input type="text" class="form-control" id="name" name="name"
+						       autocomplete="name" required aria-required="true" />
 					</div>
 					<div class="mb-3">
 						<label for="email" class="form-label mt-3">Email</label>
-						<input type="email" class="form-control" id="email" name="email" required />
+						<input type="email" class="form-control" id="email" name="email"
+						       autocomplete="email" required aria-required="true" />
 					</div>
 					<div class="mb-3">
 						<label for="message" class="form-label mt-3">Message</label>
-						<textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+						<textarea class="form-control" id="message" name="message"
+						          rows="5" required aria-required="true"></textarea>
 					</div>
 					<button type="submit" class="btn btn-cv mt-4">Send Message</button>
 				</form>
@@ -33,7 +36,7 @@
 					<a class="contact-link me-3" href="https://www.youtube.com/@Bramevet" target="_blank" rel="noopener noreferrer" aria-label="YouTube channel">
 						<i class="bi bi-youtube contact-icon" aria-hidden="true"></i>
 					</a>
-					<a href="mailto:ftouny@outlook.com" class="contact-email">ftouny@outlook.com</a>
+					<a href="mailto:jihad@ftouny.com" class="contact-email">jihad@ftouny.com</a>
 				</div>
 		</div>
 		<div class="d-none d-md-block col-md-2"></div>

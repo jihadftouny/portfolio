@@ -1,15 +1,16 @@
-<section class="w-100 min-vh-100 d-flex align-items-center justify-content-center">
+<section class="hero w-100 min-vh-100 d-flex align-items-center justify-content-center">
     <div class="container py-5">
         <!-- Row 1: Avatar + Intro Headline with 2-col spacers -->
-        <div class="row align-items-center gx-3 pt-5" style="min-height: 60vh;">
+        <div class="row align-items-center gx-3 pt-5" style="min-height: 60vh;" appReveal>
             <div class="d-none d-md-block col-md-2"></div>
             <div class="col-12 col-md-8">
                 <div class="row align-items-center">
                     <!-- Avatar (left on desktop) -->
                     <div
                         class="col-12 col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-start mb-3 mb-lg-0">
-                        <img src="/assets/images/Jihad-Ftouny-Space.jpg" alt="Cartoon avatar of a person with a laptop"
-                            class="mb-2"
+                        <img #avatar src="/assets/images/Jihad-Ftouny-Space.jpg"
+                            alt="Cartoon avatar of Jihad Ftouny holding a laptop"
+                            class="hero-avatar mb-2"
                             style="width:12rem;height:18rem;object-fit:cover;border-radius:60%/60%;box-shadow: 0 0 80px 18px rgba(102,232,255,0.28), 0 0 20px 6px rgba(102,232,255,0.18);" />
                     </div>
                     <!-- Text (right on desktop) -->
@@ -38,16 +39,16 @@
             <div class="d-none d-md-block col-md-2"></div>
         </div>
         <!-- Row 2: Full-width content with 2-col spacers left & right -->
-        <div class="row align-items-center gx-3 mt-5">
+        <div class="row align-items-center gx-3 mt-5" appReveal [revealDelay]="120">
             <div class="d-none d-md-block col-md-2"></div>
             <div class="col-12 col-md-8 text-start">
                 <h2 class="fw-bold display-6 text-white mb-3">
-                    I’m an AI Engineer.
-                    <span style="color:var(--accent-neon);animation:blink-cursor 1s steps(2, start) infinite;">|</span>
+                    <span class="typewriter-text" [appTypewriter]="phrases">{{ phrases[0] }}</span><span
+                        class="typewriter-cursor" aria-hidden="true">|</span>
                 </h2>
 
                 <div class="text-on-dark mb-3">
-                    Currently, I’m an AI Instructor at ZAKA AI
+                    Currently, I’m an AI Engineer at Limitless Technologies
                 </div>
 
                 <p class="mt-3 text-on-dark" style="font-size:1.2rem; line-height:1.6; max-width:100%;">
@@ -61,11 +62,15 @@
                     like the <strong>LYONITE Smart Ring</strong>.
                 </p>
 
-                <!-- CV download button placed after the main H2 -->
-                <div class="mb-3">
+                <!-- CTA cluster -->
+                <div class="hero-cta-row mb-3 d-flex flex-wrap align-items-center gap-3">
                     <a class="btn btn-cv" href="/assets/downloads/Jihad_Ftouny_CV.pdf" target="_blank"
                         rel="noopener noreferrer" download>
                         Download CV
+                    </a>
+                    <a class="btn-ghost" [routerLink]="['/']" fragment="projects">
+                        View Projects
+                        <span aria-hidden="true">→</span>
                     </a>
                 </div>
 

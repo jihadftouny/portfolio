@@ -1,42 +1,106 @@
 :host {
-	display: block;
+  display: block;
 }
 
 .navbar {
-	background: transparent;
+  background: transparent;
+  transition: background 220ms ease, box-shadow 220ms ease;
 }
 
 .navbar-brand {
-	color: var(--text-heading) !important;
-	font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--text-heading) !important;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.55rem;
+  background: linear-gradient(135deg, rgba(102, 232, 255, 0.18), rgba(155, 92, 255, 0.18));
+  border: 1px solid rgba(102, 232, 255, 0.35);
+  color: var(--accent-neon);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+/* ─── Nav links + active state ─────────────────────────────────────── */
 .nav-link {
-	color: var(--text-primary) !important;
-	font-weight: 500;
+  position: relative;
+  color: var(--text-secondary) !important;
+  font-weight: 500;
+  margin: 0 0.15rem;
+  padding-left: 0.85rem !important;
+  padding-right: 0.85rem !important;
+  transition: color 200ms ease;
 }
 
-/* Ensure toggler icon is visible on dark background */
+.nav-link:hover {
+  color: var(--text-primary) !important;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0.4rem;
+  width: 0;
+  height: 2px;
+  background: var(--accent-neon);
+  border-radius: 2px;
+  transform: translateX(-50%);
+  transition: width 220ms cubic-bezier(.2, .8, .2, 1);
+}
+
+.nav-link.active {
+  color: var(--text-primary) !important;
+}
+
+.nav-link.active::after {
+  width: calc(100% - 1.7rem);
+}
+
+/* Toggler icon */
 .navbar-toggler {
-	border-color: rgba(255,255,255,0.12);
-}
-.navbar-toggler-icon {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  border-color: rgba(255, 255, 255, 0.12);
 }
 
-/* Glass blur */
-.glass-navbar{
-  background: rgba(23,24,35,0.35);        /* tweak for your dark theme */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* ─── Glass blur ───────────────────────────────────────────────────── */
+.glass-navbar {
+  background: rgba(23, 24, 35, 0.35);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  z-index: 1030; /* above content */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  z-index: 1030;
+}
+
+.glass-navbar.is-scrolled {
+  background: rgba(15, 17, 27, 0.7);
+  border-bottom-color: rgba(102, 232, 255, 0.18);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
 }
 
 /* Prevent content from sliding under the fixed navbar */
-body { padding-top: 72px; }                /* adjust to your navbar height */
+body { padding-top: 72px; }
 @media (min-width: 992px){
   body { padding-top: 80px; }
 }
 
-
+@media (prefers-reduced-motion: reduce) {
+  .navbar,
+  .nav-link,
+  .nav-link::after {
+    transition: none;
+  }
+}
