@@ -24,7 +24,7 @@ export class HeroComponent {
   ];
 
   readonly stats = [
-    { value: '200+', label: 'Students Mentored' },
+    { value: '400+', label: 'Students Taught & Mentored' },
     { value: '5+', label: 'Programs Delivered' },
     { value: '🏆', label: 'AUB Hackathon Winner' }
   ];

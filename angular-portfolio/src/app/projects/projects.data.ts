@@ -5,6 +5,7 @@ export interface Project {
   title: string;
   category: ProjectCategory;
   image: string;
+  imageAlign?: 'top' | 'center' | 'bottom';
   link: string;
   overlay?: string;
   description?: string;
@@ -24,9 +25,9 @@ export const PROJECTS: Project[] = [
     link: '#',
     overlay: 'Client Project',
     description:
-      "An end-to-end AI platform that automates the creation of children's storybooks. Built the full pipeline — story generation with LLMs, illustration synthesis, page layout, sticker system, and PDF/PowerPoint export — plus a public-facing site with an in-browser cover generator. Architected, built, and deployed end-to-end.",
+      "An end-to-end AI platform that automates the creation of children's storybooks. Built the full pipeline — story generation with LLMs, illustration synthesis, page layout, sticker system, and PDF export. Architected, built, and deployed end-to-end.",
     projectType: 'AI Platform',
-    tech: ['Python', 'LLMs', 'Image Generation', 'Automation', 'PDF/PPT Export'],
+    tech: ['Python', 'LLMs', 'Image Generation', 'Automation', 'PDF Export'],
     featured: true
   },
   {
@@ -93,6 +94,19 @@ export const PROJECTS: Project[] = [
       'Developed AUB’s AI Starter Kit, an 8-week online certificate for absolute beginners. Covers task automation, data analysis, content creation, workflow optimization, and ethics — with localized examples including Arabic LLMs.',
     projectType: 'Professional Certificate',
     tech: ['LLMs', 'Curriculum', 'Online Course']
+  },
+  {
+    id: 'uae-ai-academy',
+    title: 'UAE AI Academy: From Campus to the Future',
+    category: 'education',
+    image: 'assets/images/projects/ai-academy.jpg',
+    imageAlign: 'bottom',
+    link: 'https://www.middleeastainews.com/p/microsoft-upskill-1-million-in-ai-uae',
+    overlay: 'View Article',
+    description:
+      'Course author for the UAE AI Academy — a national initiative with Microsoft. A 2-month flexible program for university students, faculty, and staff that combines self-paced AI courses, expert workshops, and a national hackathon.',
+    projectType: 'University Program',
+    tech: ['Microsoft', 'University', 'AI Curriculum']
   },
   {
     id: 'visa-training',
@@ -167,22 +181,11 @@ export const PROJECTS: Project[] = [
     tech: ['Curriculum', 'AI Literacy', 'K-12']
   },
   {
-    id: 'uae-ai-academy',
-    title: 'UAE AI Academy: From Campus to the Future',
-    category: 'education',
-    image: 'assets/images/projects/ai-academy.jpg',
-    link: 'https://www.middleeastainews.com/p/microsoft-upskill-1-million-in-ai-uae',
-    overlay: 'View Article',
-    description:
-      'Course author for the UAE AI Academy — a national initiative with Microsoft. A 2-month flexible program for university students, faculty, and staff that combines self-paced AI courses, expert workshops, and a national hackathon.',
-    projectType: 'University Program',
-    tech: ['Microsoft', 'University', 'AI Curriculum']
-  },
-  {
     id: 'ai-tools-training',
     title: 'AI Tools Training',
     category: 'education',
     image: 'assets/images/projects/ai-personal-toolkit.jpg',
+    imageAlign: 'top',
     link: 'https://zaka.ai/personal-toolkit/',
     overlay: 'View Course',
     description:
@@ -198,7 +201,7 @@ export const PROJECTS: Project[] = [
     link: 'https://www.linkedin.com/in/jihad-ftouny/details/recommendations/?detailScreenTabIndex=0',
     overlay: 'View Recommendations',
     description:
-      'Mentored 30+ students on AI capstone projects and pitch competitions, advising on data preparation, model design, evaluation metrics, and presentation. Projects spanned recommender systems, health-tech, and social impact applications.',
+      'Mentored 50+ students on AI capstone projects and pitch competitions, advising on data preparation, model design, evaluation metrics, and presentation. Projects spanned recommender systems, health-tech, and social impact applications.',
     projectType: 'Mentorship',
     tech: ['Mentorship', 'Capstone', 'Pitch Coaching']
   },

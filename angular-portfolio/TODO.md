@@ -13,21 +13,6 @@ Drop into `src/assets/images/projects/`. ~16:10 ratio, 1280×800 or larger.
 
 Optional polish: the Internal Chatbots and SE Factory cards both show brand wordmarks. If you ever get a tasteful, NDA-safe screenshot for either, drop it in to replace.
 
-### 1.3 Per-project image alignment
-Card images use `object-fit: cover` with the default `center` alignment, which crops important parts out on some thumbnails — e.g., **UAE AI Academy** hides the bottom of the wordmark.
-
-- [ ] Decide alignment (`top`, `center`, or `bottom`) for each project's image — walk the grid and note which ones look wrong.
-- [ ] Wire it up: add an `imageAlign?: 'top' | 'center' | 'bottom'` field on the `Project` interface in `projects.data.ts`, set it per entry where needed, and apply it as `object-position` on `.card-img` in `project-card.component.html`.
-- [ ] Known: **UAE AI Academy** → `bottom`.
-
-### 1.2 EmailJS credentials in `src/app/contact/contact.component.ts`
-The `sendEmail()` call uses `'ftouny@outlook'` as the service ID, which doesn't match the EmailJS pattern (`service_xxxxxxx`). The contact form will fail silently in production until corrected.
-
-- [ ] Replace service ID, template ID, and public key with the real values from your EmailJS dashboard.
-- [ ] Submit a test message after deploying to confirm delivery.
-
-(The visible footer email has already been updated to `jihad@ftouny.com`.)
-
 ---
 
 ## 2. Content gaps — placeholders that need real values
@@ -67,6 +52,14 @@ Cycles through 4 phrases in `src/app/hero/hero.component.ts`. Currently:
 ### 2.7 Stats in hero section (`src/app/hero/hero.component.ts`)
 - [ ] Confirm "200+ Students Mentored", "5+ Programs Delivered" are accurate. Programs delivered should probably go up given SE Factory, ZAKA bootcamps, AUB, UAE AI Academy, IMAGIC, Inception, VISA — could realistically say "10+".
 
+### 2.8 Personal life section
+Add a short section that humanizes the portfolio — interests, hobbies, side curiosities outside of AI/teaching. Goes between Projects and the contact footer in `home.component.html` (new `<app-personal>` or similar).
+
+- [ ] Decide tone (playful vs. understated) and length (short paragraph vs. a few cards/chips).
+- [ ] Pick what to share — e.g. game dev under the Bramevet alias, photography, music, travel, books, anything you'd want a recruiter or collaborator to know beyond the résumé.
+- [ ] (Optional) Provide a personal photo or two.
+- [ ] Once content is decided, say the word and I'll scaffold the component and slot it into the home page.
+
 ---
 
 ## 3. Optional polish — nice to have
@@ -101,7 +94,7 @@ The old PNG icons in `src/assets/images/skills/` (chsarp, css, deeplearning, nlp
 When you're ready to publish:
 
 - [ ] `npm run build` succeeds with no new warnings
-- [ ] `ng serve` and walk through every section: hero typewriter cycles, scroll reveal triggers once per element, projects tabs swap with a soft fade, every card has an image and either a working link or "Under NDA"/"Coming Soon" badge, contact form sends a real email
+- [ ] `ng serve` and walk through every section: hero typewriter cycles, scroll reveal triggers once per element, projects tabs swap with a soft fade, every card has an image and either a working link or "Under NDA"/"Coming Soon" badge, footer social/email icons all open the right destinations
 - [ ] Open DevTools → Lighthouse → run on `/`. Target: a11y ≥ 95.
 - [ ] DevTools → Rendering → toggle `prefers-reduced-motion: reduce`. Confirm typewriter shows static text, parallax is disabled, reveals are instant, tab fade is instant.
 - [ ] Test on a phone (or DevTools mobile emulation): navbar hamburger opens/closes, project grid drops to 1 column, no horizontal scroll.

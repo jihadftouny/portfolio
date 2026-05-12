@@ -4,6 +4,7 @@
       [src]="project.image"
       [alt]="project.title"
       class="card-img"
+      [style.object-position]="project.imageAlign || 'center'"
       loading="lazy"
     />
     <span class="card-category" [attr.data-cat]="project.category">
