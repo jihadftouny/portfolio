@@ -19,7 +19,6 @@ declare const bootstrap: any;
 export class NavbarComponent implements AfterViewInit, OnDestroy {
   readonly sections: { id: string; label: string }[] = [
     { id: 'hero', label: 'Home' },
-    { id: 'about', label: 'About' },
     { id: 'projects', label: 'Projects' },
     { id: 'contact', label: 'Contact' }
   ];

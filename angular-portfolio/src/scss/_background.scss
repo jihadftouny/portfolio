@@ -240,7 +240,6 @@
   radial-gradient(1px 1px at 72% 38%, var(--space-star-dim) 0, transparent 2px),
   radial-gradient(.8px .8px at 80% 60%, var(--space-star) 0, transparent 2px);
   opacity: .18;
-  animation: twinkleA 6s infinite ease-in-out;
 }
 .bg-starfield--twinkle::after {
   background-image:
@@ -266,23 +265,6 @@
   radial-gradient(.8px .8px at 74% 48%, var(--space-star) 0, transparent 2px),
   radial-gradient(1px 1px at 82% 70%, var(--space-star-dim) 0, transparent 2px);
   opacity: .12;
-  animation: twinkleB 8s infinite ease-in-out;
-}
-
-@keyframes twinkleA {
-  0% { opacity: .12; transform: scale(1); }
-  25% { opacity: .22; transform: scale(1.02); }
-  50% { opacity: .10; transform: scale(0.98); }
-  75% { opacity: .20; transform: scale(1.01); }
-  100% { opacity: .12; transform: scale(1); }
-}
-
-@keyframes twinkleB {
-  0% { opacity: .08; transform: scale(1); }
-  20% { opacity: .18; transform: scale(1.03); }
-  40% { opacity: .06; transform: scale(0.97); }
-  70% { opacity: .16; transform: scale(1.015); }
-  100% { opacity: .08; transform: scale(1); }
 }
 
 /* 3) Nebula glow accents: soft, corner-anchored blurs */

@@ -31,14 +31,13 @@
                                 class="text-decoration-underline"
                                 style="color:var(--accent-neon);background:rgba(102,232,255,0.10);border-radius:1rem;padding:0 .5rem;">possibilities...</span>
                         </h1>
-                        <div class="text-on-dark mb-3" style="font-size:1.5rem;line-height:1.2;">Where every model is
-                            a new constellation waiting to be explored.</div>
                     </div>
                 </div>
             </div>
             <div class="d-none d-md-block col-md-2"></div>
         </div>
-        <!-- Row 2: Full-width content with 2-col spacers left & right -->
+
+        <!-- Row 2: Typewriter + bio + CTAs -->
         <div class="row align-items-center gx-3 mt-5" appReveal [revealDelay]="120">
             <div class="d-none d-md-block col-md-2"></div>
             <div class="col-12 col-md-8 text-start">
@@ -52,18 +51,28 @@
                 </div>
 
                 <p class="mt-3 text-on-dark" style="font-size:1.2rem; line-height:1.6; max-width:100%;">
-                    I design and deploy <strong>machine learning and deep learning solutions</strong> while mentoring
-                    the
-                    next generation of AI talent.
-                </p>
-                <p class="mt-0 text-on-dark" style="font-size:1.2rem; line-height:1.6; max-width:100%;">
-                    My work bridges <strong>education, engineering, and entrepreneurship</strong>, from building
-                    <strong>neural networks</strong> and <strong>NLP models</strong> to launching e-commerce businesses
-                    like the <strong>LYONITE Smart Ring</strong>.
+                    I design and ship <strong>AI systems end-to-end</strong> — LLM agents and RAG pipelines for
+                    live customer products, AI-driven creative tools, and research prototypes.
+                    <br><br>
+                    Flagship work includes <strong>Leo</strong>, the customer-facing AI assistant for <strong>LIA Assurex</strong>;
+                    internal chatbots built for a range of companies at Limitless; and <strong>Magic Wonder</strong>,
+                    an AI platform that generates full children's storybooks, customly built for a client.
+                    <br><br>
+                    On the side, I teach and mentor. I have created successful AI educational programs at <strong>AUB</strong>, <strong>Microsoft</strong>, <strong>G42</strong>, <strong>ZAKA</strong>, and
+                    <strong>SE Factory</strong> — and enjoy a good game development session every now and then.
                 </p>
 
+                <!-- Stat tiles -->
+                <div class="stats-grid mt-4">
+                    <div class="stat-tile" *ngFor="let stat of stats; let i = index"
+                         appReveal [revealDelay]="i * 80">
+                        <div class="stat-value">{{ stat.value }}</div>
+                        <div class="stat-label">{{ stat.label }}</div>
+                    </div>
+                </div>
+
                 <!-- CTA cluster -->
-                <div class="hero-cta-row mb-3 d-flex flex-wrap align-items-center gap-3">
+                <div class="hero-cta-row mt-4 mb-3 d-flex flex-wrap align-items-center gap-3">
                     <a class="btn btn-cv" href="/assets/downloads/Jihad_Ftouny_CV.pdf" target="_blank"
                         rel="noopener noreferrer" download>
                         Download CV
@@ -73,12 +82,48 @@
                         <span aria-hidden="true">→</span>
                     </a>
                 </div>
-
             </div>
             <div class="d-none d-md-block col-md-2"></div>
         </div>
 
+        <!-- Row 3: Soft skills marquee (full-bleed within container) -->
+        <div class="row gx-3 mt-5" appReveal [revealDelay]="160">
+            <div class="col-12">
+                <app-soft-skills-marquee></app-soft-skills-marquee>
+            </div>
+        </div>
 
+        <!-- Row 4: Hard skills grid -->
+        <div class="row gx-3 mt-5" appReveal [revealDelay]="200">
+            <div class="d-none d-md-block col-md-2"></div>
+            <div class="col-12 col-md-8">
+                <div class="skills-wrap">
+                    <div
+                        class="skill-category"
+                        *ngFor="let category of skillCategories; let i = index"
+                        appReveal
+                        [revealDelay]="i * 60"
+                    >
+                        <h3 class="skill-category-title">{{ category.title }}</h3>
+                        <ul class="skill-grid" role="list">
+                            <li class="skill-tile" *ngFor="let skill of category.skills">
+                                <div class="skill-icon-wrap">
+                                    <img
+                                        [src]="skill.src"
+                                        [alt]="skill.label"
+                                        [title]="skill.label"
+                                        class="skill-icon"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <span class="skill-label">{{ skill.label }}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-md-block col-md-2"></div>
+        </div>
 
     </div>
 </section>

@@ -75,9 +75,118 @@
   gap: 0.7rem;
 }
 
+/* ─── Stat tiles ───────────────────────────────────────────────────── */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.stat-tile {
+  padding: 1rem;
+  background: rgba(23, 24, 35, 0.78);
+  border: 1px solid rgba(102, 232, 255, 0.12);
+  border-radius: 0.75rem;
+  text-align: center;
+  transition: border-color 200ms ease, transform 200ms ease;
+}
+
+.stat-tile:hover {
+  border-color: rgba(102, 232, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.stat-value {
+  color: var(--accent-neon);
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.stat-label {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  margin-top: 0.4rem;
+}
+
+/* ─── Hard skills grid ─────────────────────────────────────────────── */
+.skills-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.skill-category-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.4rem;
+  display: inline-block;
+  border-bottom: 2px solid var(--accent-neon);
+}
+
+.skill-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+  gap: 0.75rem;
+}
+
+.skill-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  padding: 0.85rem 0.5rem;
+  background: rgba(23, 24, 35, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 0.75rem;
+  transition:
+    border-color 220ms ease,
+    transform 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.skill-tile:hover {
+  border-color: rgba(102, 232, 255, 0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 232, 255, 0.12);
+}
+
+.skill-icon-wrap {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-icon {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.skill-label {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-align: center;
+  line-height: 1.2;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hero-avatar,
-  .btn-ghost {
+  .btn-ghost,
+  .stat-tile,
+  .skill-tile {
     transition: none;
   }
   .typewriter-cursor {

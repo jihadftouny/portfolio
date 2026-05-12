@@ -1,0 +1,125 @@
+:host {
+  display: block;
+}
+
+.soft-skills {
+  width: 100%;
+}
+
+.soft-skills-eyebrow {
+  color: var(--accent-neon);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.85rem;
+  text-align: center;
+}
+
+.marquee-viewport {
+  position: relative;
+  /* Clip horizontally only — leaves vertical room for chip hover lift + shadow */
+  overflow-x: clip;
+  overflow-y: visible;
+  width: 100%;
+  /* Extra breathing room above/below for hover lift + shadow */
+  padding-block: 0.75rem;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0,
+    #000 8%,
+    #000 92%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0,
+    #000 8%,
+    #000 92%,
+    transparent 100%
+  );
+}
+
+.marquee-track {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  gap: 1.25rem;
+  animation: soft-skills-scroll 55s linear infinite;
+  will-change: transform;
+}
+
+.marquee-viewport:hover .marquee-track,
+.marquee-viewport.is-out-of-view .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.55rem 1rem;
+  background: rgba(23, 24, 35, 0.78);
+  border: 1px solid rgba(102, 232, 255, 0.15);
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: border-color 220ms ease, transform 220ms ease, box-shadow 220ms ease;
+}
+
+.marquee-item:hover {
+  border-color: rgba(102, 232, 255, 0.5);
+  transform: translateY(-2px);
+  /* Centered glow — no Y offset so the brightness radiates evenly around the chip */
+  box-shadow: 0 0 18px rgba(102, 232, 255, 0.2);
+}
+
+.marquee-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  color: var(--accent-neon);
+  flex-shrink: 0;
+}
+
+.marquee-icon ::ng-deep svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.marquee-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  letter-spacing: 0.01em;
+}
+
+@keyframes soft-skills-scroll {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    /* Half the doubled track moves exactly one set width out — seamless loop */
+    transform: translate3d(calc(-50% - 0.625rem), 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-viewport {
+    -webkit-mask-image: none;
+    mask-image: none;
+    overflow-x: visible;
+    overflow-y: visible;
+  }
+  .marquee-track {
+    animation: none;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  .marquee-item {
+    transition: none;
+  }
+}

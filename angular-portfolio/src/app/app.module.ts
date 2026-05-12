@@ -10,7 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HeroComponent } from './hero/hero.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { AboutComponent } from './about/about.component';
+import { SoftSkillsMarqueeComponent } from './soft-skills-marquee/soft-skills-marquee.component';
 import { RevealDirective } from './shared/reveal.directive';
 import { TypewriterDirective } from './shared/typewriter.directive';
 
@@ -23,7 +23,7 @@ import { TypewriterDirective } from './shared/typewriter.directive';
     HeroComponent,
     ProjectCardComponent,
     ProjectsComponent,
-    AboutComponent,
+    SoftSkillsMarqueeComponent,
     RevealDirective,
     TypewriterDirective
   ],

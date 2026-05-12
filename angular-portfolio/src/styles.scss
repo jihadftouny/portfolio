@@ -8,9 +8,6 @@
 .animate-blink {
   animation: blink-cursor 1s steps(2, start) infinite;
 }
-.animate-blink {
-  animation: blink-cursor 1s steps(2, start) infinite;
-}
 @keyframes blink-cursor {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }

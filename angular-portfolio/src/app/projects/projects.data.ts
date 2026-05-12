@@ -17,10 +17,10 @@ export interface Project {
 export const PROJECTS: Project[] = [
   // ─── AI ──────────────────────────────────────────────────────────────
   {
-    id: 'storybook-ai',
-    title: "Storybook AI: Children's Book Automation",
+    id: 'magic-wonder',
+    title: 'Magic Wonder',
     category: 'ai',
-    image: 'assets/images/projects/storybook-ai.jpg',
+    image: 'assets/images/projects/magic-wonder.jpg',
     link: '#',
     overlay: 'Client Project',
     description:
@@ -43,14 +43,14 @@ export const PROJECTS: Project[] = [
     featured: true
   },
   {
-    id: 'lia-internal-chatbots',
-    title: 'LIA Internal Chatbots',
+    id: 'internal-chatbots',
+    title: 'Internal Chatbots',
     category: 'ai',
-    image: 'assets/images/projects/lia-internal.jpg',
+    image: 'assets/images/projects/limitless.png',
     link: '#',
     overlay: 'Under NDA',
     description:
-      'Built internal chatbots for LIA while at Limitless. The technical details and use cases are under NDA.',
+      'During my time at Limitless, built internal chatbots for a variety of companies — covering knowledge retrieval, workflow assistance, and policy-grounded Q&A. Specific clients and technical details are under NDA.',
     projectType: 'Internal AI Tools',
     tech: ['LLMs', 'Conversational AI']
   },
@@ -83,6 +83,54 @@ export const PROJECTS: Project[] = [
 
   // ─── Education ───────────────────────────────────────────────────────
   {
+    id: 'aub-starter-kit',
+    title: 'AUB: AI Starter Kit',
+    category: 'education',
+    image: 'assets/images/projects/aub-starter-kit.jpg',
+    link: 'https://aub.edu.lb/msfea/online/Programs/AI-starter-kit.html',
+    overlay: 'View Project',
+    description:
+      'Developed AUB’s AI Starter Kit, an 8-week online certificate for absolute beginners. Covers task automation, data analysis, content creation, workflow optimization, and ethics — with localized examples including Arabic LLMs.',
+    projectType: 'Professional Certificate',
+    tech: ['LLMs', 'Curriculum', 'Online Course']
+  },
+  {
+    id: 'visa-training',
+    title: 'VISA Training Program',
+    category: 'education',
+    image: 'assets/images/projects/visa.jpg',
+    link: 'https://corporate.visa.com/en/services/visa-consulting-analytics.html',
+    overlay: 'View Company',
+    description:
+      'Designed AI training workshops for VISA professionals, focused on AI literacy, hands-on tooling, and responsible AI for finance and analytics teams.',
+    projectType: 'Corporate Training',
+    tech: ['Finance', 'AI Literacy']
+  },
+  {
+    id: 'inception-g42',
+    title: 'Inception / G42 Training Program',
+    category: 'education',
+    image: 'assets/images/projects/inception.jpg',
+    link: 'https://www.g42.ai/companies/inception-institute-of-ai',
+    overlay: 'View Company',
+    description:
+      'Designed and delivered AI training sessions for Inception / G42, building capability across teams in applied AI, modern ML workflows, and responsible deployment.',
+    projectType: 'Professional Training',
+    tech: ['Corporate', 'Applied AI']
+  },
+  {
+    id: 'imagic-training',
+    title: 'IMAGIC Training Program',
+    category: 'education',
+    image: 'assets/images/projects/imagic.jpg',
+    link: 'https://www.g42.ai/companies/inception-institute-of-ai',
+    overlay: 'View Company',
+    description:
+      'Designed and delivered AI training sessions for IMAGIC professionals, focused on practical adoption of AI tools and workflows in production environments.',
+    projectType: 'Corporate Training',
+    tech: ['Corporate', 'AI Adoption']
+  },
+  {
     id: 'sefactory-aie-bootcamp',
     title: 'SE Factory: AI Engineering Bootcamp',
     category: 'education',
@@ -90,9 +138,9 @@ export const PROJECTS: Project[] = [
     link: 'https://sefactory.io/',
     overlay: 'View Bootcamp',
     description:
-      "Designed and delivered the AI portion of SE Factory's Artificial Intelligence Engineering Bootcamp. Built the full curriculum — solution notebooks, slide decks, speaker notes, hands-on labs, and weekly project briefs — covering ML foundations, data pipelines, encoding/scaling, supervised baselines, computer vision (YOLO), and AWS Bedrock. Mentored students and reviewed their capstone projects.",
-    projectType: 'Bootcamp Curriculum',
-    tech: ['Curriculum Design', 'ML', 'Pipelines', 'Computer Vision', 'Mentorship']
+      "Mentor and code reviewer for SE Factory's Artificial Intelligence Engineering Bootcamp. Reviewed student code across ML foundations, data pipelines, supervised baselines, computer vision, and AWS Bedrock labs — guided trainees on debugging, model evaluation, and capstone projects.",
+    projectType: 'Mentorship & Code Review',
+    tech: ['ML', 'Computer Vision', 'Code Review', 'Mentorship']
   },
   {
     id: 'zaka-certification',
@@ -117,18 +165,6 @@ export const PROJECTS: Project[] = [
       'Developed ZAKA’s SEEDS content — the first K-12 AI program in the MENA region. Designed hands-on lessons for Grades 4–12 covering data, machine learning, AI tools, and responsible AI to prepare the next generation of AI leaders.',
     projectType: 'Educational Program',
     tech: ['Curriculum', 'AI Literacy', 'K-12']
-  },
-  {
-    id: 'aub-starter-kit',
-    title: 'AUB: AI Starter Kit',
-    category: 'education',
-    image: 'assets/images/projects/aub-starter-kit.jpg',
-    link: 'https://aub.edu.lb/msfea/online/Programs/AI-starter-kit.html',
-    overlay: 'View Project',
-    description:
-      'Developed AUB’s AI Starter Kit, an 8-week online certificate for absolute beginners. Covers task automation, data analysis, content creation, workflow optimization, and ethics — with localized examples including Arabic LLMs.',
-    projectType: 'Professional Certificate',
-    tech: ['LLMs', 'Curriculum', 'Online Course']
   },
   {
     id: 'uae-ai-academy',
@@ -177,42 +213,6 @@ export const PROJECTS: Project[] = [
       'Served as a judge at Berytech’s Clyntech Hackathon, evaluating clean-tech and green-innovation solutions for technical feasibility, impact, scalability, and AI usage — and giving feedback to teams addressing environmental challenges with AI.',
     projectType: 'Community Engagement',
     tech: ['Hackathon', 'Judging', 'CleanTech']
-  },
-  {
-    id: 'imagic-training',
-    title: 'IMAGIC Training Program',
-    category: 'education',
-    image: 'assets/images/projects/imagic.jpg',
-    link: 'https://www.g42.ai/companies/inception-institute-of-ai',
-    overlay: 'View Company',
-    description:
-      'Designed and delivered AI training sessions for IMAGIC professionals, focused on practical adoption of AI tools and workflows in production environments.',
-    projectType: 'Corporate Training',
-    tech: ['Corporate', 'AI Adoption']
-  },
-  {
-    id: 'inception-g42',
-    title: 'Inception / G42 Training Program',
-    category: 'education',
-    image: 'assets/images/projects/inception.jpg',
-    link: 'https://www.g42.ai/companies/inception-institute-of-ai',
-    overlay: 'View Company',
-    description:
-      'Designed and delivered AI training sessions for Inception / G42, building capability across teams in applied AI, modern ML workflows, and responsible deployment.',
-    projectType: 'Professional Training',
-    tech: ['Corporate', 'Applied AI']
-  },
-  {
-    id: 'visa-training',
-    title: 'VISA Training Program',
-    category: 'education',
-    image: 'assets/images/projects/visa.jpg',
-    link: 'https://corporate.visa.com/en/services/visa-consulting-analytics.html',
-    overlay: 'View Company',
-    description:
-      'Designed AI training workshops for VISA professionals, focused on AI literacy, hands-on tooling, and responsible AI for finance and analytics teams.',
-    projectType: 'Corporate Training',
-    tech: ['Finance', 'AI Literacy']
   },
 
   // ─── Game Development ────────────────────────────────────────────────

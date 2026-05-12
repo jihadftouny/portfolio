@@ -1,0 +1,15 @@
+<section class="soft-skills" aria-label="Soft skills">
+  <p class="soft-skills-eyebrow">How I work</p>
+  <div #viewport class="marquee-viewport" [class.is-out-of-view]="!inView">
+    <div class="marquee-track">
+      <div class="marquee-item" *ngFor="let skill of skills">
+        <span class="marquee-icon" [innerHTML]="skill.svg"></span>
+        <span class="marquee-label">{{ skill.label }}</span>
+      </div>
+      <div class="marquee-item" *ngFor="let skill of skills" aria-hidden="true">
+        <span class="marquee-icon" [innerHTML]="skill.svg"></span>
+        <span class="marquee-label">{{ skill.label }}</span>
+      </div>
+    </div>
+  </div>
+</section>

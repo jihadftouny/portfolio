@@ -1,10 +1,12 @@
 /* ─── Scroll-reveal directive ──────────────────────────────────────── */
+/* No permanent will-change here — it spawns a GPU layer per element
+   (50+ across the page). Browsers auto-promote opacity/transform during
+   the transition, which is plenty. */
 [appReveal] {
   opacity: 0;
   transform: translateY(16px);
   transition: opacity .7s cubic-bezier(.2,.8,.2,1),
               transform .7s cubic-bezier(.2,.8,.2,1);
-  will-change: opacity, transform;
 }
 
 [appReveal].is-revealed {
