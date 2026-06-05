@@ -18,9 +18,9 @@ Optional polish: the Internal Chatbots and SE Factory cards both show brand word
 ## 2. Content gaps — placeholders that need real values
 
 ### 2.3 Reorder projects by impact
-The current order in `src/app/projects/projects.data.ts` was set by me — it loosely puts the new flagship work first (Magic Wonder, LIA Assurex, SE Factory). You're the right person to decide which projects represent you best. The grid renders in array order, so position 1 = top-left of the card grid.
+The current order in `src/app/projects/projects.data.ts` was set by me — it loosely puts the new flagship work first (Magic Wonder, Customer-Facing AI Agent, SE Factory). You're the right person to decide which projects represent you best. The grid renders in array order, so position 1 = top-left of the card grid.
 
-- [ ] **AI** (currently: Magic Wonder, LIA Assurex, Internal Chatbots, GPTector, Smart Glasses) — reorder so the most impactful ones lead. Cards in positions 1–3 are what most visitors see before scrolling.
+- [ ] **AI** (currently: Magic Wonder, Customer-Facing AI Agent, Internal Chatbots, GPTector, Smart Glasses) — reorder so the most impactful ones lead. Cards in positions 1–3 are what most visitors see before scrolling.
 - [ ] **Games** (currently: The Void, Elvish Rootings, Airstrike Defense) — your call on order.
 - [ ] **Web** — only ABZ Flowers right now; consider adding LYONITE Smart Ring.
 
@@ -36,7 +36,7 @@ Lives in the new **Web** category. Tech tags are placeholders right now.
 
 ### 2.5 Project links currently set to `#`
 - [ ] **Magic Wonder** *(formerly Storybook AI)* — add a demo URL or LinkedIn post if you'd like a public link
-- [ ] **LIA Assurex** — add an LIA case-study URL or LinkedIn post if available
+- [ ] **Customer-Facing AI Agent** — likely stays `#` (confidential client); add a public link only if one becomes available
 - [ ] **Internal Chatbots** — likely stays `#` permanently due to NDA
 
 ### 2.6 Hero typewriter phrases
@@ -47,7 +47,7 @@ Cycles through 4 phrases in `src/app/hero/hero.component.ts`. Currently:
 "I build ML systems."
 "I mentor AI talent."
 ```
-- [ ] Adjust to match how you want to be perceived (e.g., add "I ship LLM agents." now that you have LIA Assurex).
+- [ ] Adjust to match how you want to be perceived (e.g., add "I ship LLM agents." now that you have the customer-facing AI agent).
 
 ### 2.7 Stats in hero section (`src/app/hero/hero.component.ts`)
 - [ ] Confirm "200+ Students Mentored", "5+ Programs Delivered" are accurate. Programs delivered should probably go up given SE Factory, ZAKA bootcamps, AUB, UAE AI Academy, IMAGIC, Inception, VISA — could realistically say "10+".

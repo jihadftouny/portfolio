@@ -31,14 +31,14 @@ export const PROJECTS: Project[] = [
     featured: true
   },
   {
-    id: 'lia-assurex',
-    title: 'LIA Assurex: Customer-Facing AI Agent',
+    id: 'customer-ai-agent',
+    title: 'Customer-Facing AI Agent',
     category: 'ai',
-    image: 'assets/images/projects/lia-assurex.png',
+    image: 'assets/images/projects/limitless.png',
     link: '#',
     overlay: 'Client Project',
     description:
-      'Built the LIA Assurex AI agent — a customer-facing assistant that lets clients ask about their policies and related questions in natural language. Designed the prompt architecture, conversation flows, and grounding behavior end-to-end. Delivered for LIA while at Limitless.',
+      'Built a customer-facing AI agent for a confidential insurance client — an assistant that lets customers ask about their policies and related questions in natural language. Designed the prompt architecture, conversation flows, and grounding behavior end-to-end. Delivered while at Limitless.',
     projectType: 'Conversational AI',
     tech: ['LLMs', 'Prompt Engineering', 'RAG', 'Conversational AI'],
     featured: true
