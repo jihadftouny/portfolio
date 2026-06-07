@@ -122,7 +122,10 @@
 /* ─── Grid ─────────────────────────────────────────────────────────── */
 .projects-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  /* minmax(0, 1fr) — not bare 1fr — so the column can't grow past the
+     container to fit non-shrinkable card content, which on narrow phones
+     overflowed right and broke centering. */
+  grid-template-columns: minmax(0, 1fr);
   gap: 1.5rem;
   align-items: stretch;
 }
