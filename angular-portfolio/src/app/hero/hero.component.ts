@@ -53,6 +53,13 @@ export class HeroComponent {
       ]
     },
     {
+      title: 'Games',
+      skills: [
+        { src: 'https://skillicons.dev/icons?i=unity', label: 'Unity' },
+        { src: 'https://skillicons.dev/icons?i=threejs', label: 'Three.js' }
+      ]
+    },
+    {
       title: 'Tools',
       skills: [
         { src: 'https://skillicons.dev/icons?i=git', label: 'Git' },
