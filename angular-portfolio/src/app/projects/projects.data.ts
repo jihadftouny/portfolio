@@ -25,20 +25,20 @@ export const PROJECTS: Project[] = [
     link: '#',
     overlay: 'Client Project',
     description:
-      "An end-to-end AI platform that automates the creation of children's storybooks. Built the full pipeline: story generation with LLMs, illustration synthesis, page layout, sticker system, and PDF export. Architected, built, and deployed end-to-end.",
+      "A platform that turns an idea into a finished children's storybook. It writes the story, illustrates it, lays out the pages, adds stickers, and exports something printable. I built it end to end with a partner, for a client who was doing all of that by hand.",
     projectType: 'AI Platform',
     tech: ['Python', 'LLMs', 'Image Generation', 'Automation', 'PDF Export'],
     featured: true
   },
   {
     id: 'customer-ai-agent',
-    title: 'Customer-Facing AI Agent',
+    title: 'Customer-Facing AI Assistant',
     category: 'ai',
     image: 'assets/images/projects/limitless.png',
     link: '#',
     overlay: 'Client Project',
     description:
-      'Built a customer-facing AI agent for a confidential insurance client, an assistant that lets customers ask about their policies and related questions in natural language. Designed the prompt architecture, conversation flows, and grounding behavior end-to-end, and I own the document-handling path in its backend: how a customer document is understood, attributed to the right person, and acted on. Delivered while at Limitless.',
+      "A conversational assistant for an insurance client that answers customers' questions about their policies. I look after the logic behind it: how it works out what someone is asking about, what it is allowed to offer, and when it should stop and hand over to a person. It is never allowed to work out a price itself, because a plausible-looking number is worse than no number.",
     projectType: 'Conversational AI',
     tech: ['LLMs', 'Prompt Engineering', 'RAG', 'Conversational AI', 'Backend Infrastructure'],
     featured: true
@@ -51,19 +51,19 @@ export const PROJECTS: Project[] = [
     link: '#',
     overlay: 'Under NDA',
     description:
-      'During my time at Limitless, built internal chatbots for a variety of companies, covering knowledge retrieval, workflow assistance, and policy-grounded Q&A. Specific clients and technical details are under NDA.',
+      "Assistants built for several companies during my time at Limitless, covering the questions their staff ask most: where something is, what the policy says, what to do next. Client details are confidential.",
     projectType: 'Internal AI Tools',
     tech: ['LLMs', 'Conversational AI']
   },
   {
     id: 'gptector',
-    title: 'GPTector: AI Text Detection Research',
+    title: 'GPTector',
     category: 'ai',
     image: 'assets/images/projects/gptector.jpg',
     link: 'https://gptector-flask.onrender.com/',
     overlay: 'View Tool',
     description:
-      'A lightweight machine-learning tool for detecting AI-generated text. Built in support of SUPSI research, it shows that compact models can identify AI-authored content without the computational overhead of large deep-learning models. A study in efficient, responsible AI.',
+      "A tool that spots AI-written text. Most detectors are themselves large models, which is expensive for what is really a yes or no question. This one uses older, lighter techniques, runs on an ordinary CPU, and answers instantly. It also handles short text, which is where most detectors fall apart. Built in support of SUPSI research.",
     projectType: 'Research Tool',
     tech: ['Python', 'scikit-learn', 'Flask', 'NLP'],
     featured: true
@@ -76,7 +76,7 @@ export const PROJECTS: Project[] = [
     link: 'https://www.linkedin.com/feed/update/urn:li:activity:7090393604661071872/',
     overlay: 'View Post',
     description:
-      'Led a team to win an AUB hackathon by designing a smart-glasses prototype for visually impaired users. Integrated computer vision with YOLO for object recognition and navigational assistance. Human-centric AI in hardware.',
+      "Smart glasses that describe what is in front of someone who cannot see it. I led the team that built it, using object recognition to call out obstacles and landmarks as you walk. It won the AUB hackathon.",
     projectType: 'Competition Project',
     tech: ['Python', 'YOLO', 'Computer Vision'],
     featured: true
@@ -91,32 +91,32 @@ export const PROJECTS: Project[] = [
     link: 'https://aub.edu.lb/msfea/online/Programs/AI-starter-kit.html',
     overlay: 'View Project',
     description:
-      'Developed AUB’s AI Starter Kit, an 8-week online certificate for absolute beginners. Covers task automation, data analysis, content creation, workflow optimization, and ethics, with localized examples including Arabic LLMs.',
+      "An eight week online certificate for people starting from zero, co-authored for the American University of Beirut. It covers using AI for everyday work: automating tasks, analysing data, making things, and knowing where the limits are. The examples are local, including ones in Arabic.",
     projectType: 'Professional Certificate',
     tech: ['LLMs', 'Curriculum', 'Online Course']
   },
   {
     id: 'uae-ai-academy',
-    title: 'UAE AI Academy: From Campus to the Future',
+    title: 'UAE AI Academy',
     category: 'education',
     image: 'assets/images/projects/ai-academy.jpg',
     imageAlign: 'bottom',
     link: 'https://www.middleeastainews.com/p/microsoft-upskill-1-million-in-ai-uae',
     overlay: 'View Article',
     description:
-      'Course author for the UAE AI Academy, a national initiative with Microsoft. A 2-month flexible program for university students, faculty, and staff that combines self-paced AI courses, expert workshops, and a national hackathon.',
+      "A national AI programme run with Microsoft for university students, faculty and staff. I co-wrote the course and taught on it. Two months, self-paced material, live workshops and a hackathon at the end.",
     projectType: 'University Program',
     tech: ['Microsoft', 'University', 'AI Curriculum']
   },
   {
     id: 'corporate-ai-training',
-    title: 'Corporate AI Training: VISA Jordan, Inception / G42, IMAGIC',
+    title: 'Corporate AI Training',
     category: 'education',
     image: 'assets/images/projects/visa.jpg',
     link: '#',
     overlay: 'Client Programmes',
     description:
-      'Co-authored and delivered AI training programmes for VISA Jordan, Inception / G42, and IMAGIC. Covered AI literacy, hands-on tooling, modern ML workflows, and responsible deployment, tailored to finance and analytics teams in one case and to production engineering teams in another.',
+      "AI training written and delivered for VISA Jordan, Inception / G42 and IMAGIC. Different audiences, same problem: people who are good at their jobs and now have to work out what these tools are actually for. Practical sessions, not theory.",
     projectType: 'Corporate Training',
     tech: ['Corporate', 'Applied AI', 'AI Literacy']
   },
@@ -128,19 +128,19 @@ export const PROJECTS: Project[] = [
     link: 'https://sefactory.io/',
     overlay: 'View Bootcamp',
     description:
-      "Mentor and code reviewer for SE Factory's Artificial Intelligence Engineering Bootcamp. Reviewed student code across ML foundations, data pipelines, supervised baselines, computer vision, and AWS Bedrock labs, and guided trainees on debugging, model evaluation, and capstone projects.",
+      "A ten week bootcamp that takes people from understanding AI to shipping it. I designed and taught it with two colleagues, and ran the code reviews for the AI track. Reviewing someone's code honestly is the part of teaching that actually changes how they work.",
     projectType: 'Mentorship & Code Review',
     tech: ['ML', 'Computer Vision', 'Code Review', 'Mentorship']
   },
   {
     id: 'zaka-certification',
-    title: 'ZAKA AI Certification & Bootcamps',
+    title: 'ZAKA: Certification & Bootcamps',
     category: 'education',
     image: 'assets/images/projects/zaka.jpg',
     link: 'https://zaka.ai/ai-certification/',
     overlay: 'View Program',
     description:
-      'Delivered in‑person and online sessions for ZAKA’s AI Certification and Bootcamp programs, covering machine learning, deep learning, NLP, and computer vision. Guided participants through end‑to‑end AI pipelines, deployment, and AI ethics.',
+      "Three years of teaching and writing at ZAKA, across the four week AI bootcamp and the longer career tracks. Most of what I made was recorded, so it kept running for people I never met.",
     projectType: 'Professional Training',
     tech: ['ML', 'Deep Learning', 'NLP', 'CV']
   },
@@ -152,7 +152,7 @@ export const PROJECTS: Project[] = [
     link: 'https://seeds.school/',
     overlay: 'View Page',
     description:
-      'Developed ZAKA’s SEEDS content, the first K-12 AI program in the MENA region. Designed hands-on lessons for Grades 4–12 covering data, machine learning, AI tools, and responsible AI to prepare the next generation of AI leaders. The program has since reached 730 educators.',
+      "The first K-12 AI curriculum in the region. I wrote content for it, covering grades 4 to 12: data, how machines learn, what the tools can do, and how to use them responsibly. It has since reached 730 teachers.",
     projectType: 'Educational Program',
     tech: ['Curriculum', 'AI Literacy', 'K-12']
   },
@@ -203,7 +203,7 @@ export const PROJECTS: Project[] = [
     link: 'https://bramevet.itch.io/the-void',
     overlay: 'View on itch.io',
     description:
-      'A text-based RPG with turn-based combat set in the Undercity, built on D&D-style attributes and dice-based combat with a rarity-driven equipment system. Now being reworked into a prototype for LLM-driven content: enemies, lore, and story generated at runtime instead of hand-written. Early prototype, in development.',
+      "A text RPG in Java with dice-based combat, character stats and a rarity system for equipment. 121 commits of working on it alone, which taught me more about designing game systems than anything else I have done. I am rebuilding it now as an experiment in having a model generate the enemies, the lore and the story while you play, instead of writing all of it up front.",
     projectType: 'Text-Based RPG · LLM Prototype',
     tech: ['LLMs', 'Java', 'D&D Mechanics', 'Procedural Content']
   },
