@@ -17,7 +17,7 @@ interface SkillCategory {
 })
 export class HeroComponent {
   readonly phrases = [
-    "I build AI systems that do real work.",
+    "I build AI systems.",
     "I write the courses that teach them.",
     "I make games.",
     "I mentor people who are starting out."

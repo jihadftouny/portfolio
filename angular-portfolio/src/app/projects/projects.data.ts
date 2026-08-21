@@ -31,29 +31,17 @@ export const PROJECTS: Project[] = [
     featured: true
   },
   {
-    id: 'customer-ai-agent',
-    title: 'Customer-Facing AI Assistant',
-    category: 'ai',
-    image: 'assets/images/projects/limitless.png',
-    link: '#',
-    overlay: 'Client Project',
-    description:
-      "A conversational assistant for an insurance client that answers customers' questions about their policies. I look after the logic behind it: how it works out what someone is asking about, what it is allowed to offer, and when it should stop and hand over to a person. It is never allowed to work out a price itself, because a plausible-looking number is worse than no number.",
-    projectType: 'Conversational AI',
-    tech: ['LLMs', 'Prompt Engineering', 'RAG', 'Conversational AI', 'Backend Infrastructure'],
-    featured: true
-  },
-  {
-    id: 'internal-chatbots',
-    title: 'Internal Chatbots',
+    id: 'limitless-ai',
+    title: 'AI Systems at Limitless Technologies',
     category: 'ai',
     image: 'assets/images/projects/limitless.png',
     link: '#',
     overlay: 'Under NDA',
     description:
-      "Assistants built for several companies during my time at Limitless, covering the questions their staff ask most: where something is, what the policy says, what to do next. Client details are confidential.",
-    projectType: 'Internal AI Tools',
-    tech: ['LLMs', 'Conversational AI']
+      "My day job. I build AI systems for health and insurance clients at Limitless Technologies. The work is covered by confidentiality, so I cannot describe the systems, what they do, or how they are built. What I can say is the toolkit: Python, large language models, document understanding including scanned documents, browser automation, and the databases and deployment work that keeps it all running.",
+    projectType: 'Confidential',
+    tech: ['Python', 'LLMs', 'Document Understanding', 'Automation'],
+    featured: true
   },
   {
     id: 'gptector',
