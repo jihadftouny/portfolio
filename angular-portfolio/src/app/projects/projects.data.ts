@@ -25,9 +25,9 @@ export const PROJECTS: Project[] = [
     link: '#',
     overlay: 'Client Project',
     description:
-      "A platform that turns an idea into a finished children's storybook. It writes the story, illustrates it, lays out the pages, adds stickers, and exports something printable. I built it end to end with a partner, for a client who was doing all of that by hand.",
+      "Turns a child's photo into a personalized picture book. You pick a story template, upload a photo, and it swaps the child's face into every illustrated page, lets you redo any page you are not happy with, then lays the story text over the art and exports a PDF. Built with a partner for a client who had been assembling these by hand.",
     projectType: 'AI Platform',
-    tech: ['Python', 'LLMs', 'Image Generation', 'Automation', 'PDF Export'],
+    tech: ['Python', 'Flask', 'React', 'Computer Vision', 'Face Swap', 'PDF Generation'],
     featured: true
   },
   {
