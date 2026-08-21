@@ -79,7 +79,7 @@ export const PROJECTS: Project[] = [
     link: 'https://aub.edu.lb/msfea/online/Programs/AI-starter-kit.html',
     overlay: 'View Project',
     description:
-      "An eight week online certificate for people starting from zero, co-authored for the American University of Beirut. It covers using AI for everyday work: automating tasks, analysing data, making things, and knowing where the limits are. The examples are local, including ones in Arabic.",
+      "An eight week online certificate for people starting from zero, built for the American University of Beirut. I owned it end to end, from the syllabus through the assessments. It covers using AI for everyday work: automating tasks, analysing data, making things, and knowing where the limits are. The examples are local, including ones in Arabic.",
     projectType: 'Professional Certificate',
     tech: ['LLMs', 'Curriculum', 'Online Course']
   },
