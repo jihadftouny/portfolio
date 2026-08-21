@@ -109,40 +109,16 @@ export const PROJECTS: Project[] = [
     tech: ['Microsoft', 'University', 'AI Curriculum']
   },
   {
-    id: 'visa-training',
-    title: 'VISA Training Program',
+    id: 'corporate-ai-training',
+    title: 'Corporate AI Training: VISA Jordan, Inception / G42, IMAGIC',
     category: 'education',
     image: 'assets/images/projects/visa.jpg',
-    link: 'https://corporate.visa.com/en/services/visa-consulting-analytics.html',
-    overlay: 'View Company',
+    link: '#',
+    overlay: 'Client Programmes',
     description:
-      'Designed AI training workshops for VISA professionals, focused on AI literacy, hands-on tooling, and responsible AI for finance and analytics teams.',
+      'Co-authored and delivered AI training programmes for VISA Jordan, Inception / G42, and IMAGIC. Covered AI literacy, hands-on tooling, modern ML workflows, and responsible deployment, tailored to finance and analytics teams in one case and to production engineering teams in another.',
     projectType: 'Corporate Training',
-    tech: ['Finance', 'AI Literacy']
-  },
-  {
-    id: 'inception-g42',
-    title: 'Inception / G42 Training Program',
-    category: 'education',
-    image: 'assets/images/projects/inception.jpg',
-    link: 'https://www.g42.ai/companies/inception-institute-of-ai',
-    overlay: 'View Company',
-    description:
-      'Designed and delivered AI training sessions for Inception / G42, building capability across teams in applied AI, modern ML workflows, and responsible deployment.',
-    projectType: 'Professional Training',
-    tech: ['Corporate', 'Applied AI']
-  },
-  {
-    id: 'imagic-training',
-    title: 'IMAGIC Training Program',
-    category: 'education',
-    image: 'assets/images/projects/imagic.jpg',
-    link: 'https://www.g42.ai/companies/inception-institute-of-ai',
-    overlay: 'View Company',
-    description:
-      'Designed and delivered AI training sessions for IMAGIC professionals, focused on practical adoption of AI tools and workflows in production environments.',
-    projectType: 'Corporate Training',
-    tech: ['Corporate', 'AI Adoption']
+    tech: ['Corporate', 'Applied AI', 'AI Literacy']
   },
   {
     id: 'sefactory-aie-bootcamp',
