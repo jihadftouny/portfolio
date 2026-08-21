@@ -176,7 +176,7 @@ export const PROJECTS: Project[] = [
     link: 'https://seeds.school/',
     overlay: 'View Page',
     description:
-      'Developed ZAKA’s SEEDS content — the first K-12 AI program in the MENA region. Designed hands-on lessons for Grades 4–12 covering data, machine learning, AI tools, and responsible AI to prepare the next generation of AI leaders.',
+      'Developed ZAKA’s SEEDS content — the first K-12 AI program in the MENA region. Designed hands-on lessons for Grades 4–12 covering data, machine learning, AI tools, and responsible AI to prepare the next generation of AI leaders. The program has since reached 730 educators.',
     projectType: 'Educational Program',
     tech: ['Curriculum', 'AI Literacy', 'K-12']
   },
