@@ -38,9 +38,9 @@ export const PROJECTS: Project[] = [
     link: '#',
     overlay: 'Client Project',
     description:
-      'Built a customer-facing AI agent for a confidential insurance client — an assistant that lets customers ask about their policies and related questions in natural language. Designed the prompt architecture, conversation flows, and grounding behavior end-to-end. Delivered while at Limitless.',
+      'Built a customer-facing AI agent for a confidential insurance client — an assistant that lets customers ask about their policies and related questions in natural language. Designed the prompt architecture, conversation flows, and grounding behavior end-to-end, and currently own the backend infrastructure the agent runs on. Delivered while at Limitless.',
     projectType: 'Conversational AI',
-    tech: ['LLMs', 'Prompt Engineering', 'RAG', 'Conversational AI'],
+    tech: ['LLMs', 'Prompt Engineering', 'RAG', 'Conversational AI', 'Backend Infrastructure'],
     featured: true
   },
   {
@@ -176,7 +176,7 @@ export const PROJECTS: Project[] = [
     link: 'https://seeds.school/',
     overlay: 'View Page',
     description:
-      'Developed ZAKA’s SEEDS content — the first K-12 AI program in the MENA region. Designed hands-on lessons for Grades 4–12 covering data, machine learning, AI tools, and responsible AI to prepare the next generation of AI leaders.',
+      'Developed ZAKA’s SEEDS content — the first K-12 AI program in the MENA region. Designed hands-on lessons for Grades 4–12 covering data, machine learning, AI tools, and responsible AI to prepare the next generation of AI leaders. The program has since reached 730 educators.',
     projectType: 'Educational Program',
     tech: ['Curriculum', 'AI Literacy', 'K-12']
   },
@@ -225,11 +225,11 @@ export const PROJECTS: Project[] = [
     category: 'games',
     image: 'assets/images/projects/the-void.png',
     link: 'https://bramevet.itch.io/the-void',
-    overlay: 'Play on itch.io',
+    overlay: 'View on itch.io',
     description:
-      'A text-based RPG with turn-based combat set in the Undercity. Play as the Chosen One — hand-picked by the Arch-Mage — and face randomly generated enemies through a D&D-inspired die-roll system. Atmospheric, story-rich, cyberpunk. Currently in development.',
-    projectType: 'Text-Based RPG',
-    tech: ['HTML5', 'D&D Mechanics', 'Story Rich']
+      'A text-based RPG with turn-based combat set in the Undercity, built on D&D-style attributes and dice-based combat with a rarity-driven equipment system. Now being reworked into a prototype for LLM-driven content — enemies, lore, and story generated at runtime instead of hand-written. Early prototype, in development.',
+    projectType: 'Text-Based RPG · LLM Prototype',
+    tech: ['LLMs', 'Java', 'D&D Mechanics', 'Procedural Content']
   },
   {
     id: 'elvish-rootings',

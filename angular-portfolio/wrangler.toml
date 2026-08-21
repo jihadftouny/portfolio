@@ -1,0 +1,29 @@
+# Deploys portfolio.ftouny.com as its own Cloudflare Worker.
+#
+# Previously the site was served as a /portfolio/ subdirectory of the
+# "wa-demos" worker (the WhatsApp outreach tool), with the Angular build
+# output hand-copied in before each deploy. That coupled the portfolio's
+# uptime to an unrelated project and meant the live site could not be
+# rebuilt from any repository. This file replaces that arrangement.
+#
+# Deploy:  npm run deploy      (ng build && wrangler deploy)
+
+name = "portfolio-ftouny"
+compatibility_date = "2026-08-20"
+
+# Assets-only Worker: no `main` and no `binding`, because there is no
+# Worker script — Cloudflare serves the Angular build output directly.
+[assets]
+directory = "./dist/angular-portfolio"
+# Angular is a single-page app: unknown paths must return index.html
+# with 200 rather than a 404, so client-side routing works on refresh
+# and on direct links.
+not_found_handling = "single-page-application"
+
+# Custom Domain rather than a route. Cloudflare manages the DNS record
+# for this hostname, and a Custom Domain takes precedence over the
+# wildcard `*.ftouny.com/*` route that currently sends this hostname to
+# the wa-demos worker.
+[[routes]]
+pattern = "portfolio.ftouny.com"
+custom_domain = true

@@ -24,7 +24,7 @@ export class HeroComponent {
   ];
 
   readonly stats = [
-    { value: '400+', label: 'Students Taught & Mentored' },
+    { value: '7,000+', label: 'Trained Through Programs I Built' },
     { value: '5+', label: 'Programs Delivered' },
     { value: '🏆', label: 'AUB Hackathon Winner' }
   ];
@@ -50,6 +50,13 @@ export class HeroComponent {
         { src: 'assets/images/skills/ultralytics.png', label: 'Ultralytics' },
         { src: 'assets/images/skills/langchain.png', label: 'LangChain' },
         { src: 'assets/images/skills/prompt-engineering.svg', label: 'Prompt Engineering' }
+      ]
+    },
+    {
+      title: 'Games',
+      skills: [
+        { src: 'https://skillicons.dev/icons?i=unity', label: 'Unity' },
+        { src: 'https://skillicons.dev/icons?i=threejs', label: 'Three.js' }
       ]
     },
     {
