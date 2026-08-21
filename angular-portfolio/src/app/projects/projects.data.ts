@@ -38,7 +38,7 @@ export const PROJECTS: Project[] = [
     link: '#',
     overlay: 'Under NDA',
     description:
-      "My day job. I build AI systems for health and insurance clients at Limitless Technologies. The work is covered by confidentiality, so I cannot describe the systems, what they do, or how they are built. What I can say is the toolkit: Python, large language models, document understanding including scanned documents, browser automation, and the databases and deployment work that keeps it all running.",
+      "My day job. I build AI systems at Limitless Technologies, a Beirut company working in health and insurance technology. The toolkit: Python, large language models, document understanding including scanned documents, browser automation, and the databases and deployment work that keeps it all running.",
     projectType: 'Confidential',
     tech: ['Python', 'LLMs', 'Document Understanding', 'Automation'],
     featured: true
