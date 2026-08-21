@@ -38,7 +38,7 @@ export const PROJECTS: Project[] = [
     link: '#',
     overlay: 'Client Project',
     description:
-      'Built a customer-facing AI agent for a confidential insurance client, an assistant that lets customers ask about their policies and related questions in natural language. Designed the prompt architecture, conversation flows, and grounding behavior end-to-end, and currently own the backend infrastructure the agent runs on. Delivered while at Limitless.',
+      'Built a customer-facing AI agent for a confidential insurance client, an assistant that lets customers ask about their policies and related questions in natural language. Designed the prompt architecture, conversation flows, and grounding behavior end-to-end, and I own the document-handling path in its backend: how a customer document is understood, attributed to the right person, and acted on. Delivered while at Limitless.',
     projectType: 'Conversational AI',
     tech: ['LLMs', 'Prompt Engineering', 'RAG', 'Conversational AI', 'Backend Infrastructure'],
     featured: true
