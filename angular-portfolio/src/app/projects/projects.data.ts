@@ -25,7 +25,7 @@ export const PROJECTS: Project[] = [
     link: '#',
     overlay: 'Client Project',
     description:
-      "An end-to-end AI platform that automates the creation of children's storybooks. Built the full pipeline — story generation with LLMs, illustration synthesis, page layout, sticker system, and PDF export. Architected, built, and deployed end-to-end.",
+      "An end-to-end AI platform that automates the creation of children's storybooks. Built the full pipeline: story generation with LLMs, illustration synthesis, page layout, sticker system, and PDF export. Architected, built, and deployed end-to-end.",
     projectType: 'AI Platform',
     tech: ['Python', 'LLMs', 'Image Generation', 'Automation', 'PDF Export'],
     featured: true
@@ -38,7 +38,7 @@ export const PROJECTS: Project[] = [
     link: '#',
     overlay: 'Client Project',
     description:
-      'Built a customer-facing AI agent for a confidential insurance client — an assistant that lets customers ask about their policies and related questions in natural language. Designed the prompt architecture, conversation flows, and grounding behavior end-to-end, and currently own the backend infrastructure the agent runs on. Delivered while at Limitless.',
+      'Built a customer-facing AI agent for a confidential insurance client, an assistant that lets customers ask about their policies and related questions in natural language. Designed the prompt architecture, conversation flows, and grounding behavior end-to-end, and currently own the backend infrastructure the agent runs on. Delivered while at Limitless.',
     projectType: 'Conversational AI',
     tech: ['LLMs', 'Prompt Engineering', 'RAG', 'Conversational AI', 'Backend Infrastructure'],
     featured: true
@@ -51,7 +51,7 @@ export const PROJECTS: Project[] = [
     link: '#',
     overlay: 'Under NDA',
     description:
-      'During my time at Limitless, built internal chatbots for a variety of companies — covering knowledge retrieval, workflow assistance, and policy-grounded Q&A. Specific clients and technical details are under NDA.',
+      'During my time at Limitless, built internal chatbots for a variety of companies, covering knowledge retrieval, workflow assistance, and policy-grounded Q&A. Specific clients and technical details are under NDA.',
     projectType: 'Internal AI Tools',
     tech: ['LLMs', 'Conversational AI']
   },
@@ -63,7 +63,7 @@ export const PROJECTS: Project[] = [
     link: 'https://gptector-flask.onrender.com/',
     overlay: 'View Tool',
     description:
-      'A lightweight machine-learning tool for detecting AI-generated text. Built in support of SUPSI research, it shows that compact models can identify AI-authored content without the computational overhead of large deep-learning models — a study in efficient, responsible AI.',
+      'A lightweight machine-learning tool for detecting AI-generated text. Built in support of SUPSI research, it shows that compact models can identify AI-authored content without the computational overhead of large deep-learning models. A study in efficient, responsible AI.',
     projectType: 'Research Tool',
     tech: ['Python', 'scikit-learn', 'Flask', 'NLP'],
     featured: true
@@ -76,7 +76,7 @@ export const PROJECTS: Project[] = [
     link: 'https://www.linkedin.com/feed/update/urn:li:activity:7090393604661071872/',
     overlay: 'View Post',
     description:
-      'Led a team to win an AUB hackathon by designing a smart-glasses prototype for visually impaired users. Integrated computer vision with YOLO for object recognition and navigational assistance — human-centric AI in hardware.',
+      'Led a team to win an AUB hackathon by designing a smart-glasses prototype for visually impaired users. Integrated computer vision with YOLO for object recognition and navigational assistance. Human-centric AI in hardware.',
     projectType: 'Competition Project',
     tech: ['Python', 'YOLO', 'Computer Vision'],
     featured: true
@@ -91,7 +91,7 @@ export const PROJECTS: Project[] = [
     link: 'https://aub.edu.lb/msfea/online/Programs/AI-starter-kit.html',
     overlay: 'View Project',
     description:
-      'Developed AUB’s AI Starter Kit, an 8-week online certificate for absolute beginners. Covers task automation, data analysis, content creation, workflow optimization, and ethics — with localized examples including Arabic LLMs.',
+      'Developed AUB’s AI Starter Kit, an 8-week online certificate for absolute beginners. Covers task automation, data analysis, content creation, workflow optimization, and ethics, with localized examples including Arabic LLMs.',
     projectType: 'Professional Certificate',
     tech: ['LLMs', 'Curriculum', 'Online Course']
   },
@@ -104,7 +104,7 @@ export const PROJECTS: Project[] = [
     link: 'https://www.middleeastainews.com/p/microsoft-upskill-1-million-in-ai-uae',
     overlay: 'View Article',
     description:
-      'Course author for the UAE AI Academy — a national initiative with Microsoft. A 2-month flexible program for university students, faculty, and staff that combines self-paced AI courses, expert workshops, and a national hackathon.',
+      'Course author for the UAE AI Academy, a national initiative with Microsoft. A 2-month flexible program for university students, faculty, and staff that combines self-paced AI courses, expert workshops, and a national hackathon.',
     projectType: 'University Program',
     tech: ['Microsoft', 'University', 'AI Curriculum']
   },
@@ -152,7 +152,7 @@ export const PROJECTS: Project[] = [
     link: 'https://sefactory.io/',
     overlay: 'View Bootcamp',
     description:
-      "Mentor and code reviewer for SE Factory's Artificial Intelligence Engineering Bootcamp. Reviewed student code across ML foundations, data pipelines, supervised baselines, computer vision, and AWS Bedrock labs — guided trainees on debugging, model evaluation, and capstone projects.",
+      "Mentor and code reviewer for SE Factory's Artificial Intelligence Engineering Bootcamp. Reviewed student code across ML foundations, data pipelines, supervised baselines, computer vision, and AWS Bedrock labs, and guided trainees on debugging, model evaluation, and capstone projects.",
     projectType: 'Mentorship & Code Review',
     tech: ['ML', 'Computer Vision', 'Code Review', 'Mentorship']
   },
@@ -176,7 +176,7 @@ export const PROJECTS: Project[] = [
     link: 'https://seeds.school/',
     overlay: 'View Page',
     description:
-      'Developed ZAKA’s SEEDS content — the first K-12 AI program in the MENA region. Designed hands-on lessons for Grades 4–12 covering data, machine learning, AI tools, and responsible AI to prepare the next generation of AI leaders. The program has since reached 730 educators.',
+      'Developed ZAKA’s SEEDS content, the first K-12 AI program in the MENA region. Designed hands-on lessons for Grades 4–12 covering data, machine learning, AI tools, and responsible AI to prepare the next generation of AI leaders. The program has since reached 730 educators.',
     projectType: 'Educational Program',
     tech: ['Curriculum', 'AI Literacy', 'K-12']
   },
@@ -189,7 +189,7 @@ export const PROJECTS: Project[] = [
     link: 'https://zaka.ai/personal-toolkit/',
     overlay: 'View Course',
     description:
-      'Delivered ZAKA’s AI Personal Toolkit — a 7-module program on AI fundamentals, ChatGPT mastery, generative tools, creative problem solving, and ethics. Tailored versions for L’Oréal, USJ, IMAGIC, and others.',
+      'Delivered ZAKA’s AI Personal Toolkit, a 7-module program on AI fundamentals, ChatGPT mastery, generative tools, creative problem solving, and ethics. Tailored versions for L’Oréal, USJ, IMAGIC, and others.',
     projectType: 'Training Program',
     tech: ['ChatGPT', 'GenAI', 'LLMs']
   },
@@ -213,7 +213,7 @@ export const PROJECTS: Project[] = [
     link: 'https://berytech.org/',
     overlay: 'View Event',
     description:
-      'Served as a judge at Berytech’s Clyntech Hackathon, evaluating clean-tech and green-innovation solutions for technical feasibility, impact, scalability, and AI usage — and giving feedback to teams addressing environmental challenges with AI.',
+      'Served as a judge at Berytech’s Clyntech Hackathon, evaluating clean-tech and green-innovation solutions for technical feasibility, impact, scalability, and AI usage, and giving feedback to teams addressing environmental challenges with AI.',
     projectType: 'Community Engagement',
     tech: ['Hackathon', 'Judging', 'CleanTech']
   },
@@ -227,7 +227,7 @@ export const PROJECTS: Project[] = [
     link: 'https://bramevet.itch.io/the-void',
     overlay: 'View on itch.io',
     description:
-      'A text-based RPG with turn-based combat set in the Undercity, built on D&D-style attributes and dice-based combat with a rarity-driven equipment system. Now being reworked into a prototype for LLM-driven content — enemies, lore, and story generated at runtime instead of hand-written. Early prototype, in development.',
+      'A text-based RPG with turn-based combat set in the Undercity, built on D&D-style attributes and dice-based combat with a rarity-driven equipment system. Now being reworked into a prototype for LLM-driven content: enemies, lore, and story generated at runtime instead of hand-written. Early prototype, in development.',
     projectType: 'Text-Based RPG · LLM Prototype',
     tech: ['LLMs', 'Java', 'D&D Mechanics', 'Procedural Content']
   },
@@ -251,7 +251,7 @@ export const PROJECTS: Project[] = [
     link: 'https://bramevet.itch.io/airstrike-defense',
     overlay: 'Play on itch.io',
     description:
-      'A 2D side-scrolling action game where you defend your city from waves of bomb-dropping aircraft. Aim a cannon, shoot bombs out of the sky, and survive — built around precision and fast reflexes.',
+      'A 2D side-scrolling action game where you defend your city from waves of bomb-dropping aircraft. Aim a cannon, shoot bombs out of the sky, and survive, built around precision and fast reflexes.',
     projectType: 'Action / Side Scroller',
     tech: ['Unity', '2D', 'Side Scroller']
   },
@@ -265,7 +265,7 @@ export const PROJECTS: Project[] = [
     link: '#',
     overlay: 'Client Project',
     description:
-      'End-to-end fullstack e-commerce platform built for a flower shop — product catalog, cart, checkout, and admin dashboard. Designed and shipped the full stack from database to UI.',
+      'End-to-end fullstack e-commerce platform built for a flower shop: product catalog, cart, checkout, and admin dashboard. Designed and shipped the full stack from database to UI.',
     projectType: 'Fullstack E-Shop',
     tech: ['TypeScript', 'Node.js', 'MongoDB', 'E-Commerce']
   }
