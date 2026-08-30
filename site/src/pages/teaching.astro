@@ -2,6 +2,7 @@
 import { Picture } from "astro:assets";
 import Base from "../layouts/Base.astro";
 import Section from "../components/Section.astro";
+import BackHome from "../components/BackHome.astro";
 import LogoPlate from "../components/LogoPlate.astro";
 import { zakaProgrammes, capstones, talks } from "../data/teaching";
 import { site } from "../data/site";
@@ -20,7 +21,6 @@ const instructor = classes.find((c) => c.id === "instructor")!;
     title="I write and teach AI courses"
     portrait={instructor.portrait}
     portraitAlt={instructor.portraitAlt}
-    back
   >
     <div class="prose stack" data-reveal>
       <p class="lede">
@@ -172,6 +172,7 @@ const instructor = classes.find((c) => c.id === "instructor")!;
       <p class="muted">Graduates from cohorts I taught now work as AI and ML engineers.</p>
     </div>
   </Section>
+  <BackHome />
 </Base>
 
 <style>

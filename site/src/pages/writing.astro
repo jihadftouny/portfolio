@@ -16,19 +16,11 @@ import BackHome from "../components/BackHome.astro";
     <p class="empty" data-reveal>
       Nothing published yet. First one is on its way.
     </p>
-    {/* No portrait rail on this page, so the way home sits under the
-        section content instead. */}
-    <p class="back" data-reveal>
-      <BackHome />
-    </p>
   </Section>
+  <BackHome />
 </Base>
 
 <style>
-  .back {
-    margin-block-start: var(--space-m);
-  }
-
   .empty {
     padding: var(--space-l);
     border: 1px dashed var(--border);

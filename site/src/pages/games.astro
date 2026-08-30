@@ -1,6 +1,7 @@
 ﻿---
 import Base from "../layouts/Base.astro";
 import Section from "../components/Section.astro";
+import BackHome from "../components/BackHome.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import { projects } from "../data/projects";
 import { classes } from "../data/classes";
@@ -19,12 +20,12 @@ const gamedev = classes.find((c) => c.id === "gamedev")!;
     lede="I made games before I made anything else, and I still do. Right now I am rebuilding an old text RPG so a model generates the enemies, the lore and the story as you play."
     portrait={gamedev.portrait}
     portraitAlt={gamedev.portraitAlt}
-    back
   >
     <div class="grid">
       {games.map((p, i) => <ProjectCard project={p} delay={i * 70} />)}
     </div>
   </Section>
+  <BackHome />
 </Base>
 
 <style>

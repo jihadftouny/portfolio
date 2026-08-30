@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import Section from "../components/Section.astro";
+import BackHome from "../components/BackHome.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import { projects } from "../data/projects";
 import { classes } from "../data/classes";
@@ -25,7 +26,6 @@ const engineer = classes.find((c) => c.id === "engineer")!;
     lede="Most of my day job is client work I cannot show. The client projects here have nothing to click, and everything else does."
     portrait={engineer.portrait}
     portraitAlt={engineer.portraitAlt}
-    back
   >
     <div class="flagship">
       <ProjectCard project={flagship} wide />
@@ -34,6 +34,7 @@ const engineer = classes.find((c) => c.id === "engineer")!;
       {aiRest.map((p, i) => <ProjectCard project={p} delay={i * 70} />)}
     </div>
   </Section>
+  <BackHome />
 </Base>
 
 <style>

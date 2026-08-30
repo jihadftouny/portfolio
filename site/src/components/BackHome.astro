@@ -1,35 +1,64 @@
 ---
 /*
-  Back-to-home link. Cyberpunk chrome: the secondary face in full caps, the
+  Back-to-home band: its own full-width strip between a page's last section
+  and the footer, on every destination page. The link sits centered between
+  two accent hairlines, an end-of-transmission mark.
+
+  Cyberpunk chrome on the link itself: the secondary face in full caps, the
   page accent for colour so it re-themes per destination, and the same cut
   corner the achievement plates use. The arrow is an inline SVG rather than
   a glyph, because Orbitron has no arrows and a fallback-font arrow next to
   Orbitron caps looks borrowed.
-
-  Sits under the class portrait on Work, Teaching and Games (via Section's
-  `back` prop), and under the first section on Writing.
 */
 ---
 
-<a class="backhome" href="/">
-  <svg
-    class="backhome__arrow"
-    viewBox="0 0 16 10"
-    width="16"
-    height="10"
-    aria-hidden="true"
-  >
-    <path
-      d="M15 5H2M6 1 2 5l4 4"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="1.6"
-    />
-  </svg>
-  Back to Home
-</a>
+<section class="backband">
+  <div class="page backband__inner" data-reveal>
+    <a class="backhome" href="/">
+      <svg
+        class="backhome__arrow"
+        viewBox="0 0 16 10"
+        width="16"
+        height="10"
+        aria-hidden="true"
+      >
+        <path
+          d="M15 5H2M6 1 2 5l4 4"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+        />
+      </svg>
+      Back to Home
+    </a>
+  </div>
+</section>
 
 <style>
+  /* No padding of its own: the last section's bottom padding and the
+     footer's top margin already hold the band at a sensible distance. */
+  .backband__inner {
+    display: flex;
+    align-items: center;
+    gap: var(--space-m);
+  }
+
+  /* The hairlines fade outward, so the band ends soft at the page edges. */
+  .backband__inner::before,
+  .backband__inner::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+  }
+
+  .backband__inner::before {
+    background: linear-gradient(to left, var(--border-strong), transparent);
+  }
+
+  .backband__inner::after {
+    background: linear-gradient(to right, var(--border-strong), transparent);
+  }
+
   .backhome {
     --cut: 0.55rem;
     display: inline-flex;
