@@ -135,7 +135,7 @@ import { quests, achievements } from "../data/quests";
   }
 
   .hub__type {
-    font-family: var(--font-mono);
+    font-family: var(--font-secondary);
     font-size: var(--step-0);
     color: var(--text-muted);
     min-height: 1.7em;
@@ -202,10 +202,10 @@ import { quests, achievements } from "../data/quests";
     position: absolute;
     top: 0.7rem;
     inset-inline-end: 1.3rem;
-    font-family: var(--font-mono);
+    font-family: var(--font-secondary);
     font-size: var(--step--1);
     color: color-mix(in srgb, var(--c) 55%, transparent);
-    letter-spacing: 0.14em;
+    letter-spacing: 0.08em;
   }
 
   .cpanel__ring {
@@ -235,13 +235,14 @@ import { quests, achievements } from "../data/quests";
 
   .cpanel__label {
     font-family: var(--font-display);
+    font-weight: 700;
     font-size: var(--step-1);
     color: var(--c);
     margin-block-start: 0.3rem;
   }
 
   .cpanel__tag {
-    font-family: var(--font-mono);
+    font-family: var(--font-secondary);
     font-size: var(--step--1);
     letter-spacing: 0.06em;
     color: var(--text);
@@ -255,9 +256,9 @@ import { quests, achievements } from "../data/quests";
   }
 
   .cpanel__cta {
-    font-family: var(--font-mono);
+    font-family: var(--font-secondary);
     font-size: var(--step--1);
-    letter-spacing: 0.1em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--c);
   }
@@ -295,9 +296,10 @@ import { quests, achievements } from "../data/quests";
   }
 
   .sheet__head {
-    font-family: var(--font-mono);
+    font-family: var(--font-secondary);
     font-size: var(--step--1);
-    letter-spacing: 0.22em;
+    /* Orbitron carries its own width; tracking pulled in to compensate. */
+    letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--accent);
     margin-block-end: var(--space-s);
@@ -333,6 +335,7 @@ import { quests, achievements } from "../data/quests";
 
   .stat__value {
     font-family: var(--font-display);
+    font-weight: 700;
     font-size: var(--step-1);
     color: var(--accent);
     white-space: nowrap;
@@ -399,9 +402,9 @@ import { quests, achievements } from "../data/quests";
   .quest__status {
     flex-shrink: 0;
     margin-block-start: 0.15em;
-    font-family: var(--font-mono);
+    font-family: var(--font-secondary);
     font-size: var(--step--1);
-    letter-spacing: 0.14em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--cp-red);
     border: 1px solid color-mix(in srgb, var(--cp-red) 45%, transparent);
@@ -450,7 +453,7 @@ import { quests, achievements } from "../data/quests";
 
   .ach__badge {
     justify-self: start;
-    font-family: var(--font-mono);
+    font-family: var(--font-secondary);
     font-size: var(--step--1);
     color: var(--accent);
     border: 1px solid var(--border-strong);
@@ -459,6 +462,8 @@ import { quests, achievements } from "../data/quests";
 
   .ach__title {
     font-family: var(--font-display);
+    /* SemiBold, not Bold: at body size Bold Rajdhani starts to clot. */
+    font-weight: 600;
     font-size: var(--step-0);
     color: var(--text);
   }

@@ -100,9 +100,11 @@ const personSchema = {
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    {/* Rajdhani in the four weights the Cyberpunk 2077 UI uses, Orbitron for
+        the secondary text. Nothing here loads a weight the site does not set. */}
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400&family=Rajdhani:wght@400;500;600;700&display=swap"
     />
 
     <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />

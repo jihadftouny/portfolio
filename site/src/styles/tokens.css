@@ -61,10 +61,16 @@
   --dur: 260ms;
   --dur-slow: 520ms;
 
-  /* Fonts */
-  --font-display: "Audiowide", system-ui, sans-serif;
+  /*
+    Fonts, matched to the Cyberpunk 2077 in-game UI. Rajdhani carries the whole
+    interface across Regular, Medium, SemiBold and Bold; display and body are
+    deliberately the same face, separated by weight rather than by typeface.
+    Orbitron is the secondary, reserved for non-important text: eyebrows, tags,
+    counters, status pills. Same split the game uses.
+  */
+  --font-display: "Rajdhani", system-ui, sans-serif;
   --font-body: "Rajdhani", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-mono: ui-monospace, "SFMono-Regular", "Cascadia Code", monospace;
+  --font-secondary: "Orbitron", ui-monospace, "Cascadia Code", monospace;
 }
 
 /*
