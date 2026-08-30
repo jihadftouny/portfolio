@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import Section from "../components/Section.astro";
+import BackHome from "../components/BackHome.astro";
 ---
 
 <Base
@@ -15,10 +16,19 @@ import Section from "../components/Section.astro";
     <p class="empty" data-reveal>
       Nothing published yet. First one is on its way.
     </p>
+    {/* No portrait rail on this page, so the way home sits under the
+        section content instead. */}
+    <p class="back" data-reveal>
+      <BackHome />
+    </p>
   </Section>
 </Base>
 
 <style>
+  .back {
+    margin-block-start: var(--space-m);
+  }
+
   .empty {
     padding: var(--space-l);
     border: 1px dashed var(--border);
