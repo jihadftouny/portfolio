@@ -1,43 +1,42 @@
-# Astro Starter Kit: Minimal
+# portfolio.ftouny.com
 
-```sh
-npm create astro@latest -- --template minimal
+Personal portfolio of Jihad Ftouny. Static Astro site, no client framework,
+styled after the Cyberpunk 2077 in-game UI: Rajdhani for the interface,
+Orbitron for secondary text, one accent colour per page.
+
+## Stack
+
+- [Astro](https://astro.build) — every route pre-rendered, zero JS shipped
+  except a scroll-reveal observer and the typewriter line on the hub.
+- Self-hosted fonts via `@fontsource` — no third-party requests.
+- Deployed as an assets-only Cloudflare Worker (`portfolio-ftouny`), served
+  on a Custom Domain. No Worker script: Cloudflare serves `dist/` directly.
+
+## Structure
+
+```
+src/
+├── components/   Section, ProjectCard, BackHome, Header, Footer, ...
+├── data/         all copy and project data as typed TS objects
+├── layouts/      Base.astro — head, fonts, SEO, structured data
+├── pages/        index (hub), work, teaching, games, writing, 404
+└── styles/       tokens.css (design tokens), global.css
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Content lives in `src/data/`, not in the pages. To add a project or a talk,
+edit the data file; the pages render whatever is there.
 
-## 🚀 Project Structure
+## Commands
 
-Inside of your Astro project, you'll see the following folders and files:
+| Command             | Action                                        |
+| :------------------ | :-------------------------------------------- |
+| `npm install`       | Install dependencies                          |
+| `npm run dev`       | Dev server at `localhost:4321`                |
+| `npm run build`     | Production build to `./dist/`                 |
+| `npx wrangler deploy` | Deploy `./dist/` live (build first)         |
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## History
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+This site replaced an Angular build in August 2026. The Angular app was
+deleted from the repo on 2026-08-30 and exists only in git history. The
+Worker name was kept so the Custom Domain never had to move.

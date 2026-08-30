@@ -1,4 +1,13 @@
 ---
+/* Self-hosted fonts, one weight per import so nothing unused ships.
+   Rajdhani in the four weights the Cyberpunk 2077 UI uses, Orbitron for
+   the secondary text. Vite bundles the woff2 files with the site, so
+   there is no third-party request and no FOUT window on Google's side. */
+import "@fontsource/rajdhani/400.css";
+import "@fontsource/rajdhani/500.css";
+import "@fontsource/rajdhani/600.css";
+import "@fontsource/rajdhani/700.css";
+import "@fontsource/orbitron/400.css";
 import "../styles/global.css";
 import CyberBackground from "../components/CyberBackground.astro";
 import Header from "../components/Header.astro";
@@ -97,15 +106,6 @@ const personSchema = {
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    {/* Rajdhani in the four weights the Cyberpunk 2077 UI uses, Orbitron for
-        the secondary text. Nothing here loads a weight the site does not set. */}
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400&family=Rajdhani:wght@400;500;600;700&display=swap"
-    />
 
     <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
 

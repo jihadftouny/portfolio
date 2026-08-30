@@ -1,10 +1,9 @@
 # Deploys portfolio.ftouny.com from the Astro build.
 #
 # Same Worker name as the previous Angular deploy on purpose: the Custom
-# Domain is already attached to this Worker, so reusing the name swaps the
-# content without touching DNS. The Angular config at
-# ../angular-portfolio/wrangler.toml is now superseded and must not be
-# deployed, or it will overwrite this with the old site.
+# Domain is already attached to this Worker, so reusing the name swapped the
+# content without touching DNS. The Angular app itself was deleted from the
+# repo on 2026-08-30; it lives on in git history only.
 #
 # Deploy:  npx astro build && npx wrangler deploy
 
