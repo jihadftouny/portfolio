@@ -1,0 +1,197 @@
+---
+import { site } from "../data/site";
+
+const path = Astro.url.pathname;
+const isActive = (href: string) =>
+  href === "/" ? path === "/" : path.startsWith(href);
+---
+
+<header class="header">
+  <nav class="page header__inner" aria-label="Main">
+    <a class="brand" href="/">
+      <span class="brand__mark">JF</span>
+      <span class="brand__name">Jihad Ftouny</span>
+    </a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="nav-burger" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </label>
+
+    <ul class="nav">
+      {site.nav.map((item) => (
+        <li>
+          <a
+            href={item.href}
+            class:list={["nav__link", { "is-active": isActive(item.href) }]}
+            aria-current={isActive(item.href) ? "page" : undefined}
+          >
+            {item.label}
+          </a>
+        </li>
+      ))}
+      <li>
+        <a class="nav__cta" href="/#contact">Get in touch</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    /* A solid-ish tint instead of backdrop-filter, which was noted in the old
+       codebase as the worst per-frame cost on the page. It was right. */
+    background: color-mix(in srgb, var(--bg-deep) 88%, transparent);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .header__inner {
+    display: flex;
+    align-items: center;
+    gap: var(--space-m);
+    min-height: 4.2rem;
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-inline-end: auto;
+    text-decoration: none;
+    color: var(--text);
+  }
+
+  .brand__mark {
+    display: grid;
+    place-items: center;
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 0.6rem;
+    background: var(--accent-dim);
+    border: 1px solid var(--border-strong);
+    color: var(--accent);
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+  }
+
+  .brand__name {
+    font-family: var(--font-display);
+    font-size: 0.98rem;
+    letter-spacing: 0.02em;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav__link {
+    display: inline-block;
+    padding: 0.45rem 0.7rem;
+    border-radius: 0.5rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color var(--dur) var(--ease), background var(--dur) var(--ease);
+  }
+
+  .nav__link:hover {
+    color: var(--text);
+    background: var(--surface-hover);
+  }
+
+  .nav__link.is-active {
+    color: var(--accent);
+  }
+
+  .nav__cta {
+    display: inline-block;
+    margin-inline-start: 0.4rem;
+    padding: 0.45rem 0.95rem;
+    border-radius: 999px;
+    border: 1px solid var(--border-strong);
+    background: var(--accent-dim);
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    transition: background var(--dur) var(--ease), color var(--dur) var(--ease);
+  }
+
+  .nav__cta:hover {
+    background: var(--accent);
+    color: var(--on-accent);
+  }
+
+  /* CSS-only mobile menu. No JavaScript, so nothing to hydrate. */
+  .nav-toggle,
+  .nav-burger {
+    display: none;
+  }
+
+  @media (max-width: 46rem) {
+    .nav-burger {
+      display: grid;
+      gap: 5px;
+      padding: 0.55rem;
+      cursor: pointer;
+      border-radius: 0.5rem;
+      border: 1px solid var(--border);
+    }
+
+    .nav-burger span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: var(--text);
+      transition: transform var(--dur) var(--ease), opacity var(--dur) var(--ease);
+    }
+
+    .nav {
+      position: absolute;
+      inset-inline: 0;
+      top: 100%;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.15rem;
+      padding: var(--space-s);
+      background: var(--bg-near);
+      border-bottom: 1px solid var(--border);
+      /* Collapsed by default, expanded by the checkbox. */
+      display: none;
+    }
+
+    .nav-toggle:checked ~ .nav {
+      display: flex;
+    }
+
+    .nav-toggle:checked ~ .nav-burger span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .nav-toggle:checked ~ .nav-burger span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .nav-toggle:checked ~ .nav-burger span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .nav__cta {
+      margin-inline-start: 0;
+      text-align: center;
+    }
+  }
+
+  /* Keyboard users must still be able to reach the toggle. */
+  .nav-toggle:focus-visible ~ .nav-burger {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+</style>

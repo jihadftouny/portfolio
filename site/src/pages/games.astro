@@ -1,0 +1,36 @@
+﻿---
+import Base from "../layouts/Base.astro";
+import Section from "../components/Section.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import { projects } from "../data/projects";
+import { classes } from "../data/classes";
+
+const games = projects.filter((p) => p.category === "games");
+const gamedev = classes.find((c) => c.id === "gamedev")!;
+---
+
+<Base
+  title="Games"
+  description="A text RPG in Java being rebuilt around a model that generates the world as you play, plus two smaller shipped games."
+>
+  <Section
+    eyebrow="Games"
+    title="Where I started"
+    lede="I made games before I made anything else, and I still do. Right now I am rebuilding an old text RPG so a model generates the enemies, the lore and the story as you play."
+    portrait={gamedev.portrait}
+    portraitAlt={gamedev.portraitAlt}
+  >
+    <div class="grid">
+      {games.map((p, i) => <ProjectCard project={p} delay={i * 70} />)}
+    </div>
+  </Section>
+</Base>
+
+<style>
+  .grid {
+    display: grid;
+    gap: var(--space-s);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  }
+</style>
+

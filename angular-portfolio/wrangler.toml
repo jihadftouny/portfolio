@@ -1,3 +1,13 @@
+# SUPERSEDED, 2026-08-24. DO NOT DEPLOY THIS FILE.
+#
+# portfolio.ftouny.com is now served from the Astro site at ../site, which
+# deploys to this same Worker name. Running `wrangler deploy` from here would
+# replace the live site with the old Angular build and reinstate the
+# single-page-application fallback that answered 200 to every wrong URL.
+# Deploy from ../site instead.
+#
+# --- original notes below ---
+#
 # Deploys portfolio.ftouny.com as its own Cloudflare Worker.
 #
 # Previously the site was served as a /portfolio/ subdirectory of the

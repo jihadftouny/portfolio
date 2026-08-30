@@ -1,0 +1,231 @@
+@import "./tokens.css";
+
+/* ---------- Reset ---------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  /* Tells the browser to paint its own surfaces dark: the canvas before the
+     stylesheet lands, the scrollbars, and the overscroll area. Without it
+     those default to white and flash on load and at the scroll extremes. */
+  color-scheme: dark;
+  background: var(--bg-deep);
+}
+
+body {
+  min-height: 100svh;
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: 1.65;
+  color: var(--text-soft);
+  background: var(--bg-deep);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  /* Guards against the horizontal-scroll bug the old site had on mobile. */
+  overflow-x: hidden;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  text-wrap: balance;
+}
+
+h1 { font-size: var(--step-5); }
+h2 { font-size: var(--step-3); }
+h3 { font-size: var(--step-1); }
+
+p {
+  text-wrap: pretty;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent);
+  text-underline-offset: 0.22em;
+  transition: color var(--dur) var(--ease);
+}
+
+a:hover {
+  color: #fff;
+}
+
+/* Visible focus for keyboard users only. */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+/* ---------- Layout primitives ---------- */
+
+.page {
+  width: min(100% - 2.5rem, var(--page));
+  margin-inline: auto;
+}
+
+.prose {
+  max-width: var(--measure);
+}
+
+.stack > * + * {
+  margin-block-start: var(--flow, var(--space-s));
+}
+
+.section {
+  padding-block: var(--space-2xl);
+}
+
+/* Every other section sits on a faint band with hairline edges, so a page
+   reads as chapters instead of one continuous scroll. The tint is translucent
+   over the fixed background: painted once, never on scroll. */
+main > section:nth-of-type(even):not(.statband) {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.028),
+    rgba(255, 255, 255, 0.012)
+  );
+  border-block: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* The games page borrows arcade texture: squarer, chunkier cards and CRT
+   scanlines over the screenshots. Scoped by page, so the same card component
+   stays clean everywhere else. */
+html[data-page="games"] .card {
+  border-width: 2px;
+}
+
+html[data-page="games"] .card__media {
+  position: relative;
+}
+
+html[data-page="games"] .card__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(6, 10, 18, 0.22) 0 1px,
+    transparent 1px 3px
+  );
+  pointer-events: none;
+}
+
+/* Anchored sections must clear the fixed header. */
+[id] {
+  scroll-margin-top: 6rem;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* Terminal voice: every eyebrow renders with a comment prefix. It lives in
+   CSS so no copy string carries it, and no writer has to remember it. */
+.eyebrow::before {
+  content: "// ";
+}
+
+.lede {
+  font-size: var(--step-1);
+  color: var(--text);
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  padding: 0.75rem 1.1rem;
+  background: var(--accent);
+  color: var(--on-accent);
+  z-index: 999;
+}
+
+.skip-link:focus {
+  left: 0.6rem;
+  top: 0.6rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* ---------- Scroll reveal ----------
+   Animates transform and opacity only, so it stays on the compositor
+   and never triggers layout or paint.
+
+   Everything is scoped to .js-reveal, a class set by a synchronous script in
+   the head. Without JavaScript the class is never added and the content is
+   simply visible. Hiding it in the base stylesheet instead would mean a
+   blocked, failed or throttled script leaves the page permanently blank. */
+
+.js-reveal [data-reveal] {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity var(--dur-slow) var(--ease),
+    transform var(--dur-slow) var(--ease);
+}
+
+.js-reveal [data-reveal].is-revealed {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js-reveal [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+}

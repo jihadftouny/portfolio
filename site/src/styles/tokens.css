@@ -1,0 +1,123 @@
+/* Design tokens.
+   Palette carried over from the Angular site so the identity survives the rebuild. */
+
+:root {
+  /* Surfaces. Cyberpunk 2077 dark: near-black with barely any blue in it. */
+  --bg-deep: #0a0b10;
+  --bg-near: #14151d;
+  --surface: rgba(255, 255, 255, 0.035);
+  --surface-hover: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.10);
+  --border-strong: rgba(252, 238, 10, 0.30);
+
+  /*
+    Palette after Cyberpunk 2077. The acid yellow is the game's signature and
+    the site's default identity; pages override it below. Red is reserved as
+    an alert colour, used in small doses only.
+  */
+  --accent: #fcee0a;
+  --accent-dim: rgba(252, 238, 10, 0.10);
+  --accent-violet: #c77dff;
+  --cp-red: #ff003c;
+  --cp-cyan: #4df3ff;
+
+  /* Text */
+  --text: #ffffff;
+  --text-soft: #f4f7f8;
+  --text-muted: rgba(255, 255, 255, 0.66);
+  --text-quiet: rgba(255, 255, 255, 0.44);
+  --on-accent: #06121a;
+
+  /* Type scale, fluid. clamp() means no breakpoint jumps. */
+  --step--1: clamp(0.83rem, 0.79rem + 0.18vw, 0.94rem);
+  --step-0: clamp(1rem, 0.95rem + 0.25vw, 1.13rem);
+  --step-1: clamp(1.2rem, 1.11rem + 0.44vw, 1.5rem);
+  --step-2: clamp(1.44rem, 1.29rem + 0.74vw, 2rem);
+  --step-3: clamp(1.73rem, 1.49rem + 1.19vw, 2.66rem);
+  --step-4: clamp(2.07rem, 1.71rem + 1.83vw, 3.55rem);
+  --step-5: clamp(2.49rem, 1.94rem + 2.74vw, 4.73rem);
+
+  /* Spacing */
+  --space-2xs: 0.35rem;
+  --space-xs: 0.6rem;
+  --space-s: 1rem;
+  --space-m: 1.6rem;
+  --space-l: 2.6rem;
+  --space-xl: 4.2rem;
+  --space-2xl: 6.8rem;
+
+  /* Shape */
+  --radius: 0.85rem;
+  --radius-lg: 1.35rem;
+  --shadow: 0 12px 50px rgba(0, 0, 0, 0.35);
+  --shadow-glow: 0 0 40px rgba(102, 232, 255, 0.16);
+
+  /* Layout */
+  --measure: 68ch;
+  --page: 1180px;
+
+  /* Motion. One duration and one curve, used everywhere. */
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --dur: 260ms;
+  --dur-slow: 520ms;
+
+  /* Fonts */
+  --font-display: "Audiowide", system-ui, sans-serif;
+  --font-body: "Rajdhani", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", "Cascadia Code", monospace;
+}
+
+/*
+  Per-page accent identity, Cyberpunk 2077 flavoured. The hub and 404 keep
+  the signature acid yellow; each destination has its own neon. Only custom
+  properties change: no per-page CSS files, no extra bytes of layout.
+*/
+[data-page="work"] {
+  /* Netrunner electric blue. */
+  --accent: #30e6ff;
+  --accent-dim: rgba(48, 230, 255, 0.12);
+  --border-strong: rgba(48, 230, 255, 0.34);
+  --shadow-glow: 0 0 40px rgba(48, 230, 255, 0.18);
+}
+
+[data-page="teaching"] {
+  /* Quickhack hot purple, not lavender. */
+  --accent: #cf5cff;
+  --accent-dim: rgba(207, 92, 255, 0.13);
+  --border-strong: rgba(207, 92, 255, 0.36);
+  --shadow-glow: 0 0 40px rgba(207, 92, 255, 0.2);
+}
+
+[data-page="games"] {
+  /* Combat orange, hotter than the old amber. The portrait stays amber;
+     text and chrome burn a shade harder. */
+  --accent: #ff8a3d;
+  --accent-dim: rgba(255, 138, 61, 0.13);
+  --border-strong: rgba(255, 138, 61, 0.36);
+  --shadow-glow: 0 0 40px rgba(255, 138, 61, 0.18);
+}
+
+[data-page="writing"] {
+  /* Terminal teal. */
+  --accent: #2ce8cf;
+  --accent-dim: rgba(44, 232, 207, 0.12);
+  --border-strong: rgba(44, 232, 207, 0.32);
+  --shadow-glow: 0 0 40px rgba(44, 232, 207, 0.16);
+}
+
+/* Respect the OS setting. Everything below turns motion off, it does not merely shorten it. */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur: 1ms;
+    --dur-slow: 1ms;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+    scroll-behavior: auto !important;
+  }
+}

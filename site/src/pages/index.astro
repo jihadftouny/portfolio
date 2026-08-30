@@ -1,0 +1,515 @@
+---
+import { Picture } from "astro:assets";
+import Base from "../layouts/Base.astro";
+import Section from "../components/Section.astro";
+import { site, phrases } from "../data/site";
+import { classes } from "../data/classes";
+import { quests, achievements } from "../data/quests";
+---
+
+<Base>
+  {/*
+    The hub. No modal, no gate: the three classes are the home page, always
+    visible, each panel a single click into its own world. A non-gamer reads
+    three clear sections of what he does; a gamer reads a character select.
+  */}
+  <section class="hub">
+    <div class="page">
+      <p class="eyebrow" data-reveal>{site.location}</p>
+
+      <h1 class="hub__title" data-reveal data-reveal-delay="60">
+        I build AI systems and teach people
+        <span class="hub__accent">to build them.</span>
+      </h1>
+
+      <p class="hub__type" data-reveal data-reveal-delay="120" aria-hidden="true">
+        <span id="typewriter">{phrases[0]}</span><span class="caret"></span>
+      </p>
+
+      <p class="hub__lede prose" data-reveal data-reveal-delay="160">
+        I am an AI and software engineer at
+        <a href="https://limitless-tech.ai" target="_blank" rel="noopener">Limitless Technologies</a>
+        in Beirut, building systems for health and insurance technology.
+      </p>
+
+      <div class="classes">
+        {classes.map((c, i) => (
+          <a
+            class="cpanel"
+            href={c.href}
+            style={`--c: ${c.accent}`}
+            data-reveal
+            data-reveal-delay={40 + i * 50}
+          >
+            <span class="cpanel__num" aria-hidden="true">{c.code}</span>
+            <span class="cpanel__ring">
+              <Picture
+                src={c.portrait}
+                alt={c.portraitAlt}
+                widths={[240, 360, 480]}
+                sizes="7.5rem"
+                formats={["avif"]}
+                fallbackFormat="webp"
+                quality={80}
+                loading="eager"
+              />
+            </span>
+            <span class="cpanel__label">{c.label}</span>
+            <span class="cpanel__tag">{c.tagline}</span>
+            <span class="cpanel__desc">{c.desc}</span>
+            <span class="cpanel__cta">{c.cta} <span aria-hidden="true">→</span></span>
+          </a>
+        ))}
+      </div>
+
+      <div class="sheet" data-reveal>
+        <p class="sheet__head">achievement sheet</p>
+        <ul class="stats">
+          {site.sheet.map((s) => (
+            <li class="stat">
+              <span class="stat__label">{s.label}</span>
+              <span class="stat__dots" aria-hidden="true"></span>
+              {s.value && <span class="stat__value">{s.value}</span>}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <Section
+    eyebrow="Quest log"
+    title="Active quests"
+    lede="What is being built right now."
+  >
+    <div class="quests">
+      {quests.map((q, i) => (
+        <article class="quest" data-reveal data-reveal-delay={i * 70}>
+          <header class="quest__head">
+            <span class="quest__pip" aria-hidden="true"></span>
+            <h3 class="quest__name">{q.name}</h3>
+            <span class="quest__status">active</span>
+          </header>
+          <p class="quest__body">{q.body}</p>
+          {q.href && (
+            <a class="quest__link" href={q.href} target={q.href.startsWith("/") ? undefined : "_blank"} rel="noopener">
+              {q.hrefLabel ?? "View"} <span aria-hidden="true">→</span>
+            </a>
+          )}
+        </article>
+      ))}
+    </div>
+
+    <h3 class="unlocked" data-reveal>Unlocked</h3>
+    <ul class="achievements">
+      {achievements.map((a, i) => (
+        <li class="ach" data-reveal data-reveal-delay={i * 60}>
+          <span class="ach__badge">{a.badge}</span>
+          <span class="ach__title">{a.title}</span>
+          <span class="ach__body">{a.body}</span>
+        </li>
+      ))}
+    </ul>
+  </Section>
+</Base>
+
+<style>
+  .hub {
+    padding-block: clamp(2.5rem, 7vh, 5rem) var(--space-xl);
+  }
+
+  .hub__title {
+    max-width: 26ch;
+    font-size: var(--step-4);
+    line-height: 1.06;
+    margin-block-start: 0.4rem;
+    /* Static chromatic aberration: the Cyberpunk 2077 glitch, one paint. */
+    text-shadow:
+      2px 0 rgba(255, 0, 60, 0.22),
+      -2px 0 rgba(77, 243, 255, 0.22);
+  }
+
+  .hub__accent {
+    color: var(--accent);
+    text-shadow: 0 0 30px color-mix(in srgb, var(--accent) 30%, transparent);
+  }
+
+  .hub__type {
+    font-family: var(--font-mono);
+    font-size: var(--step-0);
+    color: var(--text-muted);
+    min-height: 1.7em;
+    margin-block-start: var(--space-xs);
+  }
+
+  .caret {
+    display: inline-block;
+    width: 0.6ch;
+    height: 1.1em;
+    margin-inline-start: 0.15em;
+    background: var(--accent);
+    vertical-align: text-bottom;
+    animation: blink 1.05s steps(2, start) infinite;
+  }
+
+  @keyframes blink { 50% { opacity: 0; } }
+
+  .hub__lede {
+    margin-block-start: var(--space-xs);
+    font-size: var(--step-0);
+    color: var(--text-muted);
+  }
+
+  /* ---- The three class panels ---- */
+
+  .classes {
+    display: grid;
+    gap: var(--space-s);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+    margin-block-start: var(--space-l);
+  }
+
+  .cpanel {
+    --cut: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    padding: var(--space-m);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    clip-path: polygon(0 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% 100%, 0 100%);
+    text-decoration: none;
+    color: var(--text);
+    /* Opacity is listed so the reveal fade runs at 280ms here instead of the
+       global 520ms: the panels are the page's main act and were arriving
+       noticeably late. */
+    transition:
+      transform var(--dur) var(--ease),
+      border-color var(--dur) var(--ease),
+      background var(--dur) var(--ease),
+      opacity 280ms var(--ease);
+  }
+
+  .cpanel:hover,
+  .cpanel:focus-visible {
+    transform: translateY(-5px);
+    border-color: var(--c);
+    background: var(--surface-hover);
+  }
+
+  .cpanel__num {
+    position: absolute;
+    top: 0.7rem;
+    inset-inline-end: 1.3rem;
+    font-family: var(--font-mono);
+    font-size: var(--step--1);
+    color: color-mix(in srgb, var(--c) 55%, transparent);
+    letter-spacing: 0.14em;
+  }
+
+  .cpanel__ring {
+    display: block;
+    width: 7.5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid color-mix(in srgb, var(--c) 55%, transparent);
+    filter: saturate(0.6) brightness(0.92);
+    transition: filter var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+  }
+
+  .cpanel:hover .cpanel__ring,
+  .cpanel:focus-visible .cpanel__ring {
+    filter: none;
+    box-shadow: 0 0 38px color-mix(in srgb, var(--c) 35%, transparent);
+  }
+
+  .cpanel__ring :global(picture),
+  .cpanel__ring :global(img) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .cpanel__label {
+    font-family: var(--font-display);
+    font-size: var(--step-1);
+    color: var(--c);
+    margin-block-start: 0.3rem;
+  }
+
+  .cpanel__tag {
+    font-family: var(--font-mono);
+    font-size: var(--step--1);
+    letter-spacing: 0.06em;
+    color: var(--text);
+  }
+
+  .cpanel__desc {
+    font-size: var(--step--1);
+    line-height: 1.55;
+    color: var(--text-muted);
+    flex: 1;
+  }
+
+  .cpanel__cta {
+    font-family: var(--font-mono);
+    font-size: var(--step--1);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--c);
+  }
+
+  /* ---- Character sheet ---- */
+
+  .sheet {
+    position: relative;
+    margin-block-start: var(--space-l);
+    padding: var(--space-m);
+    border: 1px solid var(--border);
+    background: var(--surface);
+  }
+
+  .sheet::before,
+  .sheet::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+  }
+
+  .sheet::before {
+    top: -1px;
+    left: -1px;
+    border-top: 2px solid var(--accent);
+    border-left: 2px solid var(--accent);
+  }
+
+  .sheet::after {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 2px solid var(--accent);
+    border-right: 2px solid var(--accent);
+  }
+
+  .sheet__head {
+    font-family: var(--font-mono);
+    font-size: var(--step--1);
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-block-end: var(--space-s);
+  }
+
+  .sheet__head::before { content: "// "; }
+
+  .stats {
+    display: grid;
+    gap: 0.8rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .stat {
+    display: flex;
+    align-items: baseline;
+    gap: 0.7rem;
+  }
+
+  .stat__label {
+    font-size: var(--step-0);
+    color: var(--text-muted);
+    white-space: nowrap;
+  }
+
+  .stat__dots {
+    flex: 1;
+    border-bottom: 1px dotted var(--text-quiet);
+    transform: translateY(-0.28em);
+  }
+
+  .stat__value {
+    font-family: var(--font-display);
+    font-size: var(--step-1);
+    color: var(--accent);
+    white-space: nowrap;
+  }
+
+  @media (max-width: 46rem) {
+    .stat__label { white-space: normal; }
+  }
+
+  /* ---- Quest log ---- */
+
+  .quests {
+    display: grid;
+    gap: var(--space-s);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  }
+
+  .quest {
+    --cut: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: var(--space-m);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    clip-path: polygon(0 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% 100%, 0 100%);
+  }
+
+  .quest__head {
+    display: flex;
+    /* Top-aligned, so a wrapped quest name leaves the pip and status chip
+       sitting on its first line instead of floating mid-block. */
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  /* Alert red, the third Cyberpunk 2077 colour, reserved for exactly this.
+     flex-shrink: 0 matters: without it a long quest name crushes the pip
+     into a sliver. */
+  .quest__pip {
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    margin-block-start: 0.62em;
+    border-radius: 50%;
+    background: var(--cp-red);
+    box-shadow: 0 0 10px var(--cp-red);
+    animation: pip 2.2s ease-in-out infinite;
+  }
+
+  @keyframes pip {
+    50% { opacity: 0.35; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .quest__pip { animation: none; }
+  }
+
+  .quest__name {
+    font-size: var(--step-1);
+    margin-inline-end: auto;
+  }
+
+  .quest__status {
+    flex-shrink: 0;
+    margin-block-start: 0.15em;
+    font-family: var(--font-mono);
+    font-size: var(--step--1);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--cp-red);
+    border: 1px solid color-mix(in srgb, var(--cp-red) 45%, transparent);
+    border-radius: 999px;
+    padding: 0.1rem 0.6rem;
+  }
+
+  .quest__body {
+    color: var(--text-muted);
+    margin: 0;
+    flex: 1;
+  }
+
+  .quest__link {
+    align-self: start;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  /* ---- Achievements ---- */
+
+  .unlocked {
+    margin-block: var(--space-l) var(--space-s);
+    font-size: var(--step-1);
+  }
+
+  .achievements {
+    display: grid;
+    gap: var(--space-s);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ach {
+    --cut: 10px;
+    display: grid;
+    gap: 0.35rem;
+    align-content: start;
+    padding: var(--space-s);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    clip-path: polygon(0 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% 100%, 0 100%);
+  }
+
+  .ach__badge {
+    justify-self: start;
+    font-family: var(--font-mono);
+    font-size: var(--step--1);
+    color: var(--accent);
+    border: 1px solid var(--border-strong);
+    padding: 0.05rem 0.45rem;
+  }
+
+  .ach__title {
+    font-family: var(--font-display);
+    font-size: var(--step-0);
+    color: var(--text);
+  }
+
+  .ach__body {
+    font-size: var(--step--1);
+    color: var(--text-muted);
+  }
+</style>
+
+<script>
+  /* Typewriter. Pure DOM, no dependencies, and it stops itself when the tab
+     is hidden so it never burns cycles in the background. */
+  const el = document.getElementById("typewriter");
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (el && !reduced) {
+    const lines = [
+      "I build AI systems.",
+      "I write the courses that teach them.",
+      "I make games.",
+      "I mentor people starting out.",
+    ];
+    let line = 0;
+    let char = 0;
+    let deleting = false;
+    let timer: number | undefined;
+
+    const tick = () => {
+      const current = lines[line];
+      char += deleting ? -1 : 1;
+      el.textContent = current.slice(0, char);
+
+      let wait = deleting ? 34 : 62;
+      if (!deleting && char === current.length) {
+        wait = 1700;
+        deleting = true;
+      } else if (deleting && char === 0) {
+        deleting = false;
+        line = (line + 1) % lines.length;
+        wait = 320;
+      }
+      timer = window.setTimeout(tick, wait);
+    };
+
+    const start = () => { if (timer === undefined) tick(); };
+    const stop = () => { window.clearTimeout(timer); timer = undefined; };
+
+    document.addEventListener("visibilitychange", () =>
+      document.hidden ? stop() : start()
+    );
+    start();
+  }
+</script>

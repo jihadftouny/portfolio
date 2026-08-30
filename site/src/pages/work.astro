@@ -1,0 +1,48 @@
+---
+import Base from "../layouts/Base.astro";
+import Section from "../components/Section.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import { projects } from "../data/projects";
+import { classes } from "../data/classes";
+
+/* Work only. The games live on /games/, the teaching on /teaching/. */
+const ai = projects.filter((p) => p.category === "ai");
+
+/* The day job leads the page full-width; the rest grid below it,
+   in reverse chronological order like everything else. */
+const [flagship, ...aiRest] = ai;
+
+const engineer = classes.find((c) => c.id === "engineer")!;
+---
+
+<Base
+  title="Work"
+  description="AI systems for health and insurance, a text detector with no large model, a personalized picture book platform, and a hackathon-winning smart glasses prototype."
+>
+  <Section
+    eyebrow="Work"
+    title="What I build"
+    lede="Most of my day job is client work I cannot show. The client projects here have nothing to click, and everything else does."
+    portrait={engineer.portrait}
+    portraitAlt={engineer.portraitAlt}
+  >
+    <div class="flagship">
+      <ProjectCard project={flagship} wide />
+    </div>
+    <div class="grid">
+      {aiRest.map((p, i) => <ProjectCard project={p} delay={i * 70} />)}
+    </div>
+  </Section>
+</Base>
+
+<style>
+  .flagship {
+    margin-block-end: var(--space-s);
+  }
+
+  .grid {
+    display: grid;
+    gap: var(--space-s);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  }
+</style>

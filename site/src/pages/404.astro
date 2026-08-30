@@ -1,0 +1,45 @@
+---
+import Base from "../layouts/Base.astro";
+import Section from "../components/Section.astro";
+import { site } from "../data/site";
+---
+
+{/*
+  Cloudflare serves this for any unmatched path, with a real 404 status.
+  The old Angular deploy used single-page-application fallback, which
+  answered 200 to every wrong URL and told crawlers those pages existed.
+*/}
+<Base
+  title="Not found"
+  description="That page does not exist."
+  noindex={true}
+>
+  <Section eyebrow="404" title="That page does not exist">
+    <div class="prose stack" data-reveal>
+      <p class="lede">
+        Either it moved, or the link was wrong. Nothing here is hiding from you.
+      </p>
+      <ul class="links">
+        {site.nav.map((item) => (
+          <li><a href={item.href}>{item.label}</a></li>
+        ))}
+      </ul>
+    </div>
+  </Section>
+</Base>
+
+<style>
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.4rem;
+    list-style: none;
+    padding: 0;
+    margin-block-start: var(--space-s);
+  }
+
+  .links a {
+    font-weight: 600;
+    text-decoration: none;
+  }
+</style>

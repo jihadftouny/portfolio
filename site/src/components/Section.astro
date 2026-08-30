@@ -1,0 +1,134 @@
+---
+import { Picture } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+interface Props {
+  title?: string;
+  eyebrow?: string;
+  id?: string;
+  lede?: string;
+  /* Overrides the ghost keyword behind the heading. Defaults to the eyebrow;
+     set it when the eyebrow is a date range and a name reads better huge. */
+  ghost?: string;
+  /* Class portrait shown in the rail under the heading. Used on the first
+     section of Work, Teaching and Games, so each page carries its class. */
+  portrait?: ImageMetadata;
+  portraitAlt?: string;
+}
+const { title, eyebrow, id, lede, ghost, portrait, portraitAlt } = Astro.props;
+---
+
+<section class="section" id={id}>
+  <div class="page section__grid">
+    {(eyebrow || title) && (
+      <header class="section__head" data-ghost={ghost ?? eyebrow} data-reveal>
+        {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+        {title && <h2>{title}</h2>}
+        {lede && <p class="lede muted section__lede">{lede}</p>}
+        {portrait && (
+          <span class="section__portrait">
+            <Picture
+              src={portrait}
+              alt={portraitAlt ?? ""}
+              widths={[240, 360]}
+              sizes="8rem"
+              formats={["avif"]}
+              fallbackFormat="webp"
+              quality={80}
+              loading="eager"
+            />
+          </span>
+        )}
+      </header>
+    )}
+    <div class="section__body">
+      <slot />
+    </div>
+  </div>
+</section>
+
+<style>
+  .section__head {
+    position: relative;
+    /*
+      Permanent stacking context, so the z-index:-1 ghost keyword stays
+      "behind the heading text" rather than "behind the page". Without this,
+      mobile only had a stacking context while the reveal transition's
+      transform was live: the ghost showed for the transition's half second,
+      then fell behind the body background and vanished. Desktop never showed
+      the bug because position: sticky creates the context there.
+    */
+    isolation: isolate;
+    max-width: var(--measure);
+    margin-block-end: var(--space-l);
+    display: grid;
+    gap: 0.5rem;
+    align-content: start;
+    justify-items: start;
+  }
+
+  /*
+    Ghost keyword behind the heading: the eyebrow text, huge and faint, in
+    the page accent. A cyberpunk poster trick that doubles as a landmark, so
+    scroll position stays legible at a glance.
+  */
+  .section__head::before {
+    content: attr(data-ghost);
+    position: absolute;
+    top: -0.55em;
+    inset-inline-start: -0.04em;
+    z-index: -1;
+    font-family: var(--font-display);
+    font-size: clamp(2.6rem, 4.5vw, 4.2rem);
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    color: color-mix(in srgb, var(--accent) 11%, transparent);
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .section__lede { margin-block-start: 0.4rem; }
+
+  .section__portrait {
+    display: block;
+    width: 8rem;
+    aspect-ratio: 1;
+    margin-block-start: var(--space-s);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--border-strong);
+    box-shadow: 0 0 34px color-mix(in srgb, var(--accent) 24%, transparent);
+  }
+
+  .section__portrait :global(picture),
+  .section__portrait :global(img) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .section__body { min-width: 0; }
+
+  /* Wide screens get an editorial two-column split: the heading parks in a
+     sticky rail on the left while its content scrolls past. Single column
+     below this, so nothing to undo on mobile. */
+  @media (min-width: 68rem) {
+    .section__grid {
+      display: grid;
+      grid-template-columns: minmax(0, 16rem) minmax(0, 1fr);
+      gap: var(--space-xl);
+      align-items: start;
+    }
+
+    .section__head {
+      position: sticky;
+      top: 7rem;
+      margin-block-end: 0;
+    }
+
+    .section__head h2 { font-size: var(--step-2); }
+  }
+</style>

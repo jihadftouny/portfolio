@@ -128,7 +128,7 @@ export const PROJECTS: Project[] = [
     link: 'https://zaka.ai/ai-certification/',
     overlay: 'View Program',
     description:
-      "Three years of teaching and writing at ZAKA, across the four week AI bootcamp and the longer career tracks. Most of what I made was recorded, so it kept running for people I never met.",
+      "Two years of teaching and writing at ZAKA, from 2023 to 2025, across the four week AI bootcamp and the longer career tracks. Most of what I made was recorded, so it kept running for people I never met.",
     projectType: 'Professional Training',
     tech: ['ML', 'Deep Learning', 'NLP', 'CV']
   },

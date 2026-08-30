@@ -1,0 +1,107 @@
+---
+import { site } from "../data/site";
+
+const links = [
+  { href: site.social.github, label: "GitHub" },
+  { href: site.social.linkedin, label: "LinkedIn" },
+  { href: site.social.itch, label: "itch.io" },
+  { href: site.social.huggingface, label: "Hugging Face" },
+  { href: site.social.youtube, label: "YouTube" },
+];
+const year = 2026;
+---
+
+<footer class="footer" id="contact">
+  <div class="page footer__inner">
+    <div>
+      <p class="eyebrow">Get in touch</p>
+      <p class="footer__lede">
+        Happy to talk about AI systems, teaching, or games.
+      </p>
+      <a class="footer__mail" href={`mailto:${site.email}`}>{site.email}</a>
+      <p class="muted footer__loc">{site.location}</p>
+    </div>
+
+    <nav aria-label="Elsewhere">
+      <ul class="footer__links">
+        {links.map((l) => (
+          <li>
+            <a href={l.href} rel="me noopener" target="_blank">{l.label}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+
+  <div class="page footer__base">
+    <span class="muted">&copy; {year} {site.name}</span>
+    <span class="muted">Built with Astro</span>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    margin-block-start: var(--space-2xl);
+    border-top: 1px solid var(--border);
+    padding-block: var(--space-xl) var(--space-m);
+  }
+
+  .footer__inner {
+    display: grid;
+    gap: var(--space-l);
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 46rem) {
+    .footer__inner {
+      grid-template-columns: 1.4fr 1fr;
+      align-items: start;
+    }
+  }
+
+  .footer__lede {
+    font-size: var(--step-1);
+    color: var(--text);
+    margin-block: 0.4rem 0.9rem;
+    max-width: 34ch;
+  }
+
+  .footer__mail {
+    font-family: var(--font-mono);
+    font-size: var(--step-0);
+  }
+
+  .footer__loc {
+    margin-block-start: 0.5rem;
+    font-size: var(--step--1);
+  }
+
+  .footer__links {
+    display: grid;
+    gap: 0.45rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer__links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    transition: color var(--dur) var(--ease);
+  }
+
+  .footer__links a:hover {
+    color: var(--accent);
+  }
+
+  .footer__base {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-s);
+    justify-content: space-between;
+    margin-block-start: var(--space-l);
+    padding-block-start: var(--space-s);
+    border-top: 1px solid var(--border);
+    font-size: var(--step--1);
+  }
+</style>

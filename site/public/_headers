@@ -1,0 +1,29 @@
+# Cloudflare reads this at deploy time and applies it to the served assets.
+
+# Everything under /_astro/ has a content hash in its filename, so a changed
+# file is a different URL. These can be cached permanently. Without this they
+# were served max-age=0, must-revalidate, which meant a revalidation request
+# for every image on every visit and made the hashing pointless.
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML must not be cached hard, or a deploy would not reach anyone holding a
+# stale copy. Revalidate every time and let the ETag decide.
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Referenced by every page's og:image and fetched by crawlers, not by the
+# page itself, so it wants a real but modest lifetime.
+/og-v2.png
+  Cache-Control: public, max-age=86400
+
+# Applied site-wide. Nothing here embeds third-party frames or needs to be
+# embedded in one.
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+

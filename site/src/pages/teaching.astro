@@ -1,0 +1,379 @@
+﻿---
+import { Picture } from "astro:assets";
+import Base from "../layouts/Base.astro";
+import Section from "../components/Section.astro";
+import LogoPlate from "../components/LogoPlate.astro";
+import { zakaProgrammes, capstones, talks } from "../data/teaching";
+import { site } from "../data/site";
+import { classes } from "../data/classes";
+import seFactoryLogo from "../assets/logos/se-factory.png";
+
+const instructor = classes.find((c) => c.id === "instructor")!;
+---
+
+<Base
+  title="Teaching"
+  description="I write and teach AI courses. Some I teach myself, and some are taught by other instructors from my notes. Written for AUB, Microsoft, G42, ZAKA and SE Factory."
+>
+  <Section
+    eyebrow="Teaching"
+    title="I write and teach AI courses"
+    portrait={instructor.portrait}
+    portraitAlt={instructor.portraitAlt}
+  >
+    <div class="prose stack" data-reveal>
+      <p class="lede">
+        Some I teach myself. Some are taught by other instructors, from notes I write for them.
+      </p>
+      <p class="muted">
+        The material I wrote at ZAKA reached
+        <a href="https://zaka.ai/blog/zaka-2025-year-of-accelerated-growth-ai-impact/" target="_blank" rel="noopener">
+          more than 7,000 people in 2025</a>.
+      </p>
+      <p class="muted">I have taught and mentored more than 400 people directly.</p>
+    </div>
+  </Section>
+
+  {/* Reverse chronological: the most recent teaching leads the page. */}
+  <Section eyebrow="2026" ghost="SE Factory" title="SE Factory AI Engineering Bootcamp">
+    <div class="prose stack" data-reveal>
+      <p class="muted">
+        Separate from ZAKA, and my most recent teaching. Ten weeks taking people from
+        understanding AI to shipping it. I co-designed it with Jean-Pierre Fakhry and
+        Hasan Kanaan, and I ran the code reviews for the AI track.
+      </p>
+      <p class="muted">
+        Code review is the part of teaching that actually changes how someone works. You can
+        explain a principle in a lecture and watch it not survive contact with a deadline.
+        Reviewing what someone actually wrote, and being honest about it, is slower and it sticks.
+      </p>
+      <LogoPlate logos={[{ src: seFactoryLogo, alt: "SE Factory" }]} size="md" />
+      <p>
+        <a href="https://sefactory.io/" target="_blank" rel="noopener">About the bootcamp →</a>
+      </p>
+    </div>
+  </Section>
+
+  {/* The numbers as a full-width band between the two eras. Same data as
+      the home page stats. */}
+  <section class="statband">
+    <div class="page statband__inner" data-reveal>
+      {site.teachingStats.map((s) => (
+        <div class="statband__item">
+          <span class="statband__value">{s.value}</span>
+          <span class="statband__label">{s.label}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <Section
+    eyebrow="2023 to 2025"
+    ghost="ZAKA"
+    title="ZAKA"
+    lede="Most of my teaching happened here. ZAKA is an AI education company in Beirut, and the programmes below were built and delivered under it."
+  >
+    <ol class="timeline">
+      {zakaProgrammes.map((p, i) => (
+        <li class="entry" data-reveal data-reveal-delay={i * 60}>
+          <div class="entry__head">
+            <h3>{p.title}</h3>
+            {p.year && <span class="entry__year">{p.year}</span>}
+          </div>
+          <p class="muted">{p.body}</p>
+          {p.image && (
+            <figure class="entry__media">
+              <Picture
+                src={p.image}
+                alt={p.imageAlt ?? ""}
+                widths={[320, 480, 640, 960]}
+                sizes="(min-width: 68rem) 20rem, 60vw"
+                formats={["avif"]}
+                fallbackFormat="webp"
+                quality={80}
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          )}
+          {p.logos && <LogoPlate logos={p.logos} />}
+          {p.href && (
+            <a class="entry__link" href={p.href} target="_blank" rel="noopener">
+              {p.hrefLabel ?? "Read more"} <span aria-hidden="true">→</span>
+            </a>
+          )}
+        </li>
+      ))}
+    </ol>
+  </Section>
+
+  <Section
+    eyebrow="Appearances"
+    title="Talks and panels"
+    lede="Where the teaching leaves the classroom: conference tutorials, embassy halls, ethics panels, and training rooms across the region."
+  >
+    <div class="talks">
+      {talks.map((t, i) => (
+        <article class="talk" data-reveal data-reveal-delay={i * 60}>
+          {t.image && (
+            <div class="talk__media">
+              <Picture
+                src={t.image}
+                alt={t.imageAlt ?? ""}
+                widths={[420, 640, 880]}
+                sizes="(min-width: 68rem) 27rem, (min-width: 46rem) 45vw, 92vw"
+                formats={["avif"]}
+                fallbackFormat="webp"
+                quality={78}
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          )}
+          <header class="talk__head">
+            <h3 class="talk__title">{t.title}</h3>
+            <span class="talk__year">{t.year}</span>
+          </header>
+          <p class="talk__body">{t.body}</p>
+        </article>
+      ))}
+    </div>
+  </Section>
+
+  <Section
+    eyebrow="Results"
+    title="What my students built"
+    lede="The projects are the honest measure of whether the teaching worked. These came out of the SE Factory bootcamp."
+  >
+    <div class="grid">
+      {capstones.map((c, i) => (
+        <a
+          class="capstone"
+          href={c.href}
+          target="_blank"
+          rel="noopener"
+          data-reveal
+          data-reveal-delay={i * 45}
+        >
+          <h3 class="capstone__name">{c.name}</h3>
+          <p class="capstone__body">{c.body}</p>
+          <span class="capstone__cue" aria-hidden="true">View source →</span>
+        </a>
+      ))}
+    </div>
+
+    <div class="prose stack after" data-reveal>
+      <p class="muted">
+        Earlier, at ZAKA, students I mentored built a guidance platform matching Lebanese
+        students to university majors, an electrical fault detection system, and a
+        text-to-video pipeline.
+      </p>
+      <p class="muted">Graduates from cohorts I taught now work as AI and ML engineers.</p>
+    </div>
+  </Section>
+</Base>
+
+<style>
+  .timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: var(--space-m);
+    max-width: var(--measure);
+  }
+
+  .entry {
+    position: relative;
+    padding-inline-start: var(--space-m);
+    border-inline-start: 2px solid var(--border);
+    display: grid;
+    gap: 0.5rem;
+    transition: border-color var(--dur) var(--ease);
+  }
+
+  .entry:hover { border-color: var(--border-strong); }
+
+  /* Timeline node on the rail, so entries read as points in time rather
+     than a repeated card shape. */
+  .entry::before {
+    content: "";
+    position: absolute;
+    inset-inline-start: -5px;
+    top: 0.5em;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 10px var(--accent);
+  }
+
+  .entry__head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-s);
+  }
+
+  .entry__year {
+    font-family: var(--font-mono);
+    font-size: var(--step--1);
+    color: var(--text-quiet);
+    white-space: nowrap;
+  }
+
+  .entry__link { text-decoration: none; font-weight: 600; }
+
+  /* Programme artwork is portrait or square more often than not, so it is
+     capped by width rather than stretched into a uniform banner. */
+  .entry__media {
+    margin: 0.35rem 0 0;
+    max-width: 20rem;
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--bg-near);
+  }
+
+  .entry__media :global(img) {
+    width: 100%;
+    height: auto;
+  }
+
+  .grid {
+    display: grid;
+    gap: var(--space-s);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  }
+
+  .capstone {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    padding: var(--space-s) var(--space-m) var(--space-m);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    text-decoration: none;
+    color: inherit;
+    transition:
+      transform var(--dur) var(--ease),
+      border-color var(--dur) var(--ease),
+      background var(--dur) var(--ease);
+  }
+
+  .capstone:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-strong);
+    background: var(--surface-hover);
+  }
+
+  .capstone__name { font-size: var(--step-1); color: var(--accent); }
+
+  .capstone__body {
+    color: var(--text-muted);
+    font-size: var(--step--1);
+    margin: 0;
+    flex: 1;
+  }
+
+  .capstone__cue {
+    font-size: var(--step--1);
+    color: var(--text-quiet);
+    font-weight: 600;
+  }
+
+  .after { margin-block-start: var(--space-l); }
+
+  /* Talks: same card language as the rest of the site, image band on top. */
+  .talks {
+    display: grid;
+    gap: var(--space-s);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  }
+
+  .talk {
+    --cut: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: var(--space-m);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    clip-path: polygon(0 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% 100%, 0 100%);
+  }
+
+  .talk:has(.talk__media) { padding-block-start: 0; }
+
+  .talk__media {
+    margin-inline: calc(var(--space-m) * -1);
+    height: 10.5rem;
+    overflow: hidden;
+    border-block-end: 1px solid var(--border);
+    background: var(--bg-near);
+  }
+
+  .talk__media :global(picture),
+  .talk__media :global(img) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .talk__head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-s);
+  }
+
+  .talk__title { font-size: var(--step-1); }
+
+  .talk__year {
+    font-family: var(--font-mono);
+    font-size: var(--step--1);
+    color: var(--text-quiet);
+    white-space: nowrap;
+  }
+
+  .talk__body {
+    color: var(--text-muted);
+    margin: 0;
+    font-size: var(--step--1);
+  }
+
+  .statband {
+    padding-block: var(--space-l);
+    background: color-mix(in srgb, var(--accent) 7%, transparent);
+    border-block: 1px solid color-mix(in srgb, var(--accent) 22%, transparent);
+  }
+
+  .statband__inner {
+    display: grid;
+    /* Wider tracks and a real column gap: five stats now, and the display
+       font is wide, so 7,000+ was touching its neighbour. auto-fit keeps it
+       wrapping to fewer columns on narrow screens. */
+    gap: var(--space-m) var(--space-l);
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  }
+
+  .statband__item {
+    min-width: 0;
+  }
+
+  .statband__value {
+    display: block;
+    font-family: var(--font-display);
+    font-size: var(--step-3);
+    line-height: 1.05;
+    color: var(--accent);
+  }
+
+  .statband__label {
+    display: block;
+    margin-block-start: 0.3rem;
+    color: var(--text-muted);
+  }
+</style>
+

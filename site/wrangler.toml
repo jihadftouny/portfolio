@@ -1,0 +1,30 @@
+# Deploys portfolio.ftouny.com from the Astro build.
+#
+# Same Worker name as the previous Angular deploy on purpose: the Custom
+# Domain is already attached to this Worker, so reusing the name swaps the
+# content without touching DNS. The Angular config at
+# ../angular-portfolio/wrangler.toml is now superseded and must not be
+# deployed, or it will overwrite this with the old site.
+#
+# Deploy:  npx astro build && npx wrangler deploy
+
+name = "portfolio-ftouny"
+compatibility_date = "2026-08-24"
+
+# Assets-only Worker: no `main` and no `binding`, because there is no Worker
+# script. Cloudflare serves the Astro build output directly.
+[assets]
+directory = "./dist"
+
+# Astro pre-renders every route, so an unmatched path is genuinely missing.
+# The Angular deploy used single-page-application fallback, which answered
+# 200 to every wrong URL and told crawlers those pages existed. This serves
+# dist/404.html with a real 404 status instead.
+not_found_handling = "404-page"
+
+# Custom Domain rather than a route. Cloudflare manages the DNS record for
+# this hostname, and a Custom Domain takes precedence over the wildcard
+# `*.ftouny.com/*` route that sends other hostnames to the wa-demos worker.
+[[routes]]
+pattern = "portfolio.ftouny.com"
+custom_domain = true

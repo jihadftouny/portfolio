@@ -1,0 +1,241 @@
+---
+/* Picture, not Image: the `formats` array is only honoured by Picture, so
+   Image silently emitted webp alone and the avif never got built.
+
+   fallbackFormat is not optional here. Picture defaults the <img> fallback to
+   the source format, which shipped a 3.9 MB PNG next to a 24 KB avif.
+
+   widths run past 2x the rendered card width because a 27rem card is 864
+   physical pixels on a 2x display. Astro never upscales past the source, so a
+   small original simply stops early instead of producing a fake large file. */
+import { Picture } from "astro:assets";
+import LogoPlate from "./LogoPlate.astro";
+import type { Project } from "../data/projects";
+
+interface Props {
+  project: Project;
+  delay?: number;
+  /* Full-width flagship treatment: horizontal layout, accent edge.
+     Used once per page at most, or it stops being a landmark. */
+  wide?: boolean;
+}
+const { project, delay = 0, wide = false } = Astro.props;
+---
+
+<article
+  class:list={["card", { "card--media": project.image, "card--wide": wide }]}
+  data-reveal
+  data-reveal-delay={delay}
+>
+  {project.image && (
+    <div class="card__media">
+      <Picture
+        src={project.image}
+        alt={project.imageAlt ?? ""}
+        widths={[420, 640, 880, 1120]}
+        sizes={project.imageSizes ?? "(min-width: 68rem) 27rem, (min-width: 46rem) 45vw, 92vw"}
+        formats={["avif"]}
+        fallbackFormat="webp"
+        quality={78}
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+  )}
+
+  <header class="card__head">
+    <h3 class="card__title">{project.title}</h3>
+    {project.year && <span class="card__year">{project.year}</span>}
+  </header>
+
+  <p class="card__blurb">{project.blurb}</p>
+
+  {project.note && <p class="card__note">{project.note}</p>}
+
+  {project.logos && <LogoPlate logos={project.logos} size={wide ? "md" : "sm"} />}
+
+  <ul class="card__tech">
+    {project.tech.map((t) => <li>{t}</li>)}
+  </ul>
+
+  {project.href && (
+    <a class="card__link" href={project.href} target="_blank" rel="noopener">
+      {project.hrefLabel ?? "View"}
+      <span aria-hidden="true">→</span>
+    </a>
+  )}
+</article>
+
+<style>
+  .card {
+    --cut: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    padding: var(--space-m);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    /* The Cyberpunk 2077 cut corner, instead of a border radius. */
+    clip-path: polygon(0 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% 100%, 0 100%);
+    /* Only transform and border-color animate, both cheap. */
+    transition:
+      transform var(--dur) var(--ease),
+      border-color var(--dur) var(--ease),
+      background var(--dur) var(--ease);
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-strong);
+    background: var(--surface-hover);
+  }
+
+  /* The media sits flush to the card edge, so the card's own padding moves
+     onto the remaining children instead. */
+  .card--media {
+    padding-block-start: 0;
+    overflow: hidden;
+  }
+
+  .card__media {
+    margin-inline: calc(var(--space-m) * -1);
+    overflow: hidden;
+    border-block-end: 1px solid var(--border);
+    background: var(--bg-near);
+  }
+
+  /*
+    Uniform media band. Free-height images made every card a different
+    shape: a 4:3 poster towered while a 6:1 strip was a sliver, and the
+    grid read as chaos. A fixed 10.5rem band standardises all of them.
+
+    The band is deliberately short. The earlier blur bug was a 432px-wide
+    variant stretched 3.3x to fill a 235px-tall box; covering a 168px band
+    from the same srcset stays at or under 1.4x on the very widest strip,
+    which is imperceptible, and every other source only ever scales down.
+  */
+  .card__media {
+    height: 10.5rem;
+  }
+
+  .card__media :global(picture) {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card__media :global(img) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--dur-slow) var(--ease);
+  }
+
+  .card:hover .card__media :global(img) {
+    transform: scale(1.03);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .card:hover .card__media :global(img) { transform: none; }
+  }
+
+  .card__head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-s);
+  }
+
+  .card__title { font-size: var(--step-1); }
+
+  .card__year {
+    font-family: var(--font-mono);
+    font-size: var(--step--1);
+    color: var(--text-quiet);
+  }
+
+  .card__blurb {
+    color: var(--text-muted);
+    margin: 0;
+  }
+
+  .card__note {
+    margin: 0;
+    padding-inline-start: 0.8rem;
+    border-inline-start: 2px solid var(--border-strong);
+    color: var(--text-quiet);
+    font-size: var(--step--1);
+  }
+
+  .card__tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    list-style: none;
+    padding: 0;
+    margin: auto 0 0;
+  }
+
+  .card__tech li {
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    font-size: var(--step--1);
+    color: var(--text-muted);
+  }
+
+  .card__link {
+    align-self: start;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .card__link span {
+    display: inline-block;
+    transition: transform var(--dur) var(--ease);
+  }
+
+  .card__link:hover span { transform: translateX(4px); }
+
+  /* Flagship layout. Content flows left, the logo parks right, and an accent
+     edge marks it as the headline item. Collapses to the normal card on
+     narrow screens, where the columns would fight. */
+  @media (min-width: 46rem) {
+    .card--wide {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(12rem, 15rem);
+      column-gap: var(--space-l);
+      row-gap: 0.85rem;
+      padding: var(--space-l);
+      padding-block-start: calc(var(--space-l) + 1.4rem);
+      border-inline-start: 3px solid var(--accent);
+    }
+
+    /* Terminal window chrome on the flagship: three dots and a divider.
+       Pure decoration, drawn in gradients, no extra markup. */
+    .card--wide::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      inset-inline: 0;
+      height: 1.9rem;
+      border-bottom: 1px solid var(--border);
+      background:
+        radial-gradient(circle 4px at 1.4rem 50%, var(--cp-red) 98%, transparent),
+        radial-gradient(circle 4px at 2.5rem 50%, var(--accent) 98%, transparent),
+        radial-gradient(circle 4px at 3.6rem 50%, var(--text-quiet) 98%, transparent);
+    }
+
+    .card--wide > :global(*) { grid-column: 1; }
+
+    .card--wide :global(.plates) {
+      grid-column: 2;
+      grid-row: 1 / span 4;
+      align-self: center;
+      justify-self: end;
+      margin: 0;
+    }
+  }
+</style>

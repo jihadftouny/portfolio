@@ -1,0 +1,160 @@
+---
+import "../styles/global.css";
+import CyberBackground from "../components/CyberBackground.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { site } from "../data/site";
+
+interface Props {
+  title?: string;
+  description?: string;
+  /* Set on pages that should not be indexed. */
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description = site.description,
+  noindex = false,
+} = Astro.props;
+
+const pageTitle = title
+  ? `${title} · ${site.name}`
+  : `${site.name} · ${site.role} @ ${site.employer}`;
+
+const canonical = new URL(Astro.url.pathname, Astro.site ?? site.url).href;
+/* Versioned filename on purpose: WhatsApp and friends cache OG images per
+   URL with no refresh mechanism, so a redesign must ship under a new name
+   or stale previews linger for days. Bump the version on the next redesign. */
+const ogImage = new URL("/og-v2.png", Astro.site ?? site.url).href;
+
+/* First path segment keys the per-page accent identity in tokens.css.
+   Unknown segments (including the 404 page) fall through to the default. */
+const pageKey = Astro.url.pathname.split("/").filter(Boolean)[0] ?? "home";
+
+/* Structured data. This is what let machines understand the old site once we
+   fixed it, and it carries over unchanged in substance. */
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: site.name,
+  url: site.url,
+  email: `mailto:${site.email}`,
+  jobTitle: site.role,
+  description: site.tagline,
+  worksFor: {
+    "@type": "Organization",
+    name: "Limitless Technologies SAL",
+    url: "https://limitless-tech.ai",
+    description: "Health and insurance technology company based in Beirut, Lebanon",
+  },
+  address: { "@type": "PostalAddress", addressCountry: "LB" },
+  knowsAbout: [
+    "Artificial Intelligence",
+    "Large Language Models",
+    "Retrieval-Augmented Generation",
+    "Machine Learning",
+    "Natural Language Processing",
+    "Computer Vision",
+    "Prompt Engineering",
+    "AI Curriculum Design",
+    "Game Development",
+  ],
+  sameAs: Object.values(site.social),
+};
+---
+
+<!doctype html>
+<html lang="en" data-page={pageKey}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content={site.name} />
+    <link rel="canonical" href={canonical} />
+    <meta name="theme-color" content="#0b0f19" />
+    {/* Applies before the stylesheet parses, so the very first paint is dark. */}
+    <meta name="color-scheme" content="dark" />
+    {noindex
+      ? <meta name="robots" content="noindex, nofollow" />
+      : <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />}
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content={`${site.name}, ${site.role}`} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@JihadFtouny" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+    />
+
+    <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+
+    {/* Synchronous and inline on purpose: it must land before first paint so
+        revealable content is never briefly visible and then hidden. */}
+    <script is:inline>
+      document.documentElement.classList.add("js-reveal");
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <CyberBackground />
+    <Header />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+
+    <script>
+      /*
+        Scroll reveal. Runs once per element, then disconnects.
+        No scroll listener anywhere on this site, which is the other half of
+        why the old one stuttered.
+      */
+      const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const targets = document.querySelectorAll("[data-reveal]");
+
+      if (reduced || !("IntersectionObserver" in window)) {
+        targets.forEach((el) => el.classList.add("is-revealed"));
+      } else {
+        const io = new IntersectionObserver(
+          (entries) => {
+            for (const entry of entries) {
+              if (!entry.isIntersecting) continue;
+              const el = entry.target as HTMLElement;
+              const delay = Number(el.dataset.revealDelay ?? 0);
+              if (delay) el.style.transitionDelay = `${delay}ms`;
+              el.classList.add("is-revealed");
+              io.unobserve(el);
+            }
+          },
+          /*
+            Fire while the element is still below the fold. A threshold that
+            waits for the element to be visible means a fast scroll arrives
+            before the transition does, and you land on blank space.
+          */
+          { threshold: 0, rootMargin: "0px 0px 15% 0px" }
+        );
+        targets.forEach((el) => io.observe(el));
+      }
+    </script>
+  </body>
+</html>

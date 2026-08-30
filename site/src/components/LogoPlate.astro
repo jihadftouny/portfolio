@@ -1,0 +1,91 @@
+---
+import { Picture } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+interface Props {
+  logos: { src: ImageMetadata; alt: string }[];
+  /* Wider plates for a single logo, tighter when several sit in a row. */
+  size?: "sm" | "md";
+}
+
+const { logos, size = "sm" } = Astro.props;
+---
+
+{/*
+  These are third-party marks supplied as dark artwork on white. Reversing or
+  recolouring someone's logo is worse than framing it, so each one sits on its
+  own light plate and keeps its given colours. `contain` because a logo that
+  gets cropped is a logo used wrongly.
+*/}
+<ul class:list={["plates", `plates--${size}`]}>
+  {logos.map((l) => (
+    <li class="plate">
+      <Picture
+        src={l.src}
+        alt={l.alt}
+        widths={[160, 320, 480]}
+        sizes="(min-width: 68rem) 10rem, 40vw"
+        formats={["avif"]}
+        fallbackFormat="webp"
+        quality={82}
+        loading="lazy"
+        decoding="async"
+      />
+    </li>
+  ))}
+</ul>
+
+<style>
+  .plates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    list-style: none;
+    padding: 0;
+    margin: 0.4rem 0 0;
+  }
+
+  /* Fixed plate sizes so a row of logos reads as a set rather than as
+     whatever aspect ratio each supplier happened to export. */
+  /* Tight padding on purpose: the mark should fill the plate, per Jihad. */
+  .plates--sm { --plate-w: 8.5rem; --plate-h: 3.7rem; --logo-h: 3.1rem; }
+  .plates--md { --plate-w: 11rem; --plate-h: 4.8rem; --logo-h: 4.1rem; }
+
+  @media (max-width: 46rem) {
+    .plates--sm { --plate-w: 7.2rem; --plate-h: 3.2rem; --logo-h: 2.6rem; }
+    .plates--md { --plate-w: 9.5rem; --plate-h: 4rem; --logo-h: 3.3rem; }
+  }
+
+  .plate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--plate-w);
+    height: var(--plate-h);
+    padding-inline: 0.85rem;
+    border-radius: var(--radius);
+    /* Pure white, per Jihad: the marks should sit on a clean plate. */
+    background: #ffffff;
+    border: 1px solid var(--border);
+    overflow: hidden;
+  }
+
+  /*
+    Picture renders <picture><source><img>, so the <picture> is the box that
+    has to be sized, not the img. And the height has to be an absolute length:
+    a percentage resolved against a track that had already grown to fit the
+    image, so the logo sized itself and spilled over the text below.
+  */
+  .plate :global(picture) {
+    display: block;
+    width: 100%;
+    height: var(--logo-h);
+  }
+
+  .plate :global(img) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+</style>
