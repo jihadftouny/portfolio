@@ -3,7 +3,7 @@ import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
-  site: "https://portfolio.ftouny.com",
+  site: "https://ftouny.com",
   integrations: [sitemap()],
   build: {
     // One stylesheet rather than a request per component.

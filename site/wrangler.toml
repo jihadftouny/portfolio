@@ -1,19 +1,25 @@
-# Deploys portfolio.ftouny.com from the Astro build.
+# Deploys ftouny.com from the Astro build.
 #
-# Same Worker name as the previous Angular deploy on purpose: the Custom
-# Domain is already attached to this Worker, so reusing the name swapped the
-# content without touching DNS. The Angular app itself was deleted from the
-# repo on 2026-08-30; it lives on in git history only.
+# The site lived at portfolio.ftouny.com until 2026-08-30, when it took
+# over the apex from the wa-demos Worker's agency site. Custom Domains
+# take precedence over routes, so attaching the apex here silently
+# out-ranks wa-demos' `ftouny.com/*` route without touching the clinic
+# demo subdomains, which stay on wa-demos via its `*.ftouny.com/*`
+# wildcard. Reverting is deleting the apex Custom Domain from this
+# Worker: the wa-demos route is still there underneath.
+#
+# (History: this Worker name dates from the old Angular deploy, which was
+# deleted from the repo on 2026-08-30 and lives on in git history only.)
 #
 # Deploy:  npx astro build && npx wrangler deploy
 
 name = "portfolio-ftouny"
+main = "worker.js"
 compatibility_date = "2026-08-24"
 
-# Assets-only Worker: no `main` and no `binding`, because there is no Worker
-# script. Cloudflare serves the Astro build output directly.
 [assets]
 directory = "./dist"
+binding = "ASSETS"
 
 # Astro pre-renders every route, so an unmatched path is genuinely missing.
 # The Angular deploy used single-page-application fallback, which answered
@@ -21,9 +27,18 @@ directory = "./dist"
 # dist/404.html with a real 404 status instead.
 not_found_handling = "404-page"
 
-# Custom Domain rather than a route. Cloudflare manages the DNS record for
-# this hostname, and a Custom Domain takes precedence over the wildcard
-# `*.ftouny.com/*` route that sends other hostnames to the wa-demos worker.
+# Every request goes through worker.js first, which 301s any non-apex
+# hostname (portfolio.ftouny.com, and www if ever attached) to the apex
+# before assets are considered.
+run_worker_first = true
+
+# Custom Domains rather than routes. Cloudflare manages the DNS records,
+# and a Custom Domain takes precedence over any route on the same
+# hostname. The old hostname stays attached purely to feed the redirect.
+[[routes]]
+pattern = "ftouny.com"
+custom_domain = true
+
 [[routes]]
 pattern = "portfolio.ftouny.com"
 custom_domain = true

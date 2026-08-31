@@ -8,7 +8,7 @@ export const site = {
   name: "Jihad Ftouny",
   role: "AI & Software Engineer",
   employer: "Limitless Technologies",
-  url: "https://portfolio.ftouny.com",
+  url: "https://ftouny.com",
   email: "jihad@ftouny.com",
   location: "Beirut, Lebanon",
 

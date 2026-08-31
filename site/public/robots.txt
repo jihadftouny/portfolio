@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://portfolio.ftouny.com/sitemap-index.xml
+Sitemap: https://ftouny.com/sitemap-index.xml
