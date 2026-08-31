@@ -32,13 +32,25 @@ not_found_handling = "404-page"
 # before assets are considered.
 run_worker_first = true
 
-# Custom Domains rather than routes. Cloudflare manages the DNS records,
-# and a Custom Domain takes precedence over any route on the same
-# hostname. The old hostname stays attached purely to feed the redirect.
+# Custom Domains rather than routes. Cloudflare manages the DNS records.
+# Precedence subtlety learned the hard way: Custom Domains beat WILDCARD
+# routes only after an explicit carve-out; the zone holds null-script
+# exclusion routes for portfolio.ftouny.com/* and www.ftouny.com/* that
+# shield these hostnames from wa-demos' *.ftouny.com/* wildcard. Those
+# exclusions live zone-side only and cannot be expressed here — do not
+# delete them in the dashboard. The old hostname stays attached purely to
+# feed the redirect.
 [[routes]]
 pattern = "ftouny.com"
 custom_domain = true
 
 [[routes]]
 pattern = "portfolio.ftouny.com"
+custom_domain = true
+
+# www used to be a DNS-only CNAME to a leftover Vercel project that 308'd
+# to the apex. Since 2026-08-31 it is a Custom Domain here, so worker.js
+# does the 301 and the whole domain lives on Cloudflare.
+[[routes]]
+pattern = "www.ftouny.com"
 custom_domain = true
