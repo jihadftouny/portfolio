@@ -96,7 +96,10 @@ export const projects: Project[] = [
     hrefLabel: "Source",
     blurb:
       "A text RPG in Java with dice-based combat, character stats and a rarity system for equipment. The 2023 original was 121 commits written entirely by hand, before AI assistants, and it taught me more about programming than anything else I have done. I am rebuilding it now as an experiment in having a model generate the enemies, the lore and the story as you play.",
-    tech: ["Java", "Maven", "LLMs"],
+    /* The rebuild's stack, matching the public repo the Source link opens.
+       Kaplay is a declared dependency but not imported until v2.0, so it is
+       deliberately not tagged. Changed from Java · Maven · LLMs on 2026-09-12. */
+    tech: ["TypeScript", "Electron", "Local LLM", "node-llama-cpp", "Vitest"],
     image: theVoidImg,
     imageAlt: "Six character portraits from The Void, hooded cyberpunk figures in neon-lit streets",
     /* 6:1 strip. Covering a 10.5rem band consumes ~64rem of source width,

@@ -1,4 +1,4 @@
-# portfolio.ftouny.com
+# ftouny.com
 
 Personal portfolio of Jihad Ftouny. Static Astro site, no client framework,
 styled after the Cyberpunk 2077 in-game UI: Rajdhani for the interface,
