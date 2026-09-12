@@ -43,7 +43,7 @@ export const projects: Project[] = [
     category: "ai",
     year: "2026",
     blurb:
-      "My day job. I build AI systems at Limitless Technologies in Beirut, working in health and insurance technology. It is a domain where the data is confidential and a wrong answer has real consequences for someone's claim or policy. I know our systems end to end and mentor the rest of the team across our projects, including an intern I supervised who is now a part-time engineer reporting to me.",
+      "My day job. I build AI systems at Limitless Technologies in Beirut, working in health and insurance technology. It is a domain where the data is confidential and a wrong answer has real consequences for someone's claim or policy. I know our systems end to end and mentor the rest of the team across our projects, including an intern I supervised who is now a part-time QA engineer reporting to me.",
     tech: ["Python", "LLMs", "AI Agents"],
     note: "Client work, so the systems themselves are not something I can show.",
     logos: [{ src: limitlessLogo, alt: "Limitless Technologies S.A.L." }],
