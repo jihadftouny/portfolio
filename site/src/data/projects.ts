@@ -95,7 +95,7 @@ export const projects: Project[] = [
     href: "https://github.com/jihadftouny/The-Void",
     hrefLabel: "Source",
     blurb:
-      "A text RPG in Java with dice-based combat, character stats and a rarity system for equipment. The 2023 original was 121 commits written entirely by hand, before AI assistants, and it taught me more about programming than anything else I have done. I am rebuilding it now as an experiment in having a model generate the enemies, the lore and the story as you play.",
+      "A text RPG in Java with dice-based combat, character stats and a rarity system for equipment. The 2023 original was 121 commits written entirely by hand, before AI assistants, and it taught me more about programming than anything else I have done. I am rebuilding it now so a model on your own machine narrates the story as you play, while the engine owns every rule and number.",
     /* The rebuild's stack, matching the public repo the Source link opens.
        Kaplay is a declared dependency but not imported until v2.0, so it is
        deliberately not tagged. Changed from Java · Maven · LLMs on 2026-09-12. */

@@ -56,7 +56,7 @@ export const classes: ClassOption[] = [
     code: "DEV",
     label: "Game Developer",
     tagline: "Where it all started",
-    desc: "Two shipped games, a text RPG that taught me more about programming than anything else, and a rebuild in progress where a model generates the world as you play.",
+    desc: "Two shipped games, a text RPG that taught me more about programming than anything else, and a rebuild in progress where a local model narrates the story as you play.",
     cta: "Enter Games",
     href: "/games/",
     accent: "#ff8a3d",

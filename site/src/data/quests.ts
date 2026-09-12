@@ -23,7 +23,7 @@ export const quests: Quest[] = [
   {
     name: "Rebuild The Void",
     status: "active",
-    body: "A full rebuild of the 2023 original, content, design and everything: a model generates the enemies, the lore and the story as you play. The first version was 121 commits written entirely by hand.",
+    body: "A full rebuild of the 2023 original, content, design and everything: a model on your own machine narrates the story as you play, and the engine owns every rule and number. The first version was 121 commits written entirely by hand.",
     href: "https://github.com/jihadftouny/The-Void",
     hrefLabel: "Watch the repo",
   },
