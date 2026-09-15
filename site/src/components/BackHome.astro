@@ -9,12 +9,20 @@
   corner the achievement plates use. The arrow is an inline SVG rather than
   a glyph, because Orbitron has no arrows and a fallback-font arrow next to
   Orbitron caps looks borrowed.
+
+  Home is the default destination. A writing post points the same band at
+  the Writing index instead.
 */
+interface Props {
+  href?: string;
+  label?: string;
+}
+const { href = "/", label = "Back to Home" } = Astro.props;
 ---
 
 <section class="backband">
   <div class="page backband__inner" data-reveal>
-    <a class="backhome" href="/">
+    <a class="backhome" href={href}>
       <svg
         class="backhome__arrow"
         viewBox="0 0 16 10"
@@ -29,7 +37,7 @@
           stroke-width="1.6"
         />
       </svg>
-      Back to Home
+      {label}
     </a>
   </div>
 </section>

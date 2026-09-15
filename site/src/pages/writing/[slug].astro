@@ -1,0 +1,216 @@
+---
+import { render } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import BackHome from "../../components/BackHome.astro";
+import { site } from "../../data/site";
+import { getPosts, readingMinutes, formatDate, type Post } from "../../lib/writing";
+
+export async function getStaticPaths() {
+  const posts = await getPosts();
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+interface Props {
+  post: Post;
+}
+
+const { post } = Astro.props;
+const { data } = post;
+const { Content } = await render(post);
+const minutes = readingMinutes(post.body);
+
+const base = Astro.site ?? site.url;
+const canonical = new URL(Astro.url.pathname, base).href;
+
+/* Search engines read this as an article by the same Person the rest of the
+   site describes. Drafts carry no date and so get no BlogPosting at all. */
+const schema = data.date
+  ? {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: data.title,
+      description: data.description,
+      datePublished: data.date.toISOString(),
+      url: canonical,
+      mainEntityOfPage: canonical,
+      author: { "@type": "Person", name: site.name, url: site.url },
+      ...(data.image && { image: new URL(data.image.src, base).href }),
+    }
+  : undefined;
+---
+
+<Base
+  title={data.title}
+  description={data.description}
+  accent={data.accent}
+  type="article"
+  image={data.image}
+  published={data.date}
+  schema={schema}
+>
+  <article class="post page">
+    <header class="post__head" data-ghost={data.ghost ?? ""}>
+      <p class="eyebrow">{data.eyebrow}</p>
+      <h1 class="post__title">{data.title}</h1>
+      <p class="post__meta">
+        {data.date
+          ? <time datetime={data.date.toISOString()}>{formatDate(data.date)}</time>
+          : <span class="post__draft">Draft, not published</span>}
+        <span aria-hidden="true">·</span>
+        <span>{minutes} min read</span>
+      </p>
+    </header>
+
+    <div class="post__body">
+      <Content />
+    </div>
+  </article>
+
+  <BackHome href="/writing/" label="Back to Writing" />
+</Base>
+
+<style>
+  /* One column width, in rem, shared by the header and the body. The site's
+     --measure is in ch, which scales with font size, and the body runs a size
+     up from the header, so the two would sit at different widths and never
+     line up. 42rem keeps Rajdhani, a narrow face, near 75 characters a line. */
+  .post {
+    --post-measure: 42rem;
+    padding-block: var(--space-xl) var(--space-2xl);
+  }
+
+  .post__head,
+  .post__body {
+    max-width: var(--post-measure);
+    margin-inline: auto;
+  }
+
+  .post__head {
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    gap: 0.7rem;
+    justify-items: start;
+    margin-block-end: var(--space-l);
+    padding-block-end: var(--space-m);
+    border-block-end: 1px solid var(--border);
+  }
+
+  /* The ghost keyword, as on every section heading (Section.astro). */
+  .post__head::before {
+    content: attr(data-ghost);
+    position: absolute;
+    top: -0.6em;
+    inset-inline-start: -0.04em;
+    z-index: -1;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(3rem, 7vw, 6rem);
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    color: color-mix(in srgb, var(--accent) 11%, transparent);
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .post__title {
+    font-size: var(--step-4);
+  }
+
+  .post__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-family: var(--font-secondary);
+    font-size: var(--step--1);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-quiet);
+  }
+
+  .post__draft { color: var(--cp-red); }
+</style>
+
+<style is:global>
+  /*
+    Long-form type for the Markdown body. Rajdhani is a display face with a
+    small x-height, so body copy runs a size up and a weight up from the rest
+    of the site; at 400 and the base size it tires the eye over a whole post.
+  */
+  .post__body {
+    font-size: clamp(1.1rem, 1rem + 0.4vw, 1.3rem);
+    font-weight: 500;
+    line-height: 1.7;
+    color: var(--text-soft);
+  }
+
+  .post__body > * + * {
+    margin-block-start: 1.15em;
+  }
+
+  .post__body h2 {
+    font-size: var(--step-2);
+    margin-block-start: 2.3em;
+    padding-inline-start: 0.7rem;
+    border-inline-start: 3px solid var(--accent);
+  }
+
+  .post__body h2 + * {
+    margin-block-start: 0.8em;
+  }
+
+  .post__body strong {
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .post__body ul,
+  .post__body ol {
+    padding-inline-start: 1.3em;
+  }
+
+  .post__body li + li {
+    margin-block-start: 0.4em;
+  }
+
+  .post__body code {
+    font-family: ui-monospace, "Cascadia Code", monospace;
+    font-size: 0.85em;
+    padding: 0.1em 0.35em;
+    border: 1px solid var(--border);
+    background: var(--surface);
+  }
+
+  .post__body blockquote {
+    padding-inline-start: 1rem;
+    border-inline-start: 2px solid var(--border-strong);
+    color: var(--text-muted);
+  }
+
+  /*
+    Figures break out of the text column to 56rem, centred on it, because
+    the diagrams are drawn to be read at 800px and the column is narrower.
+    On a phone the breakout collapses to the page width.
+  */
+  .post__body figure {
+    width: min(56rem, 100vw - 2.5rem);
+    margin-inline: calc(50% - min(28rem, 50vw - 1.25rem));
+    margin-block: 2.2em;
+  }
+
+  .post__body figure img {
+    width: 100%;
+    border: 1px solid var(--border);
+    background: var(--bg-deep);
+  }
+
+  .post__body figcaption {
+    margin-block-start: 0.8rem;
+    font-size: var(--step--1);
+    font-weight: 500;
+    color: var(--text-muted);
+    text-align: center;
+  }
+</style>

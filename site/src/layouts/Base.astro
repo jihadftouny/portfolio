@@ -19,12 +19,28 @@ interface Props {
   description?: string;
   /* Set on pages that should not be indexed. */
   noindex?: boolean;
+  /* Overrides the accent identity the URL would pick. A writing post takes
+     the accent of the class it belongs to: a devlog lives under /writing/
+     but burns games orange. */
+  accent?: string;
+  /* "article" on writing posts; every other page describes the person. */
+  type?: "profile" | "article";
+  /* Per-page social card, a path under public/. Defaults to the site card. */
+  image?: { src: string; width: number; height: number; alt: string };
+  published?: Date;
+  /* Extra structured data, e.g. a post's BlogPosting, next to the Person. */
+  schema?: Record<string, unknown>;
 }
 
 const {
   title,
   description = site.description,
   noindex = false,
+  accent,
+  type = "profile",
+  image,
+  published,
+  schema,
 } = Astro.props;
 
 const pageTitle = title
@@ -35,11 +51,14 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? site.url).href;
 /* Versioned filename on purpose: WhatsApp and friends cache OG images per
    URL with no refresh mechanism, so a redesign must ship under a new name
    or stale previews linger for days. Bump the version on the next redesign. */
-const ogImage = new URL("/og-v2.png", Astro.site ?? site.url).href;
+const ogImage = new URL(image?.src ?? "/og-v2.png", Astro.site ?? site.url).href;
+const ogWidth = image?.width ?? 1200;
+const ogHeight = image?.height ?? 630;
+const ogAlt = image?.alt ?? `${site.name}, ${site.role}`;
 
 /* First path segment keys the per-page accent identity in tokens.css.
    Unknown segments (including the 404 page) fall through to the default. */
-const pageKey = Astro.url.pathname.split("/").filter(Boolean)[0] ?? "home";
+const pageKey = accent ?? Astro.url.pathname.split("/").filter(Boolean)[0] ?? "home";
 
 /* Structured data. This is what let machines understand the old site once we
    fixed it, and it carries over unchanged in substance. */
@@ -90,16 +109,18 @@ const personSchema = {
       ? <meta name="robots" content="noindex, nofollow" />
       : <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />}
 
-    <meta property="og:type" content="profile" />
+    <meta property="og:type" content={type} />
     <meta property="og:site_name" content={site.name} />
     <meta property="og:url" content={canonical} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImage} />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:image:width" content={String(ogWidth)} />
+    <meta property="og:image:height" content={String(ogHeight)} />
     <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:alt" content={`${site.name}, ${site.role}`} />
+    <meta property="og:image:alt" content={ogAlt} />
+    {published && <meta property="article:published_time" content={published.toISOString()} />}
+    {type === "article" && <meta property="article:author" content={site.url} />}
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@JihadFtouny" />
@@ -108,6 +129,7 @@ const personSchema = {
     <meta name="twitter:image" content={ogImage} />
 
     <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+    {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
 
     {/* Synchronous and inline on purpose: it must land before first paint so
         revealable content is never briefly visible and then hidden. */}
