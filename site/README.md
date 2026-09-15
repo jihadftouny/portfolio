@@ -41,6 +41,11 @@ edit the data file; the pages render whatever is there.
 2. Put the post's images in `public/writing/<slug>/`, and give the post its
    own 1200×630 social card there. Figures are plain `<figure>` HTML in the
    Markdown; they break out of the text column to 56rem.
+   **Write external links as HTML**, `<a href="…" target="_blank"
+   rel="noopener">`, so they open in a new tab like the project cards' links.
+   Astro 7's default Markdown processor has no plugin hook for this; adding
+   one means installing `@astrojs/markdown-remark` and switching processors,
+   which is not worth it for one attribute.
 3. Keep `draft: true` while writing. Drafts show under `npm run dev` only;
    a production build leaves them out completely, with no page, no list
    entry and no sitemap line.

@@ -76,10 +76,10 @@ I tested a smaller 1.7B model as a fallback for weaker machines and decided agai
 
 Every code change goes through a pipeline of three agents, each in its own git worktree (a separate copy of the code). A plan agent designs the change and never writes code. A build agent implements it. A test agent runs the type checks, the build and the tests, checks the plan's acceptance criteria, and says PASS or FAIL. It only reports; it never fixes anything. A failure gets at most two fix rounds and one re-plan, and if it still fails, the unit is marked failed rather than patched by hand. I review, merge and ship every change myself, every run is logged, and a retro agent proposes pipeline improvements that I accept or reject.
 
-My part is the game. I design it, I direct the work, and I write its prose instructions, which no agent can do efficiently, or at least in my tone. The source is public to read, all rights reserved: [github.com/jihadftouny/The-Void](https://github.com/jihadftouny/The-Void).
+My part is the game. I design it, I direct the work, and I write its prose instructions, which no agent can do efficiently, or at least in my tone. The source is public to read, all rights reserved: <a href="https://github.com/jihadftouny/The-Void" target="_blank" rel="noopener">github.com/jihadftouny/The-Void</a>.
 
 ## Where is it?
 
 In development. The engine, combat, items, skills, saves and the narration pipeline are built and tested; the boss agents, the visual layer and the authored prose are not.
 
-I need playtesters, and you'll need a GPU. If you've got one and you want to try a run, [sign up here](https://docs.google.com/forms/d/e/1FAIpQLSfjXGR07XEZpm14FjSjyannpofVDBgqnsG0BR26dGR-_qgnbA/viewform). The form asks for your email, your GPU model and your operating system, and nothing else; the data is used for this playtest and then deleted. And if you've put a model next to a rules engine yourself, I'd like to hear where you drew the line.
+I need playtesters, and you'll need a GPU. If you've got one and you want to try a run, <a href="https://docs.google.com/forms/d/e/1FAIpQLSfjXGR07XEZpm14FjSjyannpofVDBgqnsG0BR26dGR-_qgnbA/viewform" target="_blank" rel="noopener">sign up here</a>. The form asks for your email, your GPU model and your operating system, and nothing else; the data is used for this playtest and then deleted. And if you've put a model next to a rules engine yourself, I'd like to hear where you drew the line.
