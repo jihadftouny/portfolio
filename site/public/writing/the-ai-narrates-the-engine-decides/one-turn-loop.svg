@@ -1,0 +1,2618 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1152pt" height="1039.68pt" viewBox="0 0 1152 1039.68" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 1039.68 
+L 1152 1039.68 
+L 1152 0 
+L 0 0 
+z
+" style="fill: #0a0b10"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 244.8 201.6 
+L 244.8 247.68 
+" clip-path="url(#pbc47dc9a33)" style="fill: none; stroke-dasharray: 7.2,5.76; stroke-dashoffset: 0; stroke: #ffffff; stroke-opacity: 0.44; stroke-width: 1.44"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 907.2 869.76 
+L 907.2 915.84 
+" clip-path="url(#pbc47dc9a33)" style="fill: none; stroke-dasharray: 7.2,5.76; stroke-dashoffset: 0; stroke: #ffffff; stroke-opacity: 0.44; stroke-width: 1.44"/>
+   </g>
+   <g id="patch_2">
+    <path d="M 43.2 247.68 
+L 429.12 247.68 
+L 446.4 264.96 
+L 446.4 383.04 
+L 43.2 383.04 
+z
+" clip-path="url(#pbc47dc9a33)" style="fill: #ff8a3d; fill-opacity: 0.13; stroke: #ff8a3d; stroke-width: 2.16; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 705.6 247.68 
+L 1091.52 247.68 
+L 1108.8 264.96 
+L 1108.8 383.04 
+L 705.6 383.04 
+z
+" clip-path="url(#pbc47dc9a33)" style="fill: #ffffff; fill-opacity: 0.035; stroke: #ffffff; stroke-opacity: 0.16; stroke-width: 1.44; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 705.6 491.04 
+L 1091.52 491.04 
+L 1108.8 508.32 
+L 1108.8 626.4 
+L 705.6 626.4 
+z
+" clip-path="url(#pbc47dc9a33)" style="fill: #ffffff; fill-opacity: 0.035; stroke: #ffffff; stroke-opacity: 0.16; stroke-width: 1.44; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 705.6 734.4 
+L 1091.52 734.4 
+L 1108.8 751.68 
+L 1108.8 869.76 
+L 705.6 869.76 
+z
+" clip-path="url(#pbc47dc9a33)" style="fill: #ffffff; fill-opacity: 0.035; stroke: #ffffff; stroke-opacity: 0.16; stroke-width: 1.44; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 43.2 734.4 
+L 429.12 734.4 
+L 446.4 751.68 
+L 446.4 869.76 
+L 43.2 869.76 
+z
+" clip-path="url(#pbc47dc9a33)" style="fill: #ffffff; fill-opacity: 0.035; stroke: #ffffff; stroke-opacity: 0.16; stroke-width: 1.44; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 43.2 28.8 
+L 429.12 28.8 
+L 446.4 46.08 
+L 446.4 201.6 
+L 43.2 201.6 
+L 43.2 28.8 
+z
+" clip-path="url(#pbc47dc9a33)" style="fill: none; stroke-dasharray: 7.2,5.76; stroke-dashoffset: 0; stroke: #ffffff; stroke-opacity: 0.44; stroke-width: 1.44; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 705.6 915.84 
+L 1091.52 915.84 
+L 1108.8 933.12 
+L 1108.8 1010.88 
+L 705.6 1010.88 
+L 705.6 915.84 
+z
+" clip-path="url(#pbc47dc9a33)" style="fill: none; stroke-dasharray: 7.2,5.76; stroke-dashoffset: 0; stroke: #ffffff; stroke-opacity: 0.44; stroke-width: 1.44; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 456.48 315.36 
+Q 576 315.36 691.784931 315.36 
+" clip-path="url(#pbc47dc9a33)" style="fill: none; stroke: #ff8a3d; stroke-width: 3.6; stroke-linejoin: miter"/>
+    <path d="M 671.624931 304.272 
+L 691.784931 315.36 
+L 671.624931 326.448 
+z
+" clip-path="url(#pbc47dc9a33)" style="fill: #ff8a3d; stroke: #ff8a3d; stroke-width: 3.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 907.2 393.12 
+Q 907.2 437.04 907.2 477.224931 
+" clip-path="url(#pbc47dc9a33)" style="fill: none; stroke: #ff8a3d; stroke-width: 3.6; stroke-linejoin: miter"/>
+    <path d="M 918.288 457.064931 
+L 907.2 477.224931 
+L 896.112 457.064931 
+z
+" clip-path="url(#pbc47dc9a33)" style="fill: #ff8a3d; stroke: #ff8a3d; stroke-width: 3.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 907.2 636.48 
+Q 907.2 680.4 907.2 720.584931 
+" clip-path="url(#pbc47dc9a33)" style="fill: none; stroke: #ff8a3d; stroke-width: 3.6; stroke-linejoin: miter"/>
+    <path d="M 918.288 700.424931 
+L 907.2 720.584931 
+L 896.112 700.424931 
+z
+" clip-path="url(#pbc47dc9a33)" style="fill: #ff8a3d; stroke: #ff8a3d; stroke-width: 3.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 695.52 802.08 
+Q 576 802.08 460.215069 802.08 
+" clip-path="url(#pbc47dc9a33)" style="fill: none; stroke: #ff8a3d; stroke-width: 3.6; stroke-linejoin: miter"/>
+    <path d="M 480.375069 813.168 
+L 460.215069 802.08 
+L 480.375069 790.992 
+z
+" clip-path="url(#pbc47dc9a33)" style="fill: #ff8a3d; stroke: #ff8a3d; stroke-width: 3.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 244.8 724.32 
+Q 244.8 558.72 244.8 396.855069 
+" clip-path="url(#pbc47dc9a33)" style="fill: none; stroke: #ff8a3d; stroke-width: 3.6; stroke-linejoin: miter"/>
+    <path d="M 233.712 417.015069 
+L 244.8 396.855069 
+L 255.888 417.015069 
+z
+" clip-path="url(#pbc47dc9a33)" style="fill: #ff8a3d; stroke: #ff8a3d; stroke-width: 3.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 734.4 393.12 
+Q 576 558.72 418.890882 722.970441 
+" clip-path="url(#pbc47dc9a33)" style="fill: none; stroke: #ff8a3d; stroke-width: 1.8; stroke-linejoin: miter"/>
+    <path d="M 436.135505 717.545726 
+L 418.890882 722.970441 
+L 423.544193 705.501863 
+z
+" clip-path="url(#pbc47dc9a33)" style="fill: #ff8a3d; stroke: #ff8a3d; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <!-- You choose -->
+    <g style="fill: #ffffff" transform="translate(64.8 295.7616) scale(0.3312 -0.3312)">
+     <defs>
+      <path id="Rajdhani-Bold-3e" d="M 1926 0 
+L 1382 0 
+Q 1248 0 1248 134 
+L 1248 1504 
+L 77 3974 
+Q 51 4032 80 4073 
+Q 109 4115 166 4115 
+L 845 4115 
+Q 947 4115 998 3981 
+L 1638 2426 
+L 1683 2426 
+L 2310 3981 
+Q 2355 4115 2464 4115 
+L 3142 4115 
+Q 3206 4115 3235 4076 
+Q 3264 4038 3232 3974 
+L 2061 1504 
+L 2061 134 
+Q 2061 0 1926 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Bold-54" d="M 1914 0 
+L 1344 0 
+Q 838 0 563 269 
+Q 288 538 288 1043 
+L 288 2221 
+Q 288 2726 563 2995 
+Q 838 3264 1344 3264 
+L 1914 3264 
+Q 2413 3264 2691 2992 
+Q 2970 2720 2970 2221 
+L 2970 1043 
+Q 2970 544 2691 272 
+Q 2413 0 1914 0 
+z
+M 1466 698 
+L 1792 698 
+Q 1997 698 2083 781 
+Q 2170 864 2170 1069 
+L 2170 2195 
+Q 2170 2400 2083 2483 
+Q 1997 2566 1792 2566 
+L 1466 2566 
+Q 1261 2566 1177 2483 
+Q 1094 2400 1094 2195 
+L 1094 1069 
+Q 1094 864 1177 781 
+Q 1261 698 1466 698 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Bold-5a" d="M 1530 0 
+L 1318 0 
+Q 826 0 573 269 
+Q 320 538 320 1043 
+L 320 3130 
+Q 320 3264 454 3264 
+L 998 3264 
+Q 1133 3264 1133 3130 
+L 1133 1082 
+Q 1133 877 1219 790 
+Q 1306 704 1504 704 
+L 1741 704 
+Q 2182 704 2182 1190 
+L 2182 3130 
+Q 2182 3264 2317 3264 
+L 2854 3264 
+Q 2995 3264 2995 3130 
+L 2995 134 
+Q 2995 0 2854 0 
+L 2317 0 
+Q 2182 0 2182 134 
+L 2182 346 
+L 2157 346 
+Q 2086 173 1907 86 
+Q 1728 0 1530 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Bold-5" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Bold-48" d="M 2432 570 
+L 2432 128 
+Q 2432 58 2403 29 
+Q 2374 0 2298 0 
+L 1344 0 
+Q 838 0 563 269 
+Q 288 538 288 1043 
+L 288 2221 
+Q 288 2726 563 2995 
+Q 838 3264 1344 3264 
+L 2298 3264 
+Q 2432 3264 2432 3130 
+L 2432 2688 
+Q 2432 2618 2403 2589 
+Q 2374 2560 2298 2560 
+L 1472 2560 
+Q 1274 2560 1187 2473 
+Q 1101 2387 1101 2182 
+L 1101 1082 
+Q 1101 877 1187 790 
+Q 1274 704 1472 704 
+L 2298 704 
+Q 2432 704 2432 570 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Bold-4d" d="M 1030 0 
+L 486 0 
+Q 352 0 352 134 
+L 352 4365 
+Q 352 4499 486 4499 
+L 1030 4499 
+Q 1165 4499 1165 4365 
+L 1165 2918 
+L 1190 2918 
+Q 1331 3264 1818 3264 
+L 2022 3264 
+Q 3027 3264 3027 2221 
+L 3027 134 
+Q 3027 0 2886 0 
+L 2349 0 
+Q 2214 0 2214 134 
+L 2214 2182 
+Q 2214 2387 2128 2473 
+Q 2042 2560 1837 2560 
+L 1606 2560 
+Q 1165 2560 1165 2074 
+L 1165 134 
+Q 1165 0 1030 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Bold-58" d="M 1587 0 
+L 371 0 
+Q 243 0 243 134 
+L 243 544 
+Q 243 614 268 643 
+Q 294 672 371 672 
+L 1440 672 
+Q 1754 672 1754 864 
+L 1754 896 
+Q 1754 1050 1491 1190 
+L 858 1542 
+Q 531 1709 377 1901 
+Q 224 2093 224 2394 
+Q 224 2842 461 3053 
+Q 698 3264 1203 3264 
+L 2272 3264 
+Q 2400 3264 2400 3130 
+L 2400 2714 
+Q 2400 2643 2374 2614 
+Q 2349 2586 2272 2586 
+L 1382 2586 
+Q 1069 2586 1069 2426 
+L 1069 2394 
+Q 1069 2253 1344 2106 
+L 1990 1722 
+Q 2323 1542 2457 1353 
+Q 2592 1165 2592 858 
+Q 2592 0 1587 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Bold-4a" d="M 2758 0 
+L 1344 0 
+Q 838 0 563 269 
+Q 288 538 288 1043 
+L 288 2221 
+Q 288 2726 563 2995 
+Q 838 3264 1344 3264 
+L 1850 3264 
+Q 2355 3264 2630 2995 
+Q 2906 2726 2906 2221 
+L 2906 1408 
+Q 2906 1274 2771 1274 
+L 1165 1274 
+Q 1088 1274 1088 1203 
+L 1088 1062 
+Q 1088 864 1174 777 
+Q 1261 691 1466 691 
+L 2758 691 
+Q 2893 691 2893 550 
+L 2893 128 
+Q 2893 58 2864 29 
+Q 2835 0 2758 0 
+z
+M 1165 1818 
+L 2035 1818 
+Q 2106 1818 2106 1888 
+L 2106 2195 
+Q 2106 2400 2022 2483 
+Q 1939 2566 1734 2566 
+L 1466 2566 
+Q 1261 2566 1177 2483 
+Q 1094 2400 1094 2195 
+L 1094 1888 
+Q 1094 1818 1165 1818 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#Rajdhani-Bold-3e"/>
+     <use xlink:href="#Rajdhani-Bold-54" transform="translate(51.703125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-5a" transform="translate(102.609375 0)"/>
+     <use xlink:href="#Rajdhani-Bold-5" transform="translate(154.90625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-48" transform="translate(176.90625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4d" transform="translate(218 0)"/>
+     <use xlink:href="#Rajdhani-Bold-54" transform="translate(270.296875 0)"/>
+     <use xlink:href="#Rajdhani-Bold-54" transform="translate(321.203125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-58" transform="translate(372.109375 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4a" transform="translate(415.90625 0)"/>
+    </g>
+   </g>
+   <g id="text_2">
+    <!-- one of the engine's legal actions -->
+    <g style="fill: #ffffff; opacity: 0.66" transform="translate(64.8 327.4776) scale(0.2232 -0.2232)">
+     <defs>
+      <path id="Rajdhani-Medium-54" d="M 1875 0 
+L 1325 0 
+Q 883 0 630 249 
+Q 378 499 378 947 
+L 378 2317 
+Q 378 2765 630 3014 
+Q 883 3264 1325 3264 
+L 1875 3264 
+Q 2317 3264 2569 3014 
+Q 2822 2765 2822 2317 
+L 2822 947 
+Q 2822 499 2569 249 
+Q 2317 0 1875 0 
+z
+M 1376 410 
+L 1824 410 
+Q 2362 410 2362 960 
+L 2362 2304 
+Q 2362 2854 1824 2854 
+L 1376 2854 
+Q 838 2854 838 2304 
+L 838 960 
+Q 838 410 1376 410 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Medium-53" d="M 819 0 
+L 531 0 
+Q 442 0 442 90 
+L 442 3174 
+Q 442 3264 531 3264 
+L 819 3264 
+Q 909 3264 909 3174 
+L 909 2925 
+L 934 2925 
+Q 1094 3264 1587 3264 
+L 1946 3264 
+Q 2381 3264 2624 3014 
+Q 2867 2765 2867 2317 
+L 2867 90 
+Q 2867 0 2778 0 
+L 2490 0 
+Q 2400 0 2400 90 
+L 2400 2298 
+Q 2400 2854 1862 2854 
+L 1504 2854 
+Q 1216 2854 1062 2700 
+Q 909 2547 909 2266 
+L 909 90 
+Q 909 0 819 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Medium-4a" d="M 2682 0 
+L 1325 0 
+Q 883 0 630 249 
+Q 378 499 378 947 
+L 378 2317 
+Q 378 2765 630 3014 
+Q 883 3264 1325 3264 
+L 1862 3264 
+Q 2304 3264 2553 3014 
+Q 2803 2765 2803 2317 
+L 2803 1504 
+Q 2803 1408 2714 1408 
+L 902 1408 
+Q 838 1408 838 1350 
+L 838 960 
+Q 838 403 1376 403 
+L 2682 403 
+Q 2771 403 2771 314 
+L 2771 83 
+Q 2771 0 2682 0 
+z
+M 902 1747 
+L 2285 1747 
+Q 2349 1747 2349 1811 
+L 2349 2304 
+Q 2349 2854 1811 2854 
+L 1376 2854 
+Q 838 2854 838 2304 
+L 838 1811 
+Q 838 1747 902 1747 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Medium-5" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Medium-4b" d="M 1261 3264 
+L 1824 3264 
+Q 1920 3264 1920 3181 
+L 1920 2944 
+Q 1920 2854 1824 2854 
+L 1261 2854 
+Q 1203 2854 1203 2797 
+L 1203 90 
+Q 1203 0 1107 0 
+L 826 0 
+Q 736 0 736 90 
+L 736 2797 
+Q 736 2854 672 2854 
+L 294 2854 
+Q 205 2854 205 2944 
+L 205 3181 
+Q 205 3264 294 3264 
+L 672 3264 
+Q 736 3264 736 3322 
+L 736 3558 
+Q 736 4013 960 4256 
+Q 1184 4499 1613 4499 
+L 1830 4499 
+Q 1920 4499 1920 4416 
+L 1920 4179 
+Q 1920 4090 1830 4090 
+L 1670 4090 
+Q 1408 4090 1305 3958 
+Q 1203 3827 1203 3539 
+L 1203 3322 
+Q 1203 3264 1261 3264 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Medium-59" d="M 563 2854 
+L 211 2854 
+Q 122 2854 122 2938 
+L 122 3174 
+Q 122 3264 211 3264 
+L 563 3264 
+Q 627 3264 627 3322 
+L 627 3872 
+Q 627 3962 717 3962 
+L 1005 3962 
+Q 1088 3962 1088 3872 
+L 1088 3322 
+Q 1088 3264 1158 3264 
+L 1837 3264 
+Q 1933 3264 1933 3174 
+L 1933 2938 
+Q 1933 2854 1837 2854 
+L 1158 2854 
+Q 1088 2854 1088 2797 
+L 1088 954 
+Q 1088 410 1651 410 
+L 1901 410 
+Q 1997 410 1997 320 
+L 1997 83 
+Q 1997 0 1901 0 
+L 1594 0 
+Q 1152 0 889 246 
+Q 627 493 627 934 
+L 627 2797 
+Q 627 2854 563 2854 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Medium-4d" d="M 819 0 
+L 531 0 
+Q 442 0 442 90 
+L 442 4410 
+Q 442 4499 531 4499 
+L 819 4499 
+Q 909 4499 909 4410 
+L 909 2925 
+L 934 2925 
+Q 1094 3264 1587 3264 
+L 1946 3264 
+Q 2381 3264 2624 3014 
+Q 2867 2765 2867 2317 
+L 2867 90 
+Q 2867 0 2778 0 
+L 2490 0 
+Q 2400 0 2400 90 
+L 2400 2298 
+Q 2400 2854 1862 2854 
+L 1504 2854 
+Q 1216 2854 1062 2700 
+Q 909 2547 909 2266 
+L 909 90 
+Q 909 0 819 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Medium-4c" d="M 1677 173 
+L 1318 173 
+Q 883 173 640 422 
+Q 397 672 397 1120 
+L 397 2317 
+Q 397 2765 649 3014 
+Q 902 3264 1344 3264 
+L 2733 3264 
+Q 2822 3264 2822 3174 
+L 2822 0 
+Q 2822 -442 2569 -694 
+Q 2317 -947 1875 -947 
+L 698 -947 
+Q 602 -947 602 -858 
+L 602 -621 
+Q 602 -531 698 -531 
+L 1818 -531 
+Q 2355 -531 2355 19 
+L 2355 512 
+L 2330 512 
+Q 2163 173 1677 173 
+z
+M 2355 1171 
+L 2355 2797 
+Q 2355 2854 2291 2854 
+L 1402 2854 
+Q 864 2854 864 2298 
+L 864 1139 
+Q 864 582 1402 582 
+L 1760 582 
+Q 2048 582 2201 736 
+Q 2355 890 2355 1171 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Medium-4e" d="M 474 3802 
+L 474 4403 
+Q 474 4493 557 4493 
+L 851 4493 
+Q 941 4493 941 4403 
+L 941 3802 
+Q 941 3712 851 3712 
+L 557 3712 
+Q 474 3712 474 3802 
+z
+M 474 90 
+L 474 3174 
+Q 474 3264 557 3264 
+L 851 3264 
+Q 941 3264 941 3174 
+L 941 90 
+Q 941 0 851 0 
+L 563 0 
+Q 474 0 474 90 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Medium-c" d="M 627 2848 
+L 563 2848 
+Q 480 2848 474 2931 
+L 378 3936 
+Q 371 4019 461 4019 
+L 730 4019 
+Q 819 4019 813 3936 
+L 723 2931 
+Q 698 2848 627 2848 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Medium-58" d="M 1549 0 
+L 410 0 
+Q 320 0 320 90 
+L 320 314 
+Q 320 397 410 397 
+L 1485 397 
+Q 1984 397 1984 768 
+L 1984 890 
+Q 1984 1229 1658 1357 
+L 902 1677 
+Q 576 1811 435 1993 
+Q 294 2176 294 2477 
+Q 294 3264 1158 3264 
+L 2208 3264 
+Q 2298 3264 2298 3174 
+L 2298 2950 
+Q 2298 2867 2208 2867 
+L 1242 2867 
+Q 1011 2867 892 2771 
+Q 774 2675 774 2547 
+L 774 2438 
+Q 774 2170 1139 2029 
+L 1894 1690 
+Q 2227 1562 2345 1350 
+Q 2464 1139 2464 768 
+Q 2464 0 1549 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Medium-51" d="M 851 0 
+L 563 0 
+Q 474 0 474 90 
+L 474 4410 
+Q 474 4499 563 4499 
+L 851 4499 
+Q 941 4499 941 4410 
+L 941 90 
+Q 941 0 851 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Medium-46" d="M 1658 0 
+L 1325 0 
+Q 883 0 630 249 
+Q 378 499 378 947 
+L 378 2317 
+Q 378 2765 630 3014 
+Q 883 3264 1325 3264 
+L 2714 3264 
+Q 2803 3264 2803 3174 
+L 2803 90 
+Q 2803 0 2714 0 
+L 2426 0 
+Q 2336 0 2336 90 
+L 2336 339 
+L 2310 339 
+Q 2150 0 1658 0 
+z
+M 2336 998 
+L 2336 2797 
+Q 2336 2854 2272 2854 
+L 1376 2854 
+Q 845 2854 845 2298 
+L 845 966 
+Q 845 410 1376 410 
+L 1741 410 
+Q 2029 410 2182 563 
+Q 2336 717 2336 998 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Medium-48" d="M 2342 320 
+L 2342 83 
+Q 2342 0 2253 0 
+L 1325 0 
+Q 883 0 630 249 
+Q 378 499 378 947 
+L 378 2317 
+Q 378 2765 630 3014 
+Q 883 3264 1325 3264 
+L 2253 3264 
+Q 2342 3264 2342 3174 
+L 2342 2938 
+Q 2342 2854 2253 2854 
+L 1376 2854 
+Q 845 2854 845 2298 
+L 845 966 
+Q 845 410 1376 410 
+L 2253 410 
+Q 2342 410 2342 320 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#Rajdhani-Medium-54"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(50 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(101.203125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(150.40625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-54" transform="translate(175.8125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4b" transform="translate(225.8125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(257.609375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(283.015625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4d" transform="translate(317.921875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(369.125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(418.328125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(443.734375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(492.9375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4c" transform="translate(544.140625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4e" transform="translate(595.140625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(617.234375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(668.4375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-c" transform="translate(717.640625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(736.234375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(779.53125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-51" transform="translate(804.9375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(827.03125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4c" transform="translate(876.234375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-46" transform="translate(927.234375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-51" transform="translate(977.9375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(1000.03125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-46" transform="translate(1025.4375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-48" transform="translate(1076.140625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(1116.046875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4e" transform="translate(1150.953125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-54" transform="translate(1173.046875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(1223.046875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(1274.25 0)"/>
+    </g>
+   </g>
+   <g id="text_3">
+    <!-- The engine resolves -->
+    <g style="fill: #ffffff" transform="translate(727.2 295.7616) scale(0.3312 -0.3312)">
+     <defs>
+      <path id="Rajdhani-Bold-39" d="M 1690 0 
+L 1152 0 
+Q 1011 0 1011 134 
+L 1011 3341 
+Q 1011 3411 941 3411 
+L 211 3411 
+Q 77 3411 77 3546 
+L 77 3981 
+Q 77 4115 211 4115 
+L 2630 4115 
+Q 2765 4115 2765 3981 
+L 2765 3546 
+Q 2765 3411 2630 3411 
+L 1901 3411 
+Q 1824 3411 1824 3341 
+L 1824 134 
+Q 1824 0 1690 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Bold-53" d="M 1030 0 
+L 486 0 
+Q 352 0 352 134 
+L 352 3130 
+Q 352 3264 486 3264 
+L 1030 3264 
+Q 1165 3264 1165 3130 
+L 1165 2918 
+L 1190 2918 
+Q 1331 3264 1818 3264 
+L 2022 3264 
+Q 3027 3264 3027 2221 
+L 3027 134 
+Q 3027 0 2886 0 
+L 2349 0 
+Q 2214 0 2214 134 
+L 2214 2182 
+Q 2214 2387 2128 2473 
+Q 2042 2560 1837 2560 
+L 1606 2560 
+Q 1165 2560 1165 2074 
+L 1165 134 
+Q 1165 0 1030 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Bold-4c" d="M 1504 147 
+L 1293 147 
+Q 800 147 547 416 
+Q 294 685 294 1190 
+L 294 2221 
+Q 294 2726 569 2995 
+Q 845 3264 1350 3264 
+L 2829 3264 
+Q 2970 3264 2970 3130 
+L 2970 -26 
+Q 2970 -525 2691 -793 
+Q 2413 -1062 1914 -1062 
+L 685 -1062 
+Q 608 -1062 579 -1033 
+Q 550 -1005 550 -934 
+L 550 -493 
+Q 550 -358 685 -358 
+L 1779 -358 
+Q 1984 -358 2070 -272 
+Q 2157 -186 2157 13 
+L 2157 499 
+L 2131 499 
+Q 2061 326 1881 236 
+Q 1702 147 1504 147 
+z
+M 2157 1338 
+L 2157 2490 
+Q 2157 2560 2080 2560 
+L 1478 2560 
+Q 1274 2560 1190 2473 
+Q 1107 2387 1107 2182 
+L 1107 1229 
+Q 1107 1024 1190 941 
+Q 1274 858 1478 858 
+L 1715 858 
+Q 2157 858 2157 1338 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Bold-4e" d="M 384 3814 
+L 384 4371 
+Q 384 4499 512 4499 
+L 1069 4499 
+Q 1197 4499 1197 4378 
+L 1197 3814 
+Q 1197 3686 1069 3686 
+L 512 3686 
+Q 384 3686 384 3814 
+z
+M 384 134 
+L 384 3130 
+Q 384 3264 512 3264 
+L 1062 3264 
+Q 1197 3264 1197 3130 
+L 1197 134 
+Q 1197 51 1168 25 
+Q 1139 0 1069 0 
+L 518 0 
+Q 384 0 384 134 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Bold-57" d="M 1030 0 
+L 486 0 
+Q 352 0 352 134 
+L 352 3130 
+Q 352 3264 486 3264 
+L 1030 3264 
+Q 1165 3264 1165 3130 
+L 1165 2912 
+L 1190 2912 
+Q 1261 3085 1440 3174 
+Q 1619 3264 1818 3264 
+L 2048 3264 
+Q 2176 3264 2176 3130 
+L 2176 2688 
+Q 2176 2611 2147 2582 
+Q 2118 2554 2048 2560 
+L 1606 2560 
+Q 1165 2560 1165 2061 
+L 1165 134 
+Q 1165 0 1030 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Bold-51" d="M 1062 0 
+L 518 0 
+Q 384 0 384 134 
+L 384 4365 
+Q 384 4499 518 4499 
+L 1062 4499 
+Q 1197 4499 1197 4365 
+L 1197 134 
+Q 1197 0 1062 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Bold-5b" d="M 211 3264 
+L 774 3264 
+Q 902 3264 928 3130 
+L 1478 723 
+L 1523 723 
+L 2061 3130 
+Q 2086 3264 2221 3264 
+L 2784 3264 
+Q 2918 3264 2880 3130 
+L 2074 141 
+Q 2048 0 1901 0 
+L 1088 0 
+Q 954 0 915 141 
+L 115 3130 
+Q 77 3264 211 3264 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#Rajdhani-Bold-39"/>
+     <use xlink:href="#Rajdhani-Bold-4d" transform="translate(44.296875 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4a" transform="translate(96.59375 0)"/>
+     <use xlink:href="#Rajdhani-Bold-5" transform="translate(146 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4a" transform="translate(168 0)"/>
+     <use xlink:href="#Rajdhani-Bold-53" transform="translate(217.40625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4c" transform="translate(269.703125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4e" transform="translate(321.609375 0)"/>
+     <use xlink:href="#Rajdhani-Bold-53" transform="translate(346.3125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4a" transform="translate(398.609375 0)"/>
+     <use xlink:href="#Rajdhani-Bold-5" transform="translate(448.015625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-57" transform="translate(470.015625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4a" transform="translate(504.921875 0)"/>
+     <use xlink:href="#Rajdhani-Bold-58" transform="translate(554.328125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-54" transform="translate(598.125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-51" transform="translate(649.03125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-5b" transform="translate(673.734375 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4a" transform="translate(720.53125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-58" transform="translate(769.9375 0)"/>
+    </g>
+   </g>
+   <g id="text_4">
+    <!-- new state · events · next legal actions -->
+    <g style="fill: #ffffff; opacity: 0.66" transform="translate(727.2 327.4776) scale(0.2232 -0.2232)">
+     <defs>
+      <path id="Rajdhani-Medium-5c" d="M 1453 0 
+L 1062 0 
+Q 973 0 954 90 
+L 134 3174 
+Q 115 3264 198 3264 
+L 525 3264 
+Q 608 3264 627 3174 
+L 1248 563 
+L 1286 563 
+L 1946 3174 
+Q 1965 3264 2048 3264 
+L 2342 3264 
+Q 2432 3264 2458 3174 
+L 3098 563 
+L 3136 563 
+L 3763 3174 
+Q 3782 3264 3866 3264 
+L 4192 3264 
+Q 4275 3264 4256 3174 
+L 3437 90 
+Q 3418 0 3328 0 
+L 2931 0 
+Q 2848 0 2829 90 
+L 2208 2637 
+L 2176 2637 
+L 1562 90 
+Q 1542 0 1453 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Medium-74" d="M 909 2426 
+L 909 1651 
+Q 909 1562 826 1562 
+L 499 1562 
+Q 416 1562 416 1651 
+L 416 2419 
+Q 416 2509 499 2509 
+L 826 2509 
+Q 909 2509 909 2426 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Medium-5b" d="M 192 3264 
+L 493 3264 
+Q 576 3264 595 3174 
+L 1363 467 
+L 1395 467 
+L 2157 3174 
+Q 2182 3264 2266 3264 
+L 2566 3264 
+Q 2656 3264 2630 3174 
+L 1709 96 
+Q 1690 0 1594 0 
+L 1158 0 
+Q 1069 0 1043 96 
+L 128 3174 
+Q 102 3264 192 3264 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Medium-5d" d="M 570 0 
+L 211 0 
+Q 109 0 160 90 
+L 1056 1664 
+L 192 3174 
+Q 141 3264 237 3264 
+L 595 3264 
+Q 678 3264 730 3174 
+L 1357 1965 
+L 1382 1965 
+L 1978 3174 
+Q 2022 3264 2112 3264 
+L 2464 3264 
+Q 2573 3264 2509 3174 
+L 1670 1670 
+L 2579 90 
+Q 2637 0 2534 0 
+L 2163 0 
+Q 2093 0 2042 90 
+L 1382 1350 
+L 1357 1350 
+L 698 90 
+Q 659 0 570 0 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#Rajdhani-Medium-53"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(51.203125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5c" transform="translate(100.40625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(169 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(194.40625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(237.703125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-46" transform="translate(272.609375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(323.3125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(358.21875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(407.421875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-74" transform="translate(432.828125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(453.53125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(478.9375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5b" transform="translate(528.140625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(571.234375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(620.4375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(671.640625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(706.546875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(749.84375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-74" transform="translate(775.25 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(795.953125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(821.359375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(872.5625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5d" transform="translate(921.765625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(964.46875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(999.375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-51" transform="translate(1024.78125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(1046.875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4c" transform="translate(1096.078125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-46" transform="translate(1147.078125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-51" transform="translate(1197.78125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(1219.875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-46" transform="translate(1245.28125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-48" transform="translate(1295.984375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(1335.890625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4e" transform="translate(1370.796875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-54" transform="translate(1392.890625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(1442.890625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(1494.09375 0)"/>
+    </g>
+   </g>
+   <g id="text_5">
+    <!-- The narrator -->
+    <g style="fill: #ffffff" transform="translate(727.2 539.1216) scale(0.3312 -0.3312)">
+     <defs>
+      <path id="Rajdhani-Bold-46" d="M 1498 0 
+L 1344 0 
+Q 838 0 563 269 
+Q 288 538 288 1043 
+L 288 2221 
+Q 288 2726 563 2995 
+Q 838 3264 1344 3264 
+L 2822 3264 
+Q 2963 3264 2963 3130 
+L 2963 134 
+Q 2963 0 2822 0 
+L 2285 0 
+Q 2150 0 2150 134 
+L 2150 346 
+L 2125 346 
+Q 2054 173 1875 86 
+Q 1696 0 1498 0 
+z
+M 2150 1190 
+L 2150 2490 
+Q 2150 2560 2074 2560 
+L 1472 2560 
+Q 1267 2560 1184 2473 
+Q 1101 2387 1101 2182 
+L 1101 1082 
+Q 1101 877 1184 790 
+Q 1267 704 1472 704 
+L 1709 704 
+Q 2150 704 2150 1190 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Bold-59" d="M 422 2560 
+L 166 2560 
+Q 90 2560 61 2585 
+Q 32 2611 32 2688 
+L 32 3130 
+Q 32 3264 166 3264 
+L 422 3264 
+Q 493 3264 493 3334 
+L 493 3942 
+Q 493 4077 634 4077 
+L 1171 4077 
+Q 1306 4077 1306 3942 
+L 1306 3334 
+Q 1306 3264 1382 3264 
+L 1882 3264 
+Q 2016 3264 2016 3130 
+L 2016 2688 
+Q 2016 2618 1987 2589 
+Q 1958 2560 1882 2560 
+L 1382 2560 
+Q 1306 2560 1306 2490 
+L 1306 1075 
+Q 1306 877 1395 790 
+Q 1485 704 1690 704 
+L 1946 704 
+Q 2080 704 2080 570 
+L 2080 128 
+Q 2080 58 2051 29 
+Q 2022 0 1946 0 
+L 1555 0 
+Q 1050 0 771 269 
+Q 493 538 493 1037 
+L 493 2490 
+Q 493 2560 422 2560 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#Rajdhani-Bold-39"/>
+     <use xlink:href="#Rajdhani-Bold-4d" transform="translate(44.296875 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4a" transform="translate(96.59375 0)"/>
+     <use xlink:href="#Rajdhani-Bold-5" transform="translate(146 0)"/>
+     <use xlink:href="#Rajdhani-Bold-53" transform="translate(168 0)"/>
+     <use xlink:href="#Rajdhani-Bold-46" transform="translate(220.296875 0)"/>
+     <use xlink:href="#Rajdhani-Bold-57" transform="translate(272.09375 0)"/>
+     <use xlink:href="#Rajdhani-Bold-57" transform="translate(307 0)"/>
+     <use xlink:href="#Rajdhani-Bold-46" transform="translate(341.90625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-59" transform="translate(393.703125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-54" transform="translate(429 0)"/>
+     <use xlink:href="#Rajdhani-Bold-57" transform="translate(479.90625 0)"/>
+    </g>
+   </g>
+   <g id="text_6">
+    <!-- turns the events into an instruction. -->
+    <g style="fill: #ffffff; opacity: 0.66" transform="translate(727.2 570.8376) scale(0.2232 -0.2232)">
+     <defs>
+      <path id="Rajdhani-Medium-5a" d="M 1690 0 
+L 1331 0 
+Q 896 0 653 249 
+Q 410 499 410 947 
+L 410 3174 
+Q 410 3264 499 3264 
+L 787 3264 
+Q 877 3264 877 3174 
+L 877 966 
+Q 877 410 1408 410 
+L 1773 410 
+Q 2061 410 2214 563 
+Q 2368 717 2368 998 
+L 2368 3174 
+Q 2368 3264 2458 3264 
+L 2746 3264 
+Q 2835 3264 2835 3174 
+L 2835 90 
+Q 2835 0 2746 0 
+L 2458 0 
+Q 2368 0 2368 90 
+L 2368 339 
+L 2342 339 
+Q 2182 0 1690 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Medium-57" d="M 819 0 
+L 531 0 
+Q 442 0 442 90 
+L 442 3174 
+Q 442 3264 531 3264 
+L 819 3264 
+Q 909 3264 909 3174 
+L 909 2918 
+L 934 2918 
+Q 998 3059 1177 3161 
+Q 1357 3264 1600 3264 
+L 1850 3264 
+Q 1933 3264 1933 3174 
+L 1933 2938 
+Q 1933 2893 1913 2870 
+Q 1894 2848 1850 2854 
+L 1504 2854 
+Q 1216 2854 1062 2681 
+Q 909 2509 909 2208 
+L 909 90 
+Q 909 0 819 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Medium-13" d="M 870 864 
+L 870 90 
+Q 870 0 787 0 
+L 461 0 
+Q 378 0 378 90 
+L 378 864 
+Q 378 947 461 947 
+L 787 947 
+Q 870 947 870 864 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#Rajdhani-Medium-59"/>
+     <use xlink:href="#Rajdhani-Medium-5a" transform="translate(34.90625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-57" transform="translate(86.109375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(118.40625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(169.609375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(212.90625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(238.3125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4d" transform="translate(273.21875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(324.421875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(373.625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(399.03125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5b" transform="translate(448.234375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(491.328125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(540.53125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(591.734375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(626.640625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(669.9375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4e" transform="translate(695.34375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(717.4375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(768.640625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-54" transform="translate(803.546875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(853.546875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-46" transform="translate(878.953125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(929.65625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(980.859375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4e" transform="translate(1006.265625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(1028.359375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(1079.5625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(1122.859375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-57" transform="translate(1157.765625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5a" transform="translate(1190.0625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-48" transform="translate(1241.265625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(1281.171875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4e" transform="translate(1316.078125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-54" transform="translate(1338.171875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(1388.171875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-13" transform="translate(1439.375 0)"/>
+    </g>
+   </g>
+   <g id="text_7">
+    <!-- No numbers. -->
+    <g style="fill: #ffffff; opacity: 0.66" transform="translate(727.2 598.1976) scale(0.2232 -0.2232)">
+     <defs>
+      <path id="Rajdhani-Medium-33" d="M 877 0 
+L 595 0 
+Q 506 0 506 90 
+L 506 4026 
+Q 506 4115 595 4115 
+L 858 4115 
+Q 934 4115 960 4064 
+L 2726 960 
+L 2752 960 
+L 2752 4026 
+Q 2752 4115 2842 4115 
+L 3123 4115 
+Q 3213 4115 3213 4026 
+L 3213 90 
+Q 3213 0 3123 0 
+L 2886 0 
+Q 2816 0 2752 83 
+L 992 3155 
+L 966 3155 
+L 966 90 
+Q 966 0 877 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Medium-52" d="M 819 0 
+L 531 0 
+Q 442 0 442 90 
+L 442 3174 
+Q 442 3264 531 3264 
+L 819 3264 
+Q 909 3264 909 3174 
+L 909 2925 
+L 934 2925 
+Q 1114 3264 1613 3264 
+L 1850 3264 
+Q 2413 3264 2630 2829 
+Q 2733 3040 2953 3152 
+Q 3174 3264 3418 3264 
+L 3642 3264 
+Q 4077 3264 4320 3014 
+Q 4563 2765 4563 2317 
+L 4563 90 
+Q 4563 0 4474 0 
+L 4186 0 
+Q 4096 0 4096 90 
+L 4096 2298 
+Q 4096 2854 3558 2854 
+L 3347 2854 
+Q 3059 2854 2902 2691 
+Q 2746 2528 2746 2246 
+L 2746 90 
+Q 2746 0 2656 0 
+L 2368 0 
+Q 2278 0 2278 90 
+L 2278 2298 
+Q 2278 2854 1741 2854 
+L 1504 2854 
+Q 1216 2854 1062 2700 
+Q 909 2547 909 2266 
+L 909 90 
+Q 909 0 819 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Medium-47" d="M 973 410 
+L 1882 410 
+Q 2426 410 2426 966 
+L 2426 2336 
+Q 2426 2893 1882 2893 
+L 1504 2893 
+Q 1216 2893 1062 2739 
+Q 909 2586 909 2310 
+L 909 467 
+Q 909 410 973 410 
+z
+M 442 90 
+L 442 4410 
+Q 442 4499 531 4499 
+L 819 4499 
+Q 909 4499 909 4410 
+L 909 2963 
+L 934 2963 
+Q 1094 3302 1587 3302 
+L 1946 3302 
+Q 2381 3302 2633 3052 
+Q 2886 2803 2886 2362 
+L 2886 947 
+Q 2886 499 2633 249 
+Q 2381 0 1946 0 
+L 531 0 
+Q 442 0 442 90 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#Rajdhani-Medium-33"/>
+     <use xlink:href="#Rajdhani-Medium-54" transform="translate(58.09375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(108.09375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(133.5 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5a" transform="translate(184.703125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-52" transform="translate(235.90625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-47" transform="translate(313.609375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(364.609375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-57" transform="translate(413.8125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(446.109375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-13" transform="translate(489.40625 0)"/>
+    </g>
+   </g>
+   <g id="text_8">
+    <!-- The local model -->
+    <g style="fill: #ffffff" transform="translate(727.2 782.4816) scale(0.3312 -0.3312)">
+     <defs>
+      <path id="Rajdhani-Bold-52" d="M 1030 0 
+L 486 0 
+Q 352 0 352 134 
+L 352 3130 
+Q 352 3264 486 3264 
+L 1030 3264 
+Q 1165 3264 1165 3130 
+L 1165 2918 
+L 1190 2918 
+Q 1267 3072 1449 3168 
+Q 1632 3264 1869 3264 
+L 2048 3264 
+Q 2605 3264 2848 2854 
+Q 3066 3264 3597 3264 
+L 3782 3264 
+Q 4275 3264 4528 2995 
+Q 4781 2726 4781 2221 
+L 4781 134 
+Q 4781 0 4646 0 
+L 4102 0 
+Q 3968 0 3968 134 
+L 3968 2182 
+Q 3968 2387 3885 2473 
+Q 3802 2560 3597 2560 
+L 3437 2560 
+Q 2995 2560 2995 2067 
+L 2995 134 
+Q 2995 0 2854 0 
+L 2317 0 
+Q 2182 0 2182 134 
+L 2182 2182 
+Q 2182 2387 2096 2473 
+Q 2010 2560 1805 2560 
+L 1606 2560 
+Q 1165 2560 1165 2074 
+L 1165 134 
+Q 1165 0 1030 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Bold-49" d="M 1549 0 
+L 1286 0 
+Q 794 0 541 269 
+Q 288 538 288 1043 
+L 288 2221 
+Q 288 2726 541 2995 
+Q 794 3264 1286 3264 
+L 1549 3264 
+Q 1747 3264 1926 3177 
+Q 2106 3091 2176 2918 
+L 2202 2918 
+L 2202 4365 
+Q 2202 4499 2336 4499 
+L 2880 4499 
+Q 3014 4499 3014 4365 
+L 3014 134 
+Q 3014 0 2880 0 
+L 2336 0 
+Q 2202 0 2202 134 
+L 2202 346 
+L 2176 346 
+Q 2106 173 1926 86 
+Q 1747 0 1549 0 
+z
+M 2202 1190 
+L 2202 2074 
+Q 2202 2560 1760 2560 
+L 1472 2560 
+Q 1267 2560 1184 2473 
+Q 1101 2387 1101 2182 
+L 1101 1082 
+Q 1101 877 1184 790 
+Q 1267 704 1472 704 
+L 1760 704 
+Q 2202 704 2202 1190 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#Rajdhani-Bold-39"/>
+     <use xlink:href="#Rajdhani-Bold-4d" transform="translate(44.296875 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4a" transform="translate(96.59375 0)"/>
+     <use xlink:href="#Rajdhani-Bold-5" transform="translate(146 0)"/>
+     <use xlink:href="#Rajdhani-Bold-51" transform="translate(168 0)"/>
+     <use xlink:href="#Rajdhani-Bold-54" transform="translate(192.703125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-48" transform="translate(243.609375 0)"/>
+     <use xlink:href="#Rajdhani-Bold-46" transform="translate(284.703125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-51" transform="translate(336.5 0)"/>
+     <use xlink:href="#Rajdhani-Bold-5" transform="translate(361.203125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-52" transform="translate(383.203125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-54" transform="translate(463 0)"/>
+     <use xlink:href="#Rajdhani-Bold-49" transform="translate(513.90625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4a" transform="translate(566.5 0)"/>
+     <use xlink:href="#Rajdhani-Bold-51" transform="translate(615.90625 0)"/>
+    </g>
+   </g>
+   <g id="text_9">
+    <!-- streams the story text -->
+    <g style="fill: #ffffff; opacity: 0.66" transform="translate(727.2 814.1976) scale(0.2232 -0.2232)">
+     <defs>
+      <path id="Rajdhani-Medium-5e" d="M 704 -1005 
+L 422 -1005 
+Q 333 -1005 333 -915 
+L 333 -678 
+Q 333 -589 422 -589 
+L 582 -589 
+Q 992 -589 1158 -358 
+Q 1293 -173 1402 173 
+L 1216 173 
+Q 1139 173 1107 262 
+L 166 3174 
+Q 141 3264 230 3264 
+L 538 3264 
+Q 621 3264 646 3174 
+L 1472 538 
+L 1498 538 
+L 2323 3174 
+Q 2342 3264 2426 3264 
+L 2720 3264 
+Q 2829 3264 2797 3168 
+L 1843 128 
+Q 1683 -416 1436 -710 
+Q 1190 -1005 704 -1005 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#Rajdhani-Medium-58"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(43.296875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-57" transform="translate(78.203125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(110.5 0)"/>
+     <use xlink:href="#Rajdhani-Medium-46" transform="translate(159.703125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-52" transform="translate(210.40625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(288.109375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(331.40625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(356.8125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4d" transform="translate(391.71875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(442.921875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(492.125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(517.53125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(560.828125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-54" transform="translate(595.734375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-57" transform="translate(645.734375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5e" transform="translate(678.03125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(724.328125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(749.734375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(784.640625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5d" transform="translate(833.84375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(876.546875 0)"/>
+    </g>
+   </g>
+   <g id="text_10">
+    <!-- The screen -->
+    <g style="fill: #ffffff" transform="translate(64.8 782.4816) scale(0.3312 -0.3312)">
+     <use xlink:href="#Rajdhani-Bold-39"/>
+     <use xlink:href="#Rajdhani-Bold-4d" transform="translate(44.296875 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4a" transform="translate(96.59375 0)"/>
+     <use xlink:href="#Rajdhani-Bold-5" transform="translate(146 0)"/>
+     <use xlink:href="#Rajdhani-Bold-58" transform="translate(168 0)"/>
+     <use xlink:href="#Rajdhani-Bold-48" transform="translate(211.796875 0)"/>
+     <use xlink:href="#Rajdhani-Bold-57" transform="translate(252.890625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4a" transform="translate(287.796875 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4a" transform="translate(337.203125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-53" transform="translate(386.609375 0)"/>
+    </g>
+   </g>
+   <g id="text_11">
+    <!-- the prose, plus the engine's actions -->
+    <g style="fill: #ffffff; opacity: 0.66" transform="translate(64.8 814.1976) scale(0.2232 -0.2232)">
+     <defs>
+      <path id="Rajdhani-Medium-55" d="M 819 -934 
+L 531 -934 
+Q 442 -934 442 -845 
+L 442 3174 
+Q 442 3264 531 3264 
+L 819 3264 
+Q 909 3264 909 3174 
+L 909 2925 
+L 934 2925 
+Q 1094 3264 1587 3264 
+L 1971 3264 
+Q 2406 3264 2646 3014 
+Q 2886 2765 2886 2317 
+L 2886 947 
+Q 2886 499 2646 249 
+Q 2406 0 1971 0 
+L 1587 0 
+Q 1094 0 934 339 
+L 909 339 
+L 909 -845 
+Q 909 -934 819 -934 
+z
+M 1504 410 
+L 1882 410 
+Q 2426 410 2426 966 
+L 2426 2298 
+Q 2426 2854 1882 2854 
+L 1504 2854 
+Q 1216 2854 1062 2700 
+Q 909 2547 909 2266 
+L 909 998 
+Q 909 717 1062 563 
+Q 1216 410 1504 410 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Medium-11" d="M 870 864 
+L 870 358 
+Q 870 218 774 -13 
+L 518 -614 
+Q 486 -666 442 -666 
+Q 378 -666 378 -582 
+L 378 864 
+Q 378 947 461 947 
+L 787 947 
+Q 870 947 870 864 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#Rajdhani-Medium-59"/>
+     <use xlink:href="#Rajdhani-Medium-4d" transform="translate(34.90625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(86.109375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(135.3125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-55" transform="translate(160.71875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-57" transform="translate(211.71875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-54" transform="translate(244.015625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(294.015625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(337.3125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-11" transform="translate(386.515625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(405.921875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-55" transform="translate(431.328125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-51" transform="translate(482.328125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5a" transform="translate(504.421875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(555.625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(598.921875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(624.328125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4d" transform="translate(659.234375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(710.4375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(759.640625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(785.046875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(834.25 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4c" transform="translate(885.453125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4e" transform="translate(936.453125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(958.546875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(1009.75 0)"/>
+     <use xlink:href="#Rajdhani-Medium-c" transform="translate(1058.953125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(1077.546875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(1120.84375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-46" transform="translate(1146.25 0)"/>
+     <use xlink:href="#Rajdhani-Medium-48" transform="translate(1196.953125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(1236.859375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4e" transform="translate(1271.765625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-54" transform="translate(1293.859375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(1343.859375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(1395.0625 0)"/>
+    </g>
+   </g>
+   <g id="text_12">
+    <!-- On a boss turn: -->
+    <g style="fill: #ffffff; opacity: 0.86" transform="translate(64.8 66.7368) scale(0.2376 -0.2376)">
+     <defs>
+      <path id="Rajdhani-Bold-34" d="M 1536 704 
+L 1990 704 
+Q 2195 704 2281 790 
+Q 2368 877 2368 1082 
+L 2368 3034 
+Q 2368 3238 2281 3324 
+Q 2195 3411 1990 3411 
+L 1536 3411 
+Q 1331 3411 1248 3324 
+Q 1165 3238 1165 3034 
+L 1165 1082 
+Q 1165 877 1248 790 
+Q 1331 704 1536 704 
+z
+M 2125 0 
+L 1408 0 
+Q 902 0 627 269 
+Q 352 538 352 1043 
+L 352 3072 
+Q 352 3578 627 3846 
+Q 902 4115 1408 4115 
+L 2125 4115 
+Q 2630 4115 2905 3846 
+Q 3181 3578 3181 3072 
+L 3181 1043 
+Q 3181 538 2905 269 
+Q 2630 0 2125 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Bold-47" d="M 1235 704 
+L 1888 704 
+Q 2093 704 2179 790 
+Q 2266 877 2266 1082 
+L 2266 2195 
+Q 2266 2400 2179 2486 
+Q 2093 2573 1888 2573 
+L 1606 2573 
+Q 1165 2573 1165 2086 
+L 1165 774 
+Q 1165 704 1235 704 
+z
+M 352 134 
+L 352 4365 
+Q 352 4499 486 4499 
+L 1030 4499 
+Q 1165 4499 1165 4365 
+L 1165 2925 
+L 1190 2925 
+Q 1261 3098 1440 3187 
+Q 1619 3277 1818 3277 
+L 2022 3277 
+Q 2528 3277 2803 3008 
+Q 3078 2739 3078 2234 
+L 3078 1043 
+Q 3078 538 2803 269 
+Q 2528 0 2022 0 
+L 486 0 
+Q 352 0 352 134 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Bold-1f" d="M 1062 3142 
+L 1062 2355 
+Q 1062 2221 941 2221 
+L 371 2221 
+Q 243 2221 243 2368 
+L 243 3136 
+Q 243 3264 371 3264 
+L 941 3264 
+Q 1062 3264 1062 3142 
+z
+M 1062 922 
+L 1062 134 
+Q 1062 0 941 0 
+L 371 0 
+Q 243 0 243 141 
+L 243 915 
+Q 243 1043 371 1043 
+L 941 1043 
+Q 1062 1043 1062 922 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#Rajdhani-Bold-34"/>
+     <use xlink:href="#Rajdhani-Bold-53" transform="translate(55.203125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-5" transform="translate(107.5 0)"/>
+     <use xlink:href="#Rajdhani-Bold-46" transform="translate(129.5 0)"/>
+     <use xlink:href="#Rajdhani-Bold-5" transform="translate(181.296875 0)"/>
+     <use xlink:href="#Rajdhani-Bold-47" transform="translate(203.296875 0)"/>
+     <use xlink:href="#Rajdhani-Bold-54" transform="translate(255.890625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-58" transform="translate(306.796875 0)"/>
+     <use xlink:href="#Rajdhani-Bold-58" transform="translate(350.59375 0)"/>
+     <use xlink:href="#Rajdhani-Bold-5" transform="translate(394.390625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-59" transform="translate(416.390625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-5a" transform="translate(451.6875 0)"/>
+     <use xlink:href="#Rajdhani-Bold-57" transform="translate(503.984375 0)"/>
+     <use xlink:href="#Rajdhani-Bold-53" transform="translate(538.890625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-1f" transform="translate(591.1875 0)"/>
+    </g>
+   </g>
+   <g id="text_13">
+    <!-- the engine lists the boss's legal moves, -->
+    <g style="fill: #ffffff; opacity: 0.66" transform="translate(64.8 95.7384) scale(0.2088 -0.2088)">
+     <use xlink:href="#Rajdhani-Medium-59"/>
+     <use xlink:href="#Rajdhani-Medium-4d" transform="translate(34.90625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(86.109375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(135.3125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(160.71875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(209.921875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4c" transform="translate(261.125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4e" transform="translate(312.125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(334.21875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(385.421875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(434.625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-51" transform="translate(460.03125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4e" transform="translate(482.125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(504.21875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(547.515625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(582.421875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(625.71875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(651.125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4d" transform="translate(686.03125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(737.234375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(786.4375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-47" transform="translate(811.84375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-54" transform="translate(862.84375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(912.84375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(956.140625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-c" transform="translate(999.4375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(1018.03125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(1061.328125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-51" transform="translate(1086.734375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(1108.828125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4c" transform="translate(1158.03125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-46" transform="translate(1209.03125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-51" transform="translate(1259.734375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(1281.828125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-52" transform="translate(1307.234375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-54" transform="translate(1384.9375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5b" transform="translate(1434.9375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(1478.03125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(1527.234375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-11" transform="translate(1570.53125 0)"/>
+    </g>
+   </g>
+   <g id="text_14">
+    <!-- the model picks one, and the pick is -->
+    <g style="fill: #ffffff; opacity: 0.66" transform="translate(64.8 121.6584) scale(0.2088 -0.2088)">
+     <defs>
+      <path id="Rajdhani-Medium-49" d="M 1677 0 
+L 1299 0 
+Q 864 0 621 249 
+Q 378 499 378 947 
+L 378 2317 
+Q 378 2765 621 3014 
+Q 864 3264 1299 3264 
+L 1677 3264 
+Q 2176 3264 2336 2925 
+L 2362 2925 
+L 2362 4410 
+Q 2362 4499 2445 4499 
+L 2739 4499 
+Q 2822 4499 2822 4410 
+L 2822 90 
+Q 2822 0 2739 0 
+L 2445 0 
+Q 2362 0 2362 90 
+L 2362 339 
+L 2336 339 
+Q 2176 0 1677 0 
+z
+M 2362 998 
+L 2362 2266 
+Q 2362 2547 2208 2700 
+Q 2054 2854 1766 2854 
+L 1376 2854 
+Q 845 2854 845 2298 
+L 845 966 
+Q 845 410 1376 410 
+L 1766 410 
+Q 2054 410 2208 563 
+Q 2362 717 2362 998 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Medium-50" d="M 2291 3264 
+L 2611 3264 
+Q 2662 3264 2678 3235 
+Q 2694 3206 2662 3162 
+L 1722 1702 
+L 1722 1677 
+L 2758 102 
+Q 2784 58 2765 29 
+Q 2746 0 2694 0 
+L 2394 0 
+Q 2272 0 2214 90 
+L 1229 1613 
+Q 1190 1677 1229 1747 
+L 2138 3181 
+Q 2176 3264 2291 3264 
+z
+M 819 0 
+L 531 0 
+Q 442 0 442 90 
+L 442 4410 
+Q 442 4499 531 4499 
+L 819 4499 
+Q 909 4499 909 4410 
+L 909 90 
+Q 909 0 819 0 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#Rajdhani-Medium-59"/>
+     <use xlink:href="#Rajdhani-Medium-4d" transform="translate(34.90625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(86.109375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(135.3125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-52" transform="translate(160.71875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-54" transform="translate(238.421875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-49" transform="translate(288.421875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(339.421875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-51" transform="translate(388.625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(410.71875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-55" transform="translate(436.125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4e" transform="translate(487.125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-48" transform="translate(509.21875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-50" transform="translate(549.125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(593.421875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(636.71875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-54" transform="translate(662.125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(712.125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(763.328125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-11" transform="translate(812.53125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(831.9375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-46" transform="translate(857.34375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(908.046875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-49" transform="translate(959.25 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(1010.25 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(1035.65625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4d" transform="translate(1070.5625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(1121.765625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(1170.96875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-55" transform="translate(1196.375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4e" transform="translate(1247.375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-48" transform="translate(1269.46875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-50" transform="translate(1309.375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(1353.671875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4e" transform="translate(1379.078125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(1401.171875 0)"/>
+    </g>
+   </g>
+   <g id="text_15">
+    <!-- recorded as an input. A fixed policy takes -->
+    <g style="fill: #ffffff; opacity: 0.66" transform="translate(64.8 147.5784) scale(0.2088 -0.2088)">
+     <defs>
+      <path id="Rajdhani-Medium-26" d="M 557 0 
+L 237 0 
+Q 154 0 179 90 
+L 1376 4026 
+Q 1402 4115 1498 4115 
+L 1958 4115 
+Q 2054 4115 2080 4026 
+L 3277 90 
+Q 3302 0 3219 0 
+L 2893 0 
+Q 2822 0 2803 90 
+L 2502 1024 
+L 954 1024 
+L 653 90 
+Q 627 0 557 0 
+z
+M 1715 3635 
+L 1056 1421 
+L 2400 1421 
+L 1741 3635 
+L 1715 3635 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#Rajdhani-Medium-57"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(32.296875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-48" transform="translate(81.5 0)"/>
+     <use xlink:href="#Rajdhani-Medium-54" transform="translate(121.40625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-57" transform="translate(171.40625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-49" transform="translate(203.703125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(254.703125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-49" transform="translate(303.90625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(354.90625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-46" transform="translate(380.3125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(431.015625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(474.3125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-46" transform="translate(499.71875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(550.421875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(601.625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4e" transform="translate(627.03125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(649.125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-55" transform="translate(700.328125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5a" transform="translate(751.328125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(802.53125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-13" transform="translate(837.4375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(856.84375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-26" transform="translate(882.25 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(936.25 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4b" transform="translate(961.65625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4e" transform="translate(993.453125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5d" transform="translate(1015.546875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(1058.25 0)"/>
+     <use xlink:href="#Rajdhani-Medium-49" transform="translate(1107.453125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(1158.453125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-55" transform="translate(1183.859375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-54" transform="translate(1234.859375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-51" transform="translate(1284.859375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4e" transform="translate(1306.953125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-48" transform="translate(1329.046875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5e" transform="translate(1368.953125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(1415.25 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(1440.65625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-46" transform="translate(1475.5625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-50" transform="translate(1526.265625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(1570.5625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(1619.765625 0)"/>
+    </g>
+   </g>
+   <g id="text_16">
+    <!-- over if the model fails. -->
+    <g style="fill: #ffffff; opacity: 0.66" transform="translate(64.8 173.4984) scale(0.2088 -0.2088)">
+     <use xlink:href="#Rajdhani-Medium-54"/>
+     <use xlink:href="#Rajdhani-Medium-5b" transform="translate(50 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(93.09375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-57" transform="translate(142.296875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(174.59375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4e" transform="translate(200 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4b" transform="translate(222.09375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(253.890625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(279.296875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4d" transform="translate(314.203125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(365.40625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(414.609375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-52" transform="translate(440.015625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-54" transform="translate(517.71875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-49" transform="translate(567.71875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(618.71875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-51" transform="translate(667.921875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(690.015625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4b" transform="translate(715.421875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-46" transform="translate(747.21875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4e" transform="translate(797.921875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-51" transform="translate(820.015625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(842.109375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-13" transform="translate(885.40625 0)"/>
+    </g>
+   </g>
+   <g id="text_17">
+    <!-- If the model fails: -->
+    <g style="fill: #ffffff; opacity: 0.86" transform="translate(727.2 953.7768) scale(0.2376 -0.2376)">
+     <defs>
+      <path id="Rajdhani-Bold-2e" d="M 1261 3981 
+L 1261 134 
+Q 1261 0 1126 0 
+L 582 0 
+Q 448 0 448 134 
+L 448 3981 
+Q 448 4115 582 4115 
+L 1126 4115 
+Q 1261 4115 1261 3981 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Bold-4b" d="M 1536 3264 
+L 2048 3264 
+Q 2125 3264 2153 3235 
+Q 2182 3206 2182 3136 
+L 2182 2694 
+Q 2182 2560 2048 2560 
+L 1536 2560 
+Q 1466 2560 1466 2490 
+L 1466 134 
+Q 1466 0 1325 0 
+L 787 0 
+Q 653 0 653 134 
+L 653 2490 
+Q 653 2560 576 2560 
+L 282 2560 
+Q 147 2560 147 2694 
+L 147 3136 
+Q 147 3213 176 3238 
+Q 205 3264 282 3264 
+L 576 3264 
+Q 653 3264 653 3334 
+L 653 3456 
+Q 653 3962 918 4230 
+Q 1184 4499 1690 4499 
+L 2054 4499 
+Q 2131 4499 2156 4470 
+Q 2182 4442 2182 4371 
+L 2182 3930 
+Q 2182 3795 2054 3795 
+L 1818 3795 
+Q 1613 3795 1539 3708 
+Q 1466 3622 1466 3418 
+L 1466 3334 
+Q 1466 3264 1536 3264 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#Rajdhani-Bold-2e"/>
+     <use xlink:href="#Rajdhani-Bold-4b" transform="translate(26.703125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-5" transform="translate(62.109375 0)"/>
+     <use xlink:href="#Rajdhani-Bold-59" transform="translate(84.109375 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4d" transform="translate(119.40625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4a" transform="translate(171.703125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-5" transform="translate(221.109375 0)"/>
+     <use xlink:href="#Rajdhani-Bold-52" transform="translate(243.109375 0)"/>
+     <use xlink:href="#Rajdhani-Bold-54" transform="translate(322.90625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-49" transform="translate(373.8125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4a" transform="translate(426.40625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-51" transform="translate(475.8125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-5" transform="translate(500.515625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4b" transform="translate(522.515625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-46" transform="translate(557.921875 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4e" transform="translate(609.71875 0)"/>
+     <use xlink:href="#Rajdhani-Bold-51" transform="translate(634.421875 0)"/>
+     <use xlink:href="#Rajdhani-Bold-58" transform="translate(659.125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-1f" transform="translate(702.921875 0)"/>
+    </g>
+   </g>
+   <g id="text_18">
+    <!-- the screen shows the plain facts instead. -->
+    <g style="fill: #ffffff; opacity: 0.66" transform="translate(727.2 982.7784) scale(0.2088 -0.2088)">
+     <use xlink:href="#Rajdhani-Medium-59"/>
+     <use xlink:href="#Rajdhani-Medium-4d" transform="translate(34.90625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(86.109375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(135.3125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(160.71875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-48" transform="translate(204.015625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-57" transform="translate(243.921875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(276.21875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(325.421875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(374.625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(425.828125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(451.234375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4d" transform="translate(494.53125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-54" transform="translate(545.734375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5c" transform="translate(595.734375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(664.328125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(707.625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(733.03125 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4d" transform="translate(767.9375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(819.140625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(868.34375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-55" transform="translate(893.75 0)"/>
+     <use xlink:href="#Rajdhani-Medium-51" transform="translate(944.75 0)"/>
+     <use xlink:href="#Rajdhani-Medium-46" transform="translate(966.84375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4e" transform="translate(1017.546875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(1039.640625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(1090.84375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4b" transform="translate(1116.25 0)"/>
+     <use xlink:href="#Rajdhani-Medium-46" transform="translate(1148.046875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-48" transform="translate(1198.75 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(1238.65625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(1273.5625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-5" transform="translate(1316.859375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4e" transform="translate(1342.265625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-53" transform="translate(1364.359375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-58" transform="translate(1415.5625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-59" transform="translate(1458.859375 0)"/>
+     <use xlink:href="#Rajdhani-Medium-4a" transform="translate(1493.765625 0)"/>
+     <use xlink:href="#Rajdhani-Medium-46" transform="translate(1542.96875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-49" transform="translate(1593.671875 0)"/>
+     <use xlink:href="#Rajdhani-Medium-13" transform="translate(1644.671875 0)"/>
+    </g>
+   </g>
+   <g id="text_19">
+    <!-- // ONE TURN -->
+    <g style="fill: #ff8a3d" transform="translate(705.6 49.13424) scale(0.1584 -0.1584)">
+     <defs>
+      <path id="Orbitron-SemiBold-86" d="M 38 0 
+L 38 0 
+L 38 845 
+L 3104 4582 
+L 3309 4608 
+L 3309 3776 
+L 250 32 
+L 38 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Orbitron-SemiBold-98" transform="scale(0.015625)"/>
+      <path id="Orbitron-SemiBold-20" d="M 1210 0 
+Q 973 0 774 115 
+Q 576 230 461 428 
+Q 346 627 346 864 
+L 346 3744 
+Q 346 3981 461 4179 
+Q 576 4378 774 4493 
+Q 973 4608 1210 4608 
+L 4090 4608 
+Q 4326 4608 4521 4493 
+Q 4717 4378 4835 4179 
+Q 4954 3981 4954 3744 
+L 4954 864 
+Q 4954 627 4835 428 
+Q 4717 230 4521 115 
+Q 4326 0 4090 0 
+L 1210 0 
+z
+M 1229 774 
+L 4058 774 
+Q 4109 774 4144 806 
+Q 4179 838 4179 890 
+L 4179 3718 
+Q 4179 3770 4144 3802 
+Q 4109 3834 4058 3834 
+L 1229 3834 
+Q 1184 3834 1149 3802 
+Q 1114 3770 1114 3718 
+L 1114 890 
+Q 1114 838 1149 806 
+Q 1184 774 1229 774 
+z
+" transform="scale(0.015625)"/>
+      <path id="Orbitron-SemiBold-1e" d="M 358 0 
+L 358 4608 
+L 1235 4608 
+L 4192 1088 
+L 4192 4608 
+L 4966 4608 
+L 4966 0 
+L 4090 0 
+L 1126 3526 
+L 1126 0 
+L 358 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Orbitron-SemiBold-d" d="M 371 0 
+L 371 4608 
+L 4602 4608 
+L 4602 3834 
+L 1146 3834 
+L 1146 2694 
+L 3930 2694 
+L 3930 1914 
+L 1146 1914 
+L 1146 774 
+L 4602 774 
+L 4602 0 
+L 371 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Orbitron-SemiBold-2b" d="M 2048 0 
+L 2048 3834 
+L 128 3834 
+L 128 4608 
+L 4736 4608 
+L 4736 3834 
+L 2822 3834 
+L 2822 0 
+L 2048 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Orbitron-SemiBold-2c" d="M 1210 0 
+Q 973 0 774 115 
+Q 576 230 461 428 
+Q 346 627 346 864 
+L 346 4608 
+L 1114 4608 
+L 1114 890 
+Q 1114 838 1149 806 
+Q 1184 774 1229 774 
+L 4058 774 
+Q 4109 774 4144 806 
+Q 4179 838 4179 890 
+L 4179 4608 
+L 4954 4608 
+L 4954 864 
+Q 4954 627 4835 428 
+Q 4717 230 4521 115 
+Q 4326 0 4090 0 
+L 1210 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Orbitron-SemiBold-29" d="M 4083 0 
+L 2733 1613 
+L 1126 1606 
+L 1126 0 
+L 358 0 
+L 358 4602 
+L 4102 4602 
+Q 4339 4602 4534 4483 
+Q 4730 4365 4848 4169 
+Q 4966 3974 4966 3738 
+L 4966 2470 
+Q 4966 2240 4848 2041 
+Q 4730 1843 4534 1728 
+Q 4339 1613 4102 1613 
+L 3738 1613 
+L 4947 179 
+L 4947 0 
+L 4083 0 
+z
+M 1242 2387 
+L 4070 2387 
+Q 4122 2387 4157 2419 
+Q 4192 2451 4192 2502 
+L 4192 3718 
+Q 4192 3763 4157 3798 
+Q 4122 3834 4070 3834 
+L 1242 3834 
+Q 1197 3834 1161 3798 
+Q 1126 3763 1126 3718 
+L 1126 2502 
+Q 1126 2451 1161 2419 
+Q 1197 2387 1242 2387 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#Orbitron-SemiBold-86"/>
+     <use xlink:href="#Orbitron-SemiBold-86" transform="translate(52.09375 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-98" transform="translate(104.1875 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-20" transform="translate(133.984375 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-1e" transform="translate(216.78125 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-d" transform="translate(299.984375 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-98" transform="translate(376.578125 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-2b" transform="translate(406.375 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-2c" transform="translate(482.28125 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-29" transform="translate(565.078125 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-1e" transform="translate(647.578125 0)"/>
+    </g>
+   </g>
+   <g id="text_20">
+    <!-- The AI narrates. -->
+    <g style="fill: #ffffff" transform="translate(705.6 102.1968) scale(0.4176 -0.4176)">
+     <defs>
+      <path id="Rajdhani-Bold-26" d="M 845 0 
+L 230 0 
+Q 115 0 154 134 
+L 1165 3981 
+Q 1210 4115 1357 4115 
+L 2208 4115 
+Q 2368 4115 2400 3981 
+L 3411 134 
+Q 3450 0 3334 0 
+L 2720 0 
+Q 2650 0 2624 29 
+Q 2598 58 2586 134 
+L 2406 838 
+L 1158 838 
+L 979 134 
+Q 966 58 937 29 
+Q 909 0 845 0 
+z
+M 1773 3341 
+L 1312 1491 
+L 2259 1491 
+L 1798 3341 
+L 1773 3341 
+z
+" transform="scale(0.015625)"/>
+      <path id="Rajdhani-Bold-13" d="M 1062 922 
+L 1062 134 
+Q 1062 0 941 0 
+L 371 0 
+Q 243 0 243 134 
+L 243 915 
+Q 243 1043 371 1043 
+L 941 1043 
+Q 1062 1043 1062 922 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#Rajdhani-Bold-39"/>
+     <use xlink:href="#Rajdhani-Bold-4d" transform="translate(44.296875 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4a" transform="translate(96.59375 0)"/>
+     <use xlink:href="#Rajdhani-Bold-5" transform="translate(146 0)"/>
+     <use xlink:href="#Rajdhani-Bold-26" transform="translate(168 0)"/>
+     <use xlink:href="#Rajdhani-Bold-2e" transform="translate(223.703125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-5" transform="translate(250.40625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-53" transform="translate(272.40625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-46" transform="translate(324.703125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-57" transform="translate(376.5 0)"/>
+     <use xlink:href="#Rajdhani-Bold-57" transform="translate(411.40625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-46" transform="translate(446.3125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-59" transform="translate(498.109375 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4a" transform="translate(533.40625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-58" transform="translate(582.8125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-13" transform="translate(626.609375 0)"/>
+    </g>
+   </g>
+   <g id="text_21">
+    <!-- The engine decides. -->
+    <g style="fill: #ff8a3d" transform="translate(705.6 148.2768) scale(0.4176 -0.4176)">
+     <use xlink:href="#Rajdhani-Bold-39"/>
+     <use xlink:href="#Rajdhani-Bold-4d" transform="translate(44.296875 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4a" transform="translate(96.59375 0)"/>
+     <use xlink:href="#Rajdhani-Bold-5" transform="translate(146 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4a" transform="translate(168 0)"/>
+     <use xlink:href="#Rajdhani-Bold-53" transform="translate(217.40625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4c" transform="translate(269.703125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4e" transform="translate(321.609375 0)"/>
+     <use xlink:href="#Rajdhani-Bold-53" transform="translate(346.3125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4a" transform="translate(398.609375 0)"/>
+     <use xlink:href="#Rajdhani-Bold-5" transform="translate(448.015625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-49" transform="translate(470.015625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4a" transform="translate(522.609375 0)"/>
+     <use xlink:href="#Rajdhani-Bold-48" transform="translate(572.015625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4e" transform="translate(613.109375 0)"/>
+     <use xlink:href="#Rajdhani-Bold-49" transform="translate(637.8125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-4a" transform="translate(690.40625 0)"/>
+     <use xlink:href="#Rajdhani-Bold-58" transform="translate(739.8125 0)"/>
+     <use xlink:href="#Rajdhani-Bold-13" transform="translate(783.609375 0)"/>
+    </g>
+   </g>
+   <g id="text_22">
+    <!-- EVENTS -->
+    <g style="fill: #ff8a3d" transform="translate(923.04 443.952) scale(0.18 -0.18)">
+     <defs>
+      <path id="Orbitron-SemiBold-31" d="M 2893 0 
+L 224 4608 
+L 1120 4608 
+L 3251 902 
+L 5389 4608 
+L 6278 4608 
+L 3610 0 
+L 2893 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Orbitron-SemiBold-2a" d="M 1197 0 
+Q 960 0 765 115 
+Q 570 230 454 428 
+Q 339 627 339 864 
+L 339 1171 
+L 1107 1171 
+L 1107 890 
+Q 1107 838 1139 806 
+Q 1171 774 1222 774 
+L 4051 774 
+Q 4102 774 4137 806 
+Q 4173 838 4173 890 
+L 4173 1805 
+Q 4173 1850 4137 1882 
+Q 4102 1914 4051 1914 
+L 1197 1914 
+Q 960 1914 765 2032 
+Q 570 2150 454 2345 
+Q 339 2541 339 2778 
+L 339 3744 
+Q 339 3981 454 4179 
+Q 570 4378 765 4493 
+Q 960 4608 1197 4608 
+L 4083 4608 
+Q 4320 4608 4515 4493 
+Q 4710 4378 4828 4179 
+Q 4947 3981 4947 3744 
+L 4947 3437 
+L 4173 3437 
+L 4173 3718 
+Q 4173 3770 4137 3802 
+Q 4102 3834 4051 3834 
+L 1222 3834 
+Q 1171 3834 1139 3802 
+Q 1107 3770 1107 3718 
+L 1107 2803 
+Q 1107 2758 1139 2726 
+Q 1171 2694 1222 2694 
+L 4083 2694 
+Q 4320 2694 4515 2576 
+Q 4710 2458 4828 2262 
+Q 4947 2067 4947 1830 
+L 4947 864 
+Q 4947 627 4828 428 
+Q 4710 230 4515 115 
+Q 4320 0 4083 0 
+L 1197 0 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#Orbitron-SemiBold-d"/>
+     <use xlink:href="#Orbitron-SemiBold-31" transform="translate(76.59375 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-d" transform="translate(176.890625 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-1e" transform="translate(253.484375 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-2b" transform="translate(336.6875 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-2a" transform="translate(412.59375 0)"/>
+    </g>
+   </g>
+   <g id="text_23">
+    <!-- STORY ONLY -->
+    <g style="fill: #ff8a3d" transform="translate(509.274844 784.746) scale(0.18 -0.18)">
+     <defs>
+      <path id="Orbitron-SemiBold-34" d="M 2189 0 
+L 2189 1728 
+L 64 4608 
+L 973 4608 
+L 2579 2586 
+L 4173 4608 
+L 5094 4608 
+L 2963 1722 
+L 2963 0 
+L 2189 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Orbitron-SemiBold-1c" d="M 365 0 
+L 365 4614 
+L 1133 4614 
+L 1133 774 
+L 4973 774 
+L 4973 0 
+L 365 0 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#Orbitron-SemiBold-2a"/>
+     <use xlink:href="#Orbitron-SemiBold-2b" transform="translate(82.5 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-20" transform="translate(158.40625 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-29" transform="translate(241.203125 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-34" transform="translate(323.703125 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-98" transform="translate(404.296875 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-20" transform="translate(434.09375 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-1e" transform="translate(516.890625 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-1c" transform="translate(600.09375 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-34" transform="translate(660.796875 0)"/>
+    </g>
+   </g>
+   <g id="text_24">
+    <!-- REPEAT -->
+    <g style="fill: #ff8a3d" transform="translate(260.64 565.632) scale(0.18 -0.18)">
+     <defs>
+      <path id="Orbitron-SemiBold-27" d="M 358 0 
+L 358 4602 
+L 4102 4602 
+Q 4339 4602 4534 4483 
+Q 4730 4365 4848 4169 
+Q 4966 3974 4966 3738 
+L 4966 2470 
+Q 4966 2240 4848 2041 
+Q 4730 1843 4534 1728 
+Q 4339 1613 4102 1613 
+L 1126 1606 
+L 1126 0 
+L 358 0 
+z
+M 1242 2387 
+L 4070 2387 
+Q 4122 2387 4157 2419 
+Q 4192 2451 4192 2502 
+L 4192 3718 
+Q 4192 3763 4157 3798 
+Q 4122 3834 4070 3834 
+L 1242 3834 
+Q 1197 3834 1161 3798 
+Q 1126 3763 1126 3718 
+L 1126 2502 
+Q 1126 2451 1161 2419 
+Q 1197 2387 1242 2387 
+z
+" transform="scale(0.015625)"/>
+      <path id="Orbitron-SemiBold-1" d="M 371 0 
+L 371 3744 
+Q 371 3981 486 4179 
+Q 602 4378 800 4493 
+Q 998 4608 1235 4608 
+L 4115 4608 
+Q 4352 4608 4547 4493 
+Q 4742 4378 4860 4179 
+Q 4979 3981 4979 3744 
+L 4979 0 
+L 4205 0 
+L 4205 1581 
+L 1139 1581 
+L 1139 0 
+L 371 0 
+z
+M 1139 2349 
+L 4205 2349 
+L 4205 3718 
+Q 4205 3770 4169 3802 
+Q 4134 3834 4083 3834 
+L 1254 3834 
+Q 1210 3834 1174 3802 
+Q 1139 3770 1139 3718 
+L 1139 2349 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#Orbitron-SemiBold-29"/>
+     <use xlink:href="#Orbitron-SemiBold-d" transform="translate(82.5 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-27" transform="translate(159.09375 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-d" transform="translate(238.1875 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-1" transform="translate(314.78125 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-2b" transform="translate(398.375 0)"/>
+    </g>
+   </g>
+   <g id="text_25">
+    <!-- NEXT LEGAL ACTIONS -->
+    <g style="fill: #ff8a3d" transform="translate(482.361998 629.453706) rotate(-46.27303) scale(0.18 -0.18)">
+     <defs>
+      <path id="Orbitron-SemiBold-33" d="M 294 0 
+L 294 179 
+L 2074 2304 
+L 294 4429 
+L 294 4608 
+L 1152 4608 
+L 2586 2912 
+L 4013 4608 
+L 4870 4608 
+L 4870 4429 
+L 3085 2304 
+L 4870 186 
+L 4870 0 
+L 4013 0 
+L 2579 1696 
+L 1152 0 
+L 294 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Orbitron-SemiBold-13" d="M 1222 0 
+Q 986 0 787 115 
+Q 589 230 473 428 
+Q 358 627 358 864 
+L 358 3744 
+Q 358 3981 473 4179 
+Q 589 4378 787 4493 
+Q 986 4608 1222 4608 
+L 4102 4608 
+Q 4339 4608 4534 4493 
+Q 4730 4378 4848 4179 
+Q 4966 3981 4966 3744 
+L 4966 3430 
+L 4192 3430 
+L 4192 3718 
+Q 4192 3770 4157 3802 
+Q 4122 3834 4070 3834 
+L 1242 3834 
+Q 1197 3834 1161 3802 
+Q 1126 3770 1126 3718 
+L 1126 890 
+Q 1126 838 1161 806 
+Q 1197 774 1242 774 
+L 4070 774 
+Q 4122 774 4157 806 
+Q 4192 838 4192 890 
+L 4192 1792 
+L 3130 1792 
+L 3130 2566 
+L 4966 2566 
+L 4966 864 
+Q 4966 627 4848 428 
+Q 4730 230 4534 115 
+Q 4339 0 4102 0 
+L 1222 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Orbitron-SemiBold-a" d="M 1222 0 
+Q 986 0 787 115 
+Q 589 230 473 428 
+Q 358 627 358 864 
+L 358 3744 
+Q 358 3981 473 4179 
+Q 589 4378 787 4493 
+Q 986 4608 1222 4608 
+L 4954 4608 
+L 4954 3834 
+L 1357 3834 
+Q 1254 3834 1190 3773 
+Q 1126 3712 1126 3610 
+L 1126 998 
+Q 1126 896 1190 835 
+Q 1254 774 1357 774 
+L 4954 774 
+L 4954 0 
+L 1222 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Orbitron-SemiBold-15" d="M 307 0 
+L 307 4608 
+L 1069 4608 
+L 1069 0 
+L 307 0 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#Orbitron-SemiBold-1e"/>
+     <use xlink:href="#Orbitron-SemiBold-d" transform="translate(83.203125 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-33" transform="translate(159.796875 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-2b" transform="translate(241 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-98" transform="translate(316.90625 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-1c" transform="translate(346.703125 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-d" transform="translate(424.609375 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-13" transform="translate(501.203125 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-1" transform="translate(584.203125 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-1c" transform="translate(667.796875 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-98" transform="translate(745.703125 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-1" transform="translate(775.5 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-a" transform="translate(859.09375 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-2b" transform="translate(941.296875 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-15" transform="translate(1017.203125 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-20" transform="translate(1038.609375 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-1e" transform="translate(1121.40625 0)"/>
+     <use xlink:href="#Orbitron-SemiBold-2a" transform="translate(1204.609375 0)"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pbc47dc9a33">
+   <rect x="0" y="0" width="1152" height="1039.68"/>
+  </clipPath>
+ </defs>
+</svg>
